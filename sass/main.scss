@@ -7,10 +7,12 @@
 /* ==|== primary styles =====================================================
    Authors: %Author Name%
    ========================================================================== */
-/* Typo */
-@font-face {
 
-}
+/* Fonts */
+/*
+@include font-face($name, $file);
+@include font-face('Open Sans', 'OpenSans-webfont');
+*/
 
 a {
   &:hover {text-decoration: none;}
