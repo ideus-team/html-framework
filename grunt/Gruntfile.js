@@ -99,11 +99,12 @@ module.exports = function(grunt) {
         tasks: ['compass', 'clean', 'csslint']
       },
       js: {
-        files: [
-          'Gruntfile.js',
-          '<%= concat.main.src %>'
-        ],
+        files: '<%= concat.main.src %>',
         tasks: ['jshint', 'concat', 'uglify']
+      },
+      grunt: {
+        files: 'Gruntfile.js',
+        tasks: 'default'
       }
     }
   });
