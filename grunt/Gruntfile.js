@@ -32,7 +32,7 @@ module.exports = function(grunt) {
           'qualified-headings': false,
           'unique-headings': false,
 
-          // Эти опции надо бы убрать в будущем
+          // Эти опции надо бы убрать в будущем. В данный момент их проверка отключена по причине конфликтов с CSS нашего фреймворка.
           'text-indent': false,
           'outline-none': false,
           'important': false,
@@ -40,7 +40,8 @@ module.exports = function(grunt) {
           'underscore-property-hack': false,
           'star-property-hack': false,
           'universal-selector': false,
-          'unqualified-attributes': false
+          'unqualified-attributes': false,
+          'compatible-vendor-prefixes': false
         },
         src: [
           '<%= compass.main.options.cssDir %>' + '/*.css'
