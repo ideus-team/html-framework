@@ -1,18 +1,19 @@
 // Обязательная обёртка
+// Обязательная обёртка
 module.exports = function(grunt) {
 
   // Задачи
   grunt.initConfig({
     // Пути к файлам и папкам JS
-    js_files: '../js/dev/main.js',
-    js_plugins_files: '../js/dev/plugins/*.js',
+    js_files: 'js/main.js',
+    js_plugins_files: 'js/plugins/*.js',
     js_result_file: '../js/scripts.js',
 
     // SASS + Compass
     compass: {
       main: {
         options: {
-          sassDir: '../sass',
+          sassDir: 'sass',
           cssDir: '../css',
           imagesDir: '../img',
           outputStyle: 'expanded',
