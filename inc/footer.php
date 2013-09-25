@@ -3,9 +3,15 @@
     <footer class="l-siteFooter" role="contentinfo">
       <div class="l-siteNavigationBottom" role="navigation">
         <ul class="b-bottomNavigation">
-          <li class="b-bottomNavigation__item"><a class="b-bottomNavigation__link" href="index.html">Home</a></li>
+          <li class="b-bottomNavigation__item<?=($uri=='home')?' -state_current':'';?>">
+            <a class="b-bottomNavigation__link" href="index.html">Home</a>
+          </li>
+          <li class="b-bottomNavigation__item">
+            <a class="b-bottomNavigation__link" href="#"></a>
+          </li>
         </ul>
       </div>
+
       <address class="l-siteCopyright vcard" itemscope itemtype="http://schema.org/Organization">
         <div class="b-siteCopyright">© <?=date('Y');?> <a rel="me" itemprop="name" class="b-siteCopyright__link fn n org url work" href="http://client-site-name.com">%clientName%</a>. Все права защищены</div>
         <div class="b-developerCopyright">Разработано в <a rel="friend" class="b-developerCopyright__link" href="http://ideus.biz/" target="_blank">iDeus</a></div>

@@ -82,16 +82,12 @@
 
       <nav class="l-siteNavigation" role="navigation">
         <ul class="b-mainNavigation">
-          <li class="b-mainNavigation__item -state_current"><a class="b-mainNavigation__link" href="#"></a></li>
-          <li class="b-mainNavigation__item"><a class="b-mainNavigation__link" href="#"></a></li>
+          <li class="b-mainNavigation__item<?=($uri=='home')?' -state_current':'';?>">
+            <a class="b-mainNavigation__link" href="index.html">Home</a>
+          </li>
           <li class="b-mainNavigation__item">
             <a class="b-mainNavigation__link" href="#"></a>
-            <ul class="b-mainNavigation__submenu">
-              <li class="b-mainNavigation__submenu__item"><a class="b-mainNavigation__submenu__item__link" href="#"></a></li>
-              <li class="b-mainNavigation__submenu__item"><a class="b-mainNavigation__submenu__item__link" href="#"></a></li>
-            </ul>
           </li>
-          <li class="b-mainNavigation__item"><a class="b-mainNavigation__link" href="#"></a></li>
         </ul>
       </nav>
     </header>
