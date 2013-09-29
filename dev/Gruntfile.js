@@ -5,7 +5,7 @@ module.exports = function(grunt) {
   grunt.initConfig({
     // Пути к файлам и папкам JS
     js_files: 'js/main.js',
-    js_plugins_files: 'js/plugins/*.js',
+    js_plugins_files: 'js/plugins/**/*.js',
     js_result_file: '../js/scripts.js',
 
     // SASS + Compass
@@ -107,7 +107,7 @@ module.exports = function(grunt) {
     // Следим за изменениями файлов
     watch: {
       css: {
-        files: '<%= compass.main.options.sassDir %>' + '/*.scss',
+        files: '<%= compass.main.options.sassDir %>' + '/**/*.scss',
         tasks: ['compass', 'clean', 'csslint', 'cssmin']
       },
       js: {
