@@ -2,11 +2,14 @@
 
 @import 'normalize';
 @import 'h5b';
-@import 'extend';
+@import 'compass/css3/images';
 @import 'mixins';
+@import 'extend';
 
 
-/* Variables */
+/**
+* @section Variables
+*/
 $fontArial: Arial, Helvetica, sans-serif;
 
 
@@ -14,10 +17,11 @@ $fontArial: Arial, Helvetica, sans-serif;
    Authors: %Author Name%
    ========================================================================== */
 
-/* Fonts */
-/*
-@include font-face($name, $file);
-@include font-face('Open Sans', 'OpenSans-webfont');
+/**
+* @section Fonts
+*
+* @include font-face($name, $file);
+* @include font-face('Open Sans', 'OpenSans-webfont');
 */
 
 a {
