@@ -20,8 +20,10 @@ $fontArial: Arial, Helvetica, sans-serif;
 /**
 * @section Fonts
 *
-* @include font-face($name, $file);
-* @include font-face('Open Sans', 'OpenSans-webfont');
+* @mixin font-face($name, $file, $weight: normal, $style: normal);
+* @include font-face('PTSans', 'PTSansRegular-webfont');
+* @include font-face('PTSans', 'PTSansItalic-webfont', normal, italic);
+* @include font-face('PTSans', 'PTSansBold-webfont', bold);
 */
 
 a {

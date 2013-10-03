@@ -75,7 +75,7 @@
           transform-style: $value;
 }
 
-@mixin font-face($name, $file) {
+@mixin font-face($name, $file, $weight: normal, $style: normal) {
   @font-face {
     font-family: '#{$name}';
     src: url('../fonts/#{$file}.eot');
@@ -83,7 +83,7 @@
          url('../fonts/#{$file}.woff') format('woff'),
          url('../fonts/#{$file}.ttf') format('truetype'),
          url('../fonts/#{$file}.svg') format('svg');
-    font-weight: normal;
-    font-style: normal;
+    font-weight: $weight;
+    font-style: $style;
   }
 }
