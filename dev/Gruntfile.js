@@ -118,6 +118,16 @@ module.exports = function(grunt) {
         files: 'Gruntfile.js',
         tasks: 'default'
       }
+    },
+
+    // Автоматизированное тестирование при помощи DalekJS
+    dalek: {
+      options: {
+        // Task-specific options go here.
+      },
+      dist: {
+        src: 'test/test.js'
+      }
     }
   });
 
@@ -130,7 +140,9 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-dalek');
 
   // Задача по умолчанию
   grunt.registerTask('default', ['compass', 'clean', 'csslint', 'cssmin', 'jshint', 'concat', 'uglify']);
+  grunt.registerTask('test', ['dalek']);
 };
