@@ -47,8 +47,7 @@ module.exports = function(grunt) {
     // JSHint
     jshint: {
       options: {
-        strict: false,
-        jquery: true
+        jshintrc: '.jshintrc'
       },
       files: [
         'Gruntfile.js',
@@ -97,7 +96,10 @@ module.exports = function(grunt) {
         tasks: ['compass', 'clean', 'csslint', 'cssmin']
       },
       js: {
-        files: '<%= concat.main.src %>',
+        files: [
+          '<%= concat.main.src %>',
+          '<%= jshint.options.jshintrc %>'
+        ],
         tasks: ['jshint', 'concat', 'uglify']
       },
       grunt: {
