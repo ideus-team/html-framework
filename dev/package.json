@@ -1,6 +1,6 @@
 {
   "name": "html-framework",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Our HTML5 template",
   "main": "Gruntfile.js",
   "dependencies": {},
@@ -9,6 +9,7 @@
     "grunt-contrib-compass": "~0.6.0",
     "grunt-contrib-clean": "~0.5.0",
     "grunt-contrib-csslint": "~0.1.2",
+    "grunt-autoprefixer": "~0.4.0",
     "grunt-contrib-cssmin": "~0.6.2",
     "grunt-contrib-jshint": "~0.6.4",
     "grunt-contrib-concat": "~0.3.0",

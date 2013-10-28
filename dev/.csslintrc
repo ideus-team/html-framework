@@ -6,6 +6,7 @@
   "font-sizes": false,
   "qualified-headings": false,
   "unique-headings": false,
+  "compatible-vendor-prefixes": false,
 
   "text-indent": false,
   "outline-none": false,
@@ -14,6 +15,5 @@
   "underscore-property-hack": false,
   "star-property-hack": false,
   "universal-selector": false,
-  "unqualified-attributes": false,
-  "compatible-vendor-prefixes": false
+  "unqualified-attributes": false
 }

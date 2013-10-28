@@ -27,9 +27,17 @@ module.exports = function(grunt) {
         options: {
           csslintrc: '.csslintrc'
         },
-        src: [
-          '<%= compass.main.options.cssDir %>' + '/*.css'
-        ]
+        src: '<%= compass.main.options.cssDir %>' + '/*.css'
+      }
+    },
+
+    // Autoprefixer
+    autoprefixer: {
+      main: {
+        options: {
+          browsers: ['last 2 version', 'ie 8', 'opera 12.1', 'android 2.3']
+        },
+        src: '<%= compass.main.options.cssDir %>' + '/*.css'
       }
     },
 
@@ -93,7 +101,7 @@ module.exports = function(grunt) {
           '<%= compass.main.options.sassDir %>' + '/**/*.scss',
           '<%= csslint.main.options.csslintrc %>'
         ],
-        tasks: ['compass', 'clean', 'csslint', 'cssmin']
+        tasks: ['compass', 'clean', 'csslint', 'autoprefixer', 'cssmin']
       },
       js: {
         files: [
@@ -123,6 +131,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-compass');
   grunt.loadNpmTasks('grunt-contrib-clean');
   grunt.loadNpmTasks('grunt-contrib-csslint');
+  grunt.loadNpmTasks('grunt-autoprefixer');
   grunt.loadNpmTasks('grunt-contrib-cssmin');
   grunt.loadNpmTasks('grunt-contrib-jshint');
   grunt.loadNpmTasks('grunt-contrib-concat');
@@ -131,6 +140,6 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-dalek');
 
   // Задача по умолчанию
-  grunt.registerTask('default', ['compass', 'clean', 'csslint', 'cssmin', 'jshint', 'concat', 'uglify']);
+  grunt.registerTask('default', ['compass', 'clean', 'csslint', 'autoprefixer', 'cssmin', 'jshint', 'concat', 'uglify']);
   grunt.registerTask('test', ['dalek']);
 };
