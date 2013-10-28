@@ -33,7 +33,17 @@
   <link rel="stylesheet" href="css/main.css" />
   <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
   <script>window.Modernizr || document.write('<script src="js/vendor/modernizr-2.6.2.min.js"><\/script>')</script>
-  <!--[if lte IE 8]><script src="js/legacy/ie8.js"></script><![endif]-->
+
+  <!--[if lte IE 8]>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+    <script src="js/legacy/ie8.js"></script>
+  <![endif]-->
+  <!--[if gte IE 9]><!-->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-2.0.3.min.js"><\/script>')</script>
+  <!--<![endif]-->
+
   <!-- Net-Craft.Dev Monitoring -->
   <script>
     var _gaq = _gaq || [];
