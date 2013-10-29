@@ -121,7 +121,7 @@ module.exports = function(grunt) {
       options: {
         // Task-specific options go here.
       },
-      dist: {
+      main: {
         src: 'test/test.js'
       }
     }
