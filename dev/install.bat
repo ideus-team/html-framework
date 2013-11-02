@@ -1,1 +1,1 @@
-npm install --save-dev & del install.bat
+npm install --save-dev
