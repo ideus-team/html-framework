@@ -132,6 +132,6 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-dalek');
 
   // Задача по умолчанию
-  grunt.registerTask('default', ['compass', 'clean', 'csslint', 'autoprefixer', 'cssmin', 'jshint', 'concat', 'uglify']);
+  grunt.registerTask('default', ['compass', /*'clean',*/ 'csslint', 'autoprefixer', 'cssmin', 'jshint', 'concat', 'uglify']);
   grunt.registerTask('test', ['dalek']);
 };
