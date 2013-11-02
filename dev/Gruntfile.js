@@ -89,9 +89,9 @@ module.exports = function(grunt) {
 
     // Чистим
     clean: {
-      main: [
-        '.sass-cache'
-      ]
+      main: {
+        src: '.sass-cache'
+      }
     },
 
     // Следим за изменениями файлов
