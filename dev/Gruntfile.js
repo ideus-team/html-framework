@@ -96,22 +96,14 @@ module.exports = function(grunt) {
 
     // Следим за изменениями файлов
     watch: {
-      css: {
+      main: {
         files: [
           '<%= compass.main.options.sassDir %>' + '/**/*.scss',
-          '<%= csslint.main.options.csslintrc %>'
-        ],
-        tasks: ['compass', 'clean', 'csslint', 'autoprefixer', 'cssmin']
-      },
-      js: {
-        files: [
+          '<%= csslint.main.options.csslintrc %>',
           '<%= concat.main.src %>',
-          '<%= jshint.options.jshintrc %>'
+          '<%= jshint.options.jshintrc %>',
+          'Gruntfile.js'
         ],
-        tasks: ['jshint', 'concat', 'uglify']
-      },
-      grunt: {
-        files: 'Gruntfile.js',
         tasks: 'default'
       }
     },
