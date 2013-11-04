@@ -1,0 +1,1 @@
+grunt & grunt watch
