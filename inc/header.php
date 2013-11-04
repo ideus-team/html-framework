@@ -75,11 +75,19 @@
           $siteLogo__iconURL = 'img/siteLogo__icon.png';
           //$siteLogo__iconURL = ($device=='mobile') ? 'img/siteLogo__icon-mobile.png' : 'img/siteLogo__icon.png';
         ?>
-        <h1 class="b-siteLogo" itemscope itemtype="http://schema.org/Organization">
-          <a class="b-siteLogo__link" <?php if(!$isHomepage): ?>href="index.html"<?php endif; ?> itemprop="url">
-            <img class="b-siteLogo__icon" src="<?=$siteLogo__iconURL?>" alt="<?=$siteName?>" title="<?=$siteName?>" itemprop="logo">
-          </a>
-        </h1>
+        <?if($isHomepage):?>
+          <h1 class="b-siteLogo" itemscope itemtype="http://schema.org/Organization">
+            <a class="b-siteLogo__link" itemprop="url">
+              <img class="b-siteLogo__icon" src="<?=$siteLogo__iconURL?>" alt="<?=$siteName?>" title="<?=$siteName?>" itemprop="logo">
+            </a>
+          </h1>
+        <?else:?>
+          <div class="b-siteLogo" itemscope itemtype="http://schema.org/Organization">
+            <a class="b-siteLogo__link" href="index.html" itemprop="url">
+              <img class="b-siteLogo__icon" src="<?=$siteLogo__iconURL?>" alt="<?=$siteName?>" title="<?=$siteName?>" itemprop="logo">
+            </a>
+          </div>
+        <?endif;?>
       </div>
 
       <div class="l-siteSearch">
