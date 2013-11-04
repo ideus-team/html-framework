@@ -9,3 +9,11 @@ Our HTML5 template, based on [HTML5Boilerplate](https://github.com/h5bp/html5-bo
 ```shell
 npm install --save-dev
 ```
+
+## Start
+
+Для начала работы с Grunt необходимо запустить файл **start.bat** в директории *dev* или выполнить там же следующую команду:
+
+```shell
+grunt & grunt watch
+```
