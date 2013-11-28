@@ -27,6 +27,5 @@
 
 # TECHNOLOGY COLOPHON
 
-    Kohana
     BEM
-    HTML5, CSS3, SASS, Compass, phpMobileDetect, Normalize.css, jQuery, Modernizr
+    HTML5, CSS3, Node.js, Grunt, SASS, Compass, CSSLint, JSHint, Dalek.JS, phpMobileDetect, Normalize.css, jQuery, Modernizr
