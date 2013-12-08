@@ -4,7 +4,7 @@ Our HTML5 template, based on [HTML5Boilerplate](https://github.com/h5bp/html5-bo
 
 ## Install
 
-Для установки Grunt и плагинов к нему необходимо запустить файл **install.bat** в директории *dev* или выполнить там же следующую команду:
+Для установки Grunt и плагинов к нему необходимо запустить файл `install.bat` в директории `dev` или выполнить там же следующую команду:
 
 ```shell
 npm install --save-dev
@@ -12,7 +12,7 @@ npm install --save-dev
 
 ## Start
 
-Для начала работы с Grunt необходимо запустить файл **start.bat** в директории *dev* или выполнить там же следующую команду:
+Для начала работы с Grunt необходимо запустить файл `start.bat` в директории `dev` или выполнить там же следующую команду:
 
 ```shell
 grunt & grunt watch
