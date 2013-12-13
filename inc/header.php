@@ -20,15 +20,15 @@
   $title = ($isHomepage) ? $siteName : $siteName.' : '.$pageName;
 ?>
 <!DOCTYPE html>
-<!--[if IE 7]>         <html class="-device_<?=$device?> no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="-device_<?=$device?> no-js lt-ie9"> <![endif]-->
-<!--[if IE 9]>         <html class="-device_<?=$device?> no-js ie9"> <![endif]-->
-<!--[if gt IE 9]><!--> <html class="-device_<?=$device?> no-js"> <!--<![endif]-->
+<!--[if IE 7]>         <html class="-device_<?php echo $device; ?> no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="-device_<?php echo $device; ?> no-js lt-ie9"> <![endif]-->
+<!--[if IE 9]>         <html class="-device_<?php echo $device; ?> no-js ie9"> <![endif]-->
+<!--[if gt IE 9]><!--> <html class="-device_<?php echo $device; ?> no-js"> <!--<![endif]-->
 <head>
   <meta charset="utf-8" />
-  <title><?=$title?></title>
+  <title><?php echo $title; ?></title>
   <meta name="description" content="" />
-  <meta name="viewport" content="width=<?=$viewport?>" />
+  <meta name="viewport" content="width=<?php echo $viewport; ?>" />
   <link rel="shortcut icon" href="favicon.ico" />
   <link rel="apple-touch-icon" href="apple-touch-icon.png" />
   <link rel="stylesheet" href="css/main.css" />
@@ -65,7 +65,7 @@
   </script>
   <!-- /Net-Craft.Dev Monitoring -->
 </head>
-<body class="-page_<?=$uri?><?=(!$isHomepage) ? ' -page_inner' : '';?> -page_lang_en" id="%SiteURI%">
+<body class="-page_<?php echo $uri; ?><?php echo (!$isHomepage) ? ' -page_inner' : ''; ?> -page_lang_en" id="%SiteURI%">
   <!--[if lte IE 7]>
     <div class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</div>
   <![endif]-->
@@ -76,19 +76,19 @@
           $siteLogo__iconURL = 'img/siteLogo__icon.png';
           //$siteLogo__iconURL = ($device=='mobile') ? 'img/siteLogo__icon-mobile.png' : 'img/siteLogo__icon.png';
         ?>
-        <?if($isHomepage):?>
+        <?php if($isHomepage): ?>
           <h1 class="b-siteLogo" itemscope itemtype="http://schema.org/Organization">
             <a class="b-siteLogo__link" itemprop="url">
-              <img class="b-siteLogo__icon" src="<?=$siteLogo__iconURL?>" alt="<?=$siteName?>" title="<?=$siteName?>" itemprop="logo">
+              <img class="b-siteLogo__icon" src="<?php echo $siteLogo__iconURL; ?>" alt="<?php echo $siteName; ?>" title="<?php echo $siteName; ?>" itemprop="logo">
             </a>
           </h1>
-        <?else:?>
+        <?php else: ?>
           <div class="b-siteLogo" itemscope itemtype="http://schema.org/Organization">
             <a class="b-siteLogo__link" href="index.html" itemprop="url">
-              <img class="b-siteLogo__icon" src="<?=$siteLogo__iconURL?>" alt="<?=$siteName?>" title="<?=$siteName?>" itemprop="logo">
+              <img class="b-siteLogo__icon" src="<?php echo $siteLogo__iconURL; ?>" alt="<?php echo $siteName; ?>" title="<?php echo $siteName; ?>" itemprop="logo">
             </a>
           </div>
-        <?endif;?>
+        <?php endif; ?>
       </div>
 
       <div class="l-siteSearch">
@@ -101,7 +101,7 @@
 
       <nav class="l-siteNavigation" role="navigation">
         <ul class="b-mainNavigation">
-          <li class="b-mainNavigation__item<?=($uri=='home')?' -state_current':'';?>">
+          <li class="b-mainNavigation__item<?php echo ($uri=='home')?' -state_current':''; ?>">
             <a class="b-mainNavigation__link" href="index.html">Home</a>
           </li>
           <li class="b-mainNavigation__item">
