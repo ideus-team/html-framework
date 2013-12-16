@@ -79,13 +79,13 @@
         <?php if($isHomepage): ?>
           <h1 class="b-siteLogo" itemscope itemtype="http://schema.org/Organization">
             <a class="b-siteLogo__link" itemprop="url">
-              <img class="b-siteLogo__icon" src="<?php echo $siteLogo__iconURL; ?>" alt="<?php echo $siteName; ?>" title="<?php echo $siteName; ?>" itemprop="logo">
+              <img class="b-siteLogo__icon" src="<?php echo $siteLogo__iconURL; ?>" alt="<?php echo $siteName; ?>" title="<?php echo $siteName; ?>" itemprop="logo" />
             </a>
           </h1>
         <?php else: ?>
           <div class="b-siteLogo" itemscope itemtype="http://schema.org/Organization">
             <a class="b-siteLogo__link" href="index.html" itemprop="url">
-              <img class="b-siteLogo__icon" src="<?php echo $siteLogo__iconURL; ?>" alt="<?php echo $siteName; ?>" title="<?php echo $siteName; ?>" itemprop="logo">
+              <img class="b-siteLogo__icon" src="<?php echo $siteLogo__iconURL; ?>" alt="<?php echo $siteName; ?>" title="<?php echo $siteName; ?>" itemprop="logo" />
             </a>
           </div>
         <?php endif; ?>
