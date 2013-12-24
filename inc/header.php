@@ -4,6 +4,8 @@
 
   $device = (!$detect->isMobile()) ? 'desktop' : ($detect->isTablet() ? 'tablet' : 'mobile');
 
+  $device = (isset($_COOKIE['device']) && $_COOKIE['device']) ? $_COOKIE['device'] : $device;
+
   switch ($device) {
     case 'mobile':
       $viewport = '1024';
