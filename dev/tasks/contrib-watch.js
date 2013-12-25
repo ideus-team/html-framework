@@ -12,6 +12,16 @@ module.exports = function(grunt) {
       ],
       tasks: 'default',
     },
+    dev: {
+      files: [
+        '<%= compass.main.options.sassDir %>' + '/**/*.scss',
+        '<%= csslint.main.options.csslintrc %>',
+        '<%= concat.main.src %>',
+        '<%= jshint.options.jshintrc %>',
+        'Gruntfile.js',
+      ],
+      tasks: 'dev',
+    },
   });
 
   grunt.loadNpmTasks('grunt-contrib-watch');
