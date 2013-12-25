@@ -17,3 +17,9 @@ npm install --save-dev
 ```shell
 grunt & grunt watch
 ```
+
+Если необходимость в минимизации CSS и JS отсутствует, то нужно запустить файл `start-dev.bat` в директории `dev` или выполнить там же следующую команду:
+
+```shell
+grunt dev & grunt watch:dev
+```
