@@ -3,6 +3,9 @@ module.exports = function(grunt) {
   // Следим за изменениями файлов
   grunt.config('watch', {
     main: {
+      options: {
+        atBegin: true,
+      },
       files: [
         '<%= sassDir %>' + '/**/*.scss',
         '<%= csslint.main.options.csslintrc %>',
@@ -14,6 +17,9 @@ module.exports = function(grunt) {
       tasks: 'default',
     },
     dev: {
+      options: {
+        atBegin: true,
+      },
       files: [
         '<%= sassDir %>' + '/**/*.scss',
         '<%= csslint.main.options.csslintrc %>',
