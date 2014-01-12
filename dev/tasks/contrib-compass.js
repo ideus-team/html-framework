@@ -4,8 +4,8 @@ module.exports = function(grunt) {
   grunt.config('compass', {
     main: {
       options: {
-        sassDir: 'sass',
-        cssDir: '../css',
+        sassDir: '<%= sassDir %>',
+        cssDir: '<%= cssDir %>',
         imagesDir: '../img',
         outputStyle: 'expanded',
         force: true,

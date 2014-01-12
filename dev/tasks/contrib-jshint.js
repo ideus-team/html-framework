@@ -3,12 +3,12 @@ module.exports = function(grunt) {
   // JSHint
   grunt.config('jshint', {
     options: {
-      jshintrc: 'config/.jshintrc'
+      jshintrc: '<%= configDir %>' + '/.jshintrc',
     },
     files: [
       'Gruntfile.js',
-      '<%= js_files %>'
-    ]
+      '<%= jsSourceFiles %>',
+    ],
   });
 
   grunt.loadNpmTasks('grunt-contrib-jshint');

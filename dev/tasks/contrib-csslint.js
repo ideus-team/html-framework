@@ -4,9 +4,9 @@ module.exports = function(grunt) {
   grunt.config('csslint', {
     main: {
       options: {
-        csslintrc: 'config/.csslintrc'
+        csslintrc: '<%= configDir %>' + '/.csslintrc',
       },
-      src: '<%= compass.main.options.cssDir %>' + '/*.css',
+      src: '<%= cssDir %>' + '/*.css',
     },
   });
 

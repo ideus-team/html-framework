@@ -4,9 +4,9 @@ module.exports = function(grunt) {
   grunt.config('watch', {
     main: {
       files: [
-        '<%= compass.main.options.sassDir %>' + '/**/*.scss',
+        '<%= sassDir %>' + '/**/*.scss',
         '<%= csslint.main.options.csslintrc %>',
-        '<%= concat.main.src %>',
+        '<%= jsSourceFiles %>',
         '<%= jshint.options.jshintrc %>',
         'Gruntfile.js',
         'tasks/*.js',
@@ -15,9 +15,9 @@ module.exports = function(grunt) {
     },
     dev: {
       files: [
-        '<%= compass.main.options.sassDir %>' + '/**/*.scss',
+        '<%= sassDir %>' + '/**/*.scss',
         '<%= csslint.main.options.csslintrc %>',
-        '<%= concat.main.src %>',
+        '<%= jsSourceFiles %>',
         '<%= jshint.options.jshintrc %>',
         'Gruntfile.js',
         'tasks/*.js',

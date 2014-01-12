@@ -8,7 +8,7 @@ module.exports = function(grunt) {
       },
       files: {
         // Результат задачи concat
-        '<%= js_result_file %>': '<%= concat.main.dest %>',
+        '<%= jsResultFile %>': '<%= jsResultFile %>',
       },
     },
   });

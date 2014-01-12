@@ -4,9 +4,9 @@ module.exports = function(grunt) {
   grunt.config('cssmin', {
     main: {
       expand: true,
-      cwd: '../css/',
+      cwd: '<%= cssDir %>' + '/',
       src: '*.css',
-      dest: '../css/',
+      dest: '<%= cssDir %>' + '/',
       ext: '.css',
     },
   });

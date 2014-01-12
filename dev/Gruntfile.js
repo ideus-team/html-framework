@@ -4,9 +4,15 @@ module.exports = function(grunt) {
   // Конфигурация
   grunt.initConfig({
     // Пути к файлам и папкам JS
-    js_files: 'js/main.js',
-    js_plugins_files: 'js/plugins/**/*.js',
-    js_result_file: '../js/scripts.js',
+    configDir: 'config',
+    sassDir: 'sass',
+    sassFiles: '<%= sassDir %>' + '/main.scss',
+    cssDir: '../css',
+    jsSourceFiles: [
+      'js/plugins/**/*.js',
+      'js/main.js',
+    ],
+    jsResultFile: '../js/scripts.js',
   });
 
   // Загрузка конфигурации к задачам из отдельных файлов
