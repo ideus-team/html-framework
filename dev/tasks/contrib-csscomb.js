@@ -4,7 +4,7 @@ module.exports = function(grunt) {
   grunt.config('csscomb', {
     main: {
       options: {
-        config: 'csscomb.json'
+        config: 'config/csscomb.json'
       },
       files: {
         'sass/main.scss': ['sass/main.scss'],
