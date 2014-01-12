@@ -1,1 +1,1 @@
-grunt & grunt watch
+grunt & grunt watch:main
