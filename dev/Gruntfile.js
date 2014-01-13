@@ -8,10 +8,8 @@ module.exports = function(grunt) {
     sassDir: 'sass',
     sassFiles: '<%= sassDir %>' + '/main.scss',
     cssDir: '../css',
-    jsSourceFiles: [
-      'js/plugins/**/*.js',
-      'js/main.js',
-    ],
+    jsSourceFiles: 'js/main.js',
+    jsSourcePlugins: 'js/plugins/**/*.js',
     jsResultFile: '../js/scripts.js',
   });
 

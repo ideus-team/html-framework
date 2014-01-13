@@ -4,6 +4,7 @@ module.exports = function(grunt) {
   grunt.config('concat', {
     main: {
       src: [
+        '<%= jsSourcePlugins %>',
         '<%= jsSourceFiles %>',
       ],
       dest: '<%= jsResultFile %>',

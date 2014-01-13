@@ -9,6 +9,7 @@ module.exports = function(grunt) {
       files: [
         '<%= sassDir %>' + '/**/*.scss',
         '<%= csslint.main.options.csslintrc %>',
+        '<%= jsSourcePlugins %>',
         '<%= jsSourceFiles %>',
         '<%= jshint.options.jshintrc %>',
         'Gruntfile.js',
@@ -23,6 +24,7 @@ module.exports = function(grunt) {
       files: [
         '<%= sassDir %>' + '/**/*.scss',
         '<%= csslint.main.options.csslintrc %>',
+        '<%= jsSourcePlugins %>',
         '<%= jsSourceFiles %>',
         '<%= jshint.options.jshintrc %>',
         'Gruntfile.js',
