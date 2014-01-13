@@ -23,6 +23,3 @@ grunt watch:main
 ```shell
 grunt watch:dev
 ```
-
-###CSScomb
-При необходимости использования [CSScomb](http://csscomb.ru/) необходимо запустить файл `start-csscomb.bat`
