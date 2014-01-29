@@ -7,7 +7,6 @@ module.exports = function(grunt) {
         mangle: false,
       },
       files: {
-        // Результат задачи concat
         '<%= jsResultFile %>': '<%= jsResultFile %>',
       },
     },
