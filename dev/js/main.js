@@ -2,7 +2,7 @@
  *  Authors: %Author Name%
 */
 
-$(document).ready(function () {
+$(document).ready(function() {
 
   if ($('html').hasClass('-device_desktop')) { // or -device_tablet, -device_mobile
     //... write some code
@@ -13,6 +13,6 @@ $(window).resize(function() {
 
 });
 
-$(window).load(function () {
+$(window).load(function() {
 
 });
