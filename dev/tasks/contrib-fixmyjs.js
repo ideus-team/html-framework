@@ -1,4 +1,5 @@
 module.exports = function(grunt) {
+
   // fixmyjs
   grunt.config('fixmyjs', {
     options: {
@@ -7,10 +8,13 @@ module.exports = function(grunt) {
       legacy: true
     },
     test: {
-      files: [
-        {expand: true, src: ['js/main.js']}
-      ]
+      files: [{
+        expand: true,
+        src: '<%= jsSourceFiles %>'
+      }]
     }
   });
+
   grunt.loadNpmTasks('grunt-fixmyjs');
+
 };

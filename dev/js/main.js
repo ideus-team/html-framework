@@ -10,6 +10,5 @@ $(window).resize(function () {
 
 });
 $(window).load(function () {
-  
-  var x = test;
+
 });
