@@ -56,9 +56,9 @@ body {}
 * @subsection Main Site Logo
 */
 .l-siteLogo {position: absolute; top: 10px; left: 10px; overflow: hidden; width: 200px; height: 150px;}
-.b-siteLogo {margin: 0; padding: 0; width: 100%; height: 100%; background: #000; color: #fff; text-align: center; text-transform: uppercase; font-weight: bold; font-size: 40px;}
-.b-siteLogo__link {display: block; width: 100%; height: 100%; color: #fff;}
-.b-siteLogo__icon {display: block; width: 100%; height: 100%; font-size: 12px;}
+.b-siteLogo {margin: 0; padding: 0; width: 100%; height: 100%;}
+.b-siteLogo__link {display: block; width: 100%; height: 100%;}
+.b-siteLogo__icon {display: block; width: 100%; height: 100%;}
 
 
 /**
