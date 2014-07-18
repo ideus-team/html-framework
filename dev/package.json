@@ -3,10 +3,7 @@
   "version": "1.2.2",
   "description": "Our HTML5 template",
   "main": "Gruntfile.js",
-  "dependencies": {
-    "chalk": "~0.3.0",
-    "fixmyjs": "~0.13.1"
-  },
+  "dependencies": {},
   "devDependencies": {
     "grunt": "~0.4.2",
     "grunt-contrib-compass": "~0.7.0",
