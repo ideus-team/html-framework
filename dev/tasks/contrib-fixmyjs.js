@@ -3,28 +3,12 @@ module.exports = function(grunt) {
   grunt.config('fixmyjs', {
     options: {
       config: '<%= configDir %>' + '/.jshintrc',
-      boss: true,
-      curly: true,
-      eqeqeq: false,
-      eqnull: true,
-      esnext: true,
-      expr: true,
-      forin: true,
-      immed: true,
-      laxbreak: true,
-      newcap: false,
-      noarg: true,
-      node: true,
-      nonew: true,
-      plusplus: true,
-      quotmark: 'single',
-      strict: false,
-      undef: true,
-      unused: true
+      debug: false,
+      legacy: true
     },
     test: {
       files: [
-        {expand: true, src: ['js/main.js']} 
+        {expand: true, src: ['js/main.js']}
       ]
     }
   });

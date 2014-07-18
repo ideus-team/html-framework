@@ -3,10 +3,7 @@
   "version": "1.2.2",
   "description": "Our HTML5 template",
   "main": "Gruntfile.js",
-  "dependencies": {
-    "chalk": "~0.3.0",
-    "fixmyjs": "~0.13.1"
-  },
+  "dependencies": {},
   "devDependencies": {
     "grunt": "~0.4.2",
     "grunt-contrib-compass": "~0.7.0",
@@ -21,7 +18,7 @@
     "grunt-contrib-watch": "~0.5.3",
     "grunt-csscomb": "~2.0.1",
     "grunt-dalek": "~0.2.0",
-    "grunt-fixmyjs": "~0.1.1"
+    "grunt-fixmyjs": "jonschlinkert/grunt-fixmyjs"
   },
   "scripts": {},
   "author": "iDeus"
