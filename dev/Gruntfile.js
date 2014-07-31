@@ -28,4 +28,5 @@ module.exports = function(grunt) {
   grunt.registerTask('dev',     ['datauri', 'compass', /*'clean',*/ 'csslint', 'autoprefixer', /*'fixmyjs',*/ 'jshint', 'concat']);
   grunt.registerTask('comb',    ['compass', /*'clean',*/ 'csslint', 'autoprefixer', 'cssmin', 'csscomb']);
   grunt.registerTask('test',    ['dalek']);
+  grunt.registerTask('john',    ['datauri', 'datauriIE8', 'compass', /*'clean',*/ 'csslint', 'autoprefixer', /*'fixmyjs',*/ 'jshint', 'concat']);
 };
