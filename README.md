@@ -25,6 +25,18 @@ grunt watch:main
 grunt watch:dev
 ```
 
+### Data URIs
+
+Для автоматической генерации Data URI для изображений следует положить файлы изображений в директорию `img/base64`, требуемый код в виде [Sass placeholders](http://sass-lang.com/docs/yardoc/file.SASS_REFERENCE.html#placeholder_selectors_) будет помещён в файл `dev/sass/_base64.scss`. Например для изображения `img/base64/testImg.png` будет сгенерирован следующий код:
+
+_dev/sass/_base64.scss_
+```scss
+%data-test-png {
+	background-image: url("data:image/png;base64,iVBORw0KGgoAAAAN.....");
+}
+...
+```
+
 ### Imagemin
 
 В случае, если необходимо произвести минимизацию изображений в директории `img`, нужно запустить файл `imagemin.bat` в директории `dev` или выполнить там же следующую команду:
