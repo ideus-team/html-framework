@@ -7,12 +7,12 @@ module.exports = function(grunt) {
       debug: false,
       legacy: true
     },
-    test: {
+    main: {
       files: [{
         expand: true,
         src: '<%= jsSourceFiles %>'
-      }]
-    }
+      }],
+    },
   });
 
   grunt.loadNpmTasks('grunt-fixmyjs');
