@@ -2,12 +2,14 @@ module.exports = function(grunt) {
 
   // Кодируем картинки в base64
   grunt.config('datauri', {
-    datauri: {
+    main: {
       options: {
         classPrefix: 'data-',
-        checkFilesize: false
+        checkFilesize: true,
+        usePlaceholder: true,
+        variables: false
       },
-      src: ['<%= imgDir %>' + '/base64/*.{png,jpg,gif}'],
+      src: ['<%= imgBaseFiles %>'],
       dest: ['<%= sassDir %>' + '/_base64.scss']
     }
   });
