@@ -24,8 +24,8 @@ module.exports = function(grunt) {
   grunt.loadTasks('tasks');
 
   // Задача по умолчанию
-  grunt.registerTask('default', ['datauri', 'compass', /*'clean',*/ 'csslint', 'autoprefixer', 'cssmin', /*'fixmyjs',*/ 'jshint', 'concat', 'uglify']);
-  grunt.registerTask('dev',     ['datauri', 'compass', /*'clean',*/ 'csslint', 'autoprefixer', /*'fixmyjs',*/ 'jshint', 'concat']);
+  grunt.registerTask('default', ['compass', /*'clean',*/ 'csslint', 'autoprefixer', 'cssmin', /*'fixmyjs',*/ 'jshint', 'concat', 'uglify']);
+  grunt.registerTask('dev',     ['compass', /*'clean',*/ 'csslint', 'autoprefixer', /*'fixmyjs',*/ 'jshint', 'concat']);
   grunt.registerTask('comb',    ['compass', /*'clean',*/ 'csslint', 'autoprefixer', 'cssmin', 'csscomb']);
   grunt.registerTask('test',    ['dalek']);
   grunt.registerTask('john',    ['datauri', 'datauriIE8', 'compass', /*'clean',*/ 'csslint', 'autoprefixer', /*'fixmyjs',*/ 'jshint', 'concat']);
