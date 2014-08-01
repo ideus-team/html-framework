@@ -29,4 +29,5 @@ module.exports = function(grunt) {
   grunt.registerTask('dev',     ['datauri', 'compass', 'csslint', 'autoprefixer', 'fixmyjs', 'jshint', 'concat']);
   grunt.registerTask('comb',    ['compass', 'csslint', 'autoprefixer', 'cssmin', 'csscomb']);
   grunt.registerTask('test',    ['dalek']);
+  grunt.registerTask('john',     ['datauri', 'datauriMobile', 'compass', 'csslint', 'autoprefixer', 'fixmyjs', 'jshint', 'concat']);
 };
