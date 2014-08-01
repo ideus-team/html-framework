@@ -2,7 +2,7 @@ var fs = require('fs');
 module.exports = function(grunt) {
   grunt.registerTask('datauriMobile', 'for mobile', function(){
     var newCSS = '';
-    var template = '\n\t.device_mobile & {background-image: url("../img/base64/{{file}}");}\n}';
+    var template = '\n\t.-device_mobile & {background-image: url("../img/base64/{{file}}");}\n}';
     var listFile = [];
     fs.readFile('sass/_base64.scss', 'utf8', function(err, file){
       if(err) throw err;
