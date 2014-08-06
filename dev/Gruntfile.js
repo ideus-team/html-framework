@@ -19,6 +19,11 @@ module.exports = function(grunt) {
 
     imgDir: '../img',
     imgBaseFiles: '<%= imgDir %>' + '/base64/*.{png,jpg,gif}',
+
+    //pagespeed options
+    pageUrl: 'https://developers.google.com',
+    pageThreshold: 70,
+    pageDevice: 'desktop'
   });
 
   // Загрузка конфигурации к задачам из отдельных файлов
@@ -29,4 +34,5 @@ module.exports = function(grunt) {
   grunt.registerTask('dev',     ['datauri', 'datauriMobile', 'compass', 'csslint', 'autoprefixer', 'fixmyjs', 'jshint', 'concat']);
   grunt.registerTask('comb',    ['compass', 'csslint', 'autoprefixer', 'cssmin', 'csscomb']);
   grunt.registerTask('test',    ['dalek']);
+  grunt.registerTask('speed',    ['pagespeed']);
 };
