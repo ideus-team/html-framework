@@ -9,7 +9,7 @@ Our HTML5 template, based on [HTML5Boilerplate](https://github.com/h5bp/html5-bo
 ```shell
 npm install --save-dev
 ```
-Необходима установка [GIT](http://git-scm.com/download)
+Необходима установка [Git](http://git-scm.com/download).
 
 ## Start
 
