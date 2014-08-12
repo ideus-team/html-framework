@@ -6,10 +6,10 @@ module.exports = function(grunt) {
       nokey: true,
       url: "https://developers.google.com"
     },
-    prod: {
+    main: {
       options: {
         url: '<%= pageUrl %>',
-        locale: 'ru_Ru',
+        locale: 'ru_RU',
         strategy: '<%= pageDevice %>',
         threshold: '<%= pageThreshold %>'
       }
