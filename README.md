@@ -32,7 +32,8 @@ grunt watch:dev
 _dev/sass/_base64.scss_
 ```scss
 %data-testImg {
-	background-image: url("data:image/png;base64,iVBORw0KGgoAAAAN.....");
+	background-image: url("data:image/png;base64,iVBORw0KGgoAAAAN.....") !important;
+  .-device_mobile & {background-image: url("../img/base64/testImg.png") !important;}
 }
 ...
 ```
@@ -49,20 +50,21 @@ grunt imagemin
 ### Pagespeed
 
 Анализ производительности клиентской части Web-приложения. В файл `Gruntfile.js` устанавливаем настройки:
+
+_Адрес анализируемого сайта_
 ```shell
 pageUrl: 'http://ideus.biz'
 ```
-Адрес анализируемого сайта.
 
+_Сколько баллов нужно получить чтобы пройти тест. Максимум 100 (супероптимизированный сайт)_
 ```shell
 pageThreshold: 70
 ```
-Сколько баллов нужно получить чтобы пройти тест. Максимум 100(супероптимизированный сайт).
 
+_Какой девайс используем, `desktop` или `mobile`_
 ```shell
 pageDevice: 'desktop'
 ```
-Какой девайс используем, `desktop` или `mobile`.
 
 Для анализа необходимо запустить `pagespeed.bat` в директории `dev` или выполнить там же следующую команду:
 
