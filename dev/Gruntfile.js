@@ -20,7 +20,7 @@ module.exports = function(grunt) {
     imgDir: '../img',
     imgBaseFiles: '<%= imgDir %>' + '/base64/*.{png,jpg,gif}',
 
-    //pagespeed options
+    // Pagespeed options
     pageUrl: 'https://developers.google.com',
     pageThreshold: 70,
     pageDevice: 'desktop'
