@@ -3,7 +3,7 @@ module.exports = function(grunt) {
 
   // Конфигурация
   grunt.initConfig({
-    // Пути к файлам и папкам JS
+    // Пути к файлам и папкам
     configDir: 'config',
 
     sassDir: 'sass',
@@ -23,7 +23,7 @@ module.exports = function(grunt) {
     // Pagespeed options
     pageUrl: 'https://developers.google.com',
     pageThreshold: 70,
-    pageDevice: 'desktop'
+    pageDevice: 'desktop',
   });
 
   // Загрузка конфигурации к задачам из отдельных файлов
