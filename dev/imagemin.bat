@@ -1,1 +1,1 @@
-grunt imagemin
+start grunt imagemin
