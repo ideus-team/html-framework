@@ -1,4 +1,4 @@
-@charset "utf-8";
+background: #fff;@charset "utf-8";
 
 @import 'normalize';
 @import 'h5b';
@@ -11,6 +11,8 @@
 * @section Variables
 */
 $fontArial: Arial, Helvetica, sans-serif;
+
+$siteWidth: 980px;
 
 
 /**
@@ -39,12 +41,12 @@ a {
   &:hover {text-decoration: none;}
 }
 html {}
-body {}
+body {background: #fff;}
 
 /**
 * @section wrapper
 */
-.l-wrapper {position: relative; margin: 0 auto; padding: 0; width: 980px; background: #fff;}
+.l-wrapper {position: relative; margin: 0 auto; padding: 0; width: $siteWidth;}
 
 /**
 * @section Main Site Header
