@@ -19,7 +19,7 @@
       break;
   }
   $isHomepage = (basename($_SERVER['PHP_SELF']) == 'index.php');
-  $title = ($isHomepage) ? $siteName : $siteName.' : '.$pageName;
+  $title = ($isHomepage) ? $pageName : $siteName.' : '.$pageName;
 ?>
 <!DOCTYPE html>
 <!--[if IE 7]>         <html class="-device_<?php echo $device; ?> no-js lt-ie9 lt-ie8"> <![endif]-->
