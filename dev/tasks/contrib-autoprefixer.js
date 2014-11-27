@@ -6,7 +6,7 @@ module.exports = function(grunt) {
       options: {
         browsers: ['last 3 version', 'ie 8', 'ff 3.6', 'opera 11.1', 'ios 4', 'android 2.3'],
       },
-      src: '<%= cssDir %>' + '/*.css',
+      src: '<%= cssFiles %>',
     },
   });
 
