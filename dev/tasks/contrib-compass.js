@@ -6,7 +6,7 @@ module.exports = function(grunt) {
       options: {
         sassDir: '<%= sassDir %>',
         cssDir: '<%= cssDir %>',
-        imagesDir: '../img',
+        imagesDir: '<%= imgDir %>',
         outputStyle: 'expanded',
         force: true,
       },
