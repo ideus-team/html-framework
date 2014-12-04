@@ -18,7 +18,6 @@
     "grunt-csscomb": "~2.0.1",
     "grunt-dalek": "~0.2.0",
     "grunt-datauri": "~0.4.0",
-    "grunt-fixmyjs": "jonschlinkert/grunt-fixmyjs",
     "grunt-pagespeed": "^0.3.0"
   },
   "scripts": {},
