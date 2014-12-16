@@ -15,7 +15,7 @@ module.exports = function(grunt) {
     jsSourceFiles: 'js/*.js',
     jsSourcePlugins: [
       'js/plugins/*.js',
-      'js/plugins/helpers/*.js'
+      'js/plugins/helpers/*.js',
     ],
     jsResultFile: '../js/scripts.js',
 
@@ -25,7 +25,7 @@ module.exports = function(grunt) {
     // Pagespeed options
     pageUrl: 'https://developers.google.com',
     pageThreshold: 70,
-    pageDevice: 'desktop'
+    pageDevice: 'desktop',
   });
 
   // Загрузка конфигурации к задачам из отдельных файлов
