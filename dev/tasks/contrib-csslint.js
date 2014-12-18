@@ -6,7 +6,7 @@ module.exports = function(grunt) {
       options: {
         csslintrc: '<%= configDir %>' + '/.csslintrc',
       },
-      src: '<%= cssDir %>' + '/*.css',
+      src: '<%= cssFiles %>',
     },
   });
 
