@@ -1,5 +1,5 @@
 <?php
-  include 'inc/vendor/Mobile_Detect.php';
+  require_once 'inc/vendor/Mobile_Detect.php';
   $detect = new Mobile_Detect();
 
   $device = (!$detect->isMobile()) ? 'desktop' : ($detect->isTablet() ? 'tablet' : 'mobile');
@@ -30,7 +30,16 @@
   <meta charset="utf-8" />
   <title><?php echo $title; ?></title>
   <meta name="description" content="" />
+
   <meta name="viewport" content="width=<?php echo $viewport; ?>" />
+  <?php if($detect->isMobile() && $detect->isIE()): ?>
+    <style>
+      @-ms-viewport {
+        width: <?php echo $viewport; ?>px;
+      }
+    </style>
+  <?php endif; ?>
+
   <link rel="shortcut icon" href="favicon.ico" />
   <link rel="apple-touch-icon" href="apple-touch-icon.png" />
   <link rel="stylesheet" href="css/main.css?<?php echo filemtime('css/main.css'); ?>" />
