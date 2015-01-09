@@ -1,0 +1,19 @@
+/**
+* @subsection Main Site Search
+*/
+.l-siteSearch {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    width: 200px;
+}
+.b-siteSearch {
+}
+.b-siteSearch__input {
+    box-sizing: border-box !important;
+    margin: 0;
+    width: 100%;
+}
+.b-siteSearch__button {
+    vertical-align: middle;
+}

@@ -1,0 +1,27 @@
+/**
+* @subsection Main Site Logo
+*/
+.l-siteLogo {
+    height: 150px;
+    left: 10px;
+    overflow: hidden;
+    position: absolute;
+    top: 10px;
+    width: 200px;
+}
+.b-siteLogo {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+.b-siteLogo__link {
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+.b-siteLogo__icon {
+    display: block;
+    height: 100%;
+    width: 100%;
+}

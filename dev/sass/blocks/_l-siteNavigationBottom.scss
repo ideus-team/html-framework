@@ -1,0 +1,22 @@
+/**
+* @section Site Navigation Bottom
+*/
+.l-siteNavigationBottom {
+}
+.b-bottomNavigation {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.b-bottomNavigation__item {
+    color: #464646;
+    &.-state_current {
+    }
+}
+.b-bottomNavigation__link {
+    color: inherit;
+    text-decoration: none;
+    &:hover {
+        text-decoration: underline;
+    }
+}

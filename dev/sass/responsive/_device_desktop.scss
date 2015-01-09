@@ -1,0 +1,9 @@
+/* ==========================================================================
+   Queries for Desktop Design.
+   Theses examples override the primary ('wide screen') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+.-device_desktop {
+  .g-tel {pointer-events: none;}
+}

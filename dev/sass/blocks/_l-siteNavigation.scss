@@ -1,0 +1,34 @@
+/**
+* @subsection Main Site Nav
+*/
+.l-siteNavigation {
+    height: 50px;
+    position: absolute;
+    top: 100px;
+    width: 100%;
+}
+.b-mainNavigation {
+    display: block;
+    height: 100%;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.b-mainNavigation__item {
+    color: #000;
+    float: left;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    &.-state_current {
+    }
+}
+.b-mainNavigation__link {
+    color: inherit;
+    display: block;
+    text-decoration: none;
+    &:hover {
+        text-decoration: underline;
+    }
+}

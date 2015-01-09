@@ -1,0 +1,12 @@
+/**
+* @subsection Developer Copyright
+*/
+.b-developerCopyright {
+}
+.b-developerCopyright__link {
+    color: inherit;
+    text-decoration: none;
+    &:hover {
+        text-decoration: underline;
+    }
+}

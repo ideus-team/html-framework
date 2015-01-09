@@ -23,11 +23,8 @@ $siteWidth: 980px;
 * %gradient2 {…}
 */
 
-.g-tel {
-    color: inherit;
-    cursor: default;
-    text-decoration: none;
-}
+@import 'blocks/g-blocks';
+
 
 /* ==|== primary styles =====================================================
    Authors: %Author Name%
@@ -77,98 +74,10 @@ body {
     width: $siteWidth;
 }
 
-/**
-* @section Main Site Header
-*/
-.l-siteHeader {
-    height: 200px;
-    position: relative;
-}
-
-/**
-* @subsection Main Site Logo
-*/
-.l-siteLogo {
-    height: 150px;
-    left: 10px;
-    overflow: hidden;
-    position: absolute;
-    top: 10px;
-    width: 200px;
-}
-.b-siteLogo {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    width: 100%;
-}
-.b-siteLogo__link {
-    display: block;
-    height: 100%;
-    width: 100%;
-}
-.b-siteLogo__icon {
-    display: block;
-    height: 100%;
-    width: 100%;
-}
-
-
-/**
-* @subsection Main Site Search
-*/
-.l-siteSearch {
-    position: absolute;
-    right: 20px;
-    top: 10px;
-    width: 200px;
-}
-.b-siteSearch {
-}
-.b-siteSearch__input {
-    box-sizing: border-box !important;
-    margin: 0;
-    width: 100%;
-}
-.b-siteSearch__button {
-    vertical-align: middle;
-}
-
-
-/**
-* @subsection Main Site Nav
-*/
-.l-siteNavigation {
-    height: 50px;
-    position: absolute;
-    top: 100px;
-    width: 100%;
-}
-.b-mainNavigation {
-    display: block;
-    height: 100%;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-.b-mainNavigation__item {
-    color: #000;
-    float: left;
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    position: relative;
-    &.-state_current {
-    }
-}
-.b-mainNavigation__link {
-    color: inherit;
-    display: block;
-    text-decoration: none;
-    &:hover {
-        text-decoration: underline;
-    }
-}
+@import 'blocks/l-siteHeader';
+@import 'blocks/l-siteLogo';
+@import 'blocks/l-siteSearch';
+@import 'blocks/l-siteNavigation';
 
 
 /**
@@ -195,125 +104,16 @@ body {
 }
 
 
-/**
-* @section Site Navigation Bottom
+@import 'blocks/l-siteNavigationBottom';
+@import 'blocks/l-siteCopyright';
+@import 'blocks/b-developerCopyright';
+
+
+/** 
+* Responsive & Print styles
 */
-.l-siteNavigationBottom {
-}
-.b-bottomNavigation {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-.b-bottomNavigation__item {
-    color: #464646;
-    &.-state_current {
-    }
-}
-.b-bottomNavigation__link {
-    color: inherit;
-    text-decoration: none;
-    &:hover {
-        text-decoration: underline;
-    }
-}
-
-
-/**
-* @section Site Copyright
-*/
-.l-siteCopyright {
-    color: #464646;
-    font: 11px $fontArial;
-}
-.b-siteCopyright {
-    margin: 0 0 15px;
-    text-transform: uppercase;
-}
-.b-siteCopyright__link {
-    color: inherit;
-    text-decoration: none;
-    &:hover {
-        text-decoration: underline;
-    }
-}
-
-/**
-* @subsection Developer Copyright
-*/
-.b-developerCopyright {
-}
-.b-developerCopyright__link {
-    color: inherit;
-    text-decoration: none;
-    &:hover {
-        text-decoration: underline;
-    }
-}
-
-
-/* ==========================================================================
-   Queries for Desktop Design.
-   Theses examples override the primary ('wide screen') styles.
-   Modify as content requires.
-   ========================================================================== */
-
-.-device_desktop {
-  .g-tel {pointer-events: none;}
-}
-
-
-/* ==========================================================================
-   Queries for Tablet Design.
-   Theses examples override the primary ('wide screen') styles.
-   Modify as content requires.
-   ========================================================================== */
-
-.-device_tablet {}
-
-
-/* ==========================================================================
-   Queries for Mobile Design.
-   Theses examples override the primary ('wide screen') styles.
-   Modify as content requires.
-   ========================================================================== */
-
-.-device_mobile {}
-
-
-/* ==========================================================================
-   EXAMPLE Media Queries for Responsive Design.
-   Theses examples override the primary ('wide screen') styles.
-   Modify as content requires.
-   ========================================================================== */
-
-@media only screen and (max-width: 480px) {
-  /* Style adjustments for viewports that meet the condition */
-}
-
-@media screen and (min-width: 480px) and (max-width: 640px) {
-  /* CSS for 480px layout goes here */
-}
-
-@media screen and (min-width: 640px) and (max-width: 1024px) {
-  @-ms-viewport { width: 640px; }
-  /* CSS for 640px layout goes here */
-}
-
-@media screen and (min-width: 1024px) and (max-width: 1366px) {
-  @-ms-viewport { width: 1024px; }
-  /* CSS for 1024px layout goes here */
-}
-
-@media screen and (min-width: 1366px) {
-  /* CSS for 1366px layout goes here */
-}
-
-@media print,
-     (-o-min-device-pixel-ratio: 5/4),
-     (-webkit-min-device-pixel-ratio: 1.25),
-     (min-resolution: 120dpi) {
-  /* Style adjustments for high resolution devices */
-}
-
+@import 'responsive/device_desktop';
+@import 'responsive/device_tablet';
+@import 'responsive/device_mobile';
+@import 'responsive/media_queries';
 @import 'print';
