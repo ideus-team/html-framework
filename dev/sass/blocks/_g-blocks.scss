@@ -1,5 +1,9 @@
 .g-tel {
-    color: inherit;
-    cursor: default;
-    text-decoration: none;
+  color: inherit;
+  cursor: default;
+  text-decoration: none;
+
+  .-device_desktop & {
+    pointer-events: none;
+  }
 }

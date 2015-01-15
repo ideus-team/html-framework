@@ -2,17 +2,18 @@
 * @section Site Copyright
 */
 .l-siteCopyright {
-    color: #464646;
-    font: 11px $fontArial;
+  color: #464646;
+  font: 11px $fontArial;
 }
 .b-siteCopyright {
-    margin: 0 0 15px;
-    text-transform: uppercase;
+  margin: 0 0 15px;
+  text-transform: uppercase;
 }
 .b-siteCopyright__link {
-    color: inherit;
-    text-decoration: none;
-    &:hover {
-        text-decoration: underline;
-    }
+  color: inherit;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
 }

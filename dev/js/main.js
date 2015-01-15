@@ -1,14 +1,16 @@
 /**
  *  Authors: %Author Name%
 */
-$(document).ready(function () {
+$(function() {
+
+
   if ($('html').hasClass('-device_desktop')) {
 
   }
 });
-$(window).resize(function () {
+$(window).resize(function() {
 
 });
-$(window).load(function () {
+$(window).load(function() {
 
 });
