@@ -12,7 +12,10 @@ module.exports = function(grunt) {
     cssDir: '../css',
     cssFiles: '<%= cssDir %>' + '/main.css',
 
-    jsSourceFiles: 'js/*.js',
+    jsSourceFiles: [
+      'js/*.js',
+      'js/blocks/*.js',
+    ],
     jsSourcePlugins: [
       'js/plugins/*.js',
       'js/plugins/helpers/*.js',
