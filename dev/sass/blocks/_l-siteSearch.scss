@@ -9,12 +9,12 @@
 }
 .b-siteSearch {
 
-}
-.b-siteSearch__input {
-  box-sizing: border-box !important;
-  margin: 0;
-  width: 100%;
-}
-.b-siteSearch__button {
-  vertical-align: middle;
+  &__input {
+    box-sizing: border-box !important;
+    margin: 0;
+    width: 100%;
+  }
+  &__button {
+    vertical-align: middle;
+  }
 }
