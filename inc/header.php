@@ -84,7 +84,7 @@
     <header class="l-siteHeader" role="banner">
       <div class="l-siteLogo">
         <?php
-          $siteLogo__iconURL = 'img/siteLogo__icon.png';
+          $siteLogo__iconURL = 'img/blocks/l-siteLogo/l-siteLogo-logo.png';
           //$siteLogo__iconURL = ($device=='mobile') ? 'img/siteLogo__icon-mobile.png' : 'img/siteLogo__icon.png';
         ?>
         <?php if($isHomepage): ?>
