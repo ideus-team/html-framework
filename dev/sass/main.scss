@@ -5,11 +5,13 @@
 @import 'compass/css3/images';
 @import 'mixins';
 @import 'base64';
-
+@import 'blocks/g-blocks';
 @import 'fonts';
 
 
-
+/**
+* @section Settings
+*/
 $siteWidth: 980px;
 
 
@@ -20,7 +22,7 @@ $siteWidth: 980px;
 * %gradient2 {…}
 */
 
-@import 'blocks/g-blocks';
+
 
 
 /* ==|== primary styles =====================================================
