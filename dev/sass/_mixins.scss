@@ -1,12 +1,3 @@
-@mixin clearfix {
-  &:before,
-  &:after {
-    content: " ";
-    display: table;
-  }
-  & {*zoom: 1;}
-}
-
 @mixin font-face($name, $file, $weight: normal, $style: normal) {
   @font-face {
     font-family: '#{$name}';

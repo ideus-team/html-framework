@@ -21,13 +21,12 @@
   $isHomepage = (basename($_SERVER['PHP_SELF']) == 'index.php');
   $title = ($isHomepage) ? $siteName : $pageName.' : '.$siteName;
 ?>
-<!DOCTYPE html>
-<!--[if IE 7]>         <html class="-device_<?php echo $device; ?> no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="-device_<?php echo $device; ?> no-js lt-ie9"> <![endif]-->
-<!--[if IE 9]>         <html class="-device_<?php echo $device; ?> no-js ie9"> <![endif]-->
-<!--[if gt IE 9]><!--> <html class="-device_<?php echo $device; ?> no-js"> <!--<![endif]-->
+<!doctype html>
+<html class="-device_<?php echo $device; ?> no-js" lang="">
 <head>
   <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
   <title><?php echo $title; ?></title>
   <meta name="description" content="" />
 
@@ -77,15 +76,16 @@
   <!-- /Net-Craft.Dev Monitoring -->
 </head>
 <body class="-page_<?php echo $uri; ?><?php echo (!$isHomepage) ? ' -page_inner' : ''; ?> -page_lang_en" id="%SiteURI%">
-  <!--[if lt IE 7]>
-    <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+  <!--[if lt IE 8]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
   <![endif]-->
+
   <div class="l-wrapper">
     <header class="l-siteHeader" role="banner">
       <div class="l-siteLogo">
         <?php
           $siteLogo__iconURL = 'img/blocks/l-siteLogo/l-siteLogo-logo.png';
-          //$siteLogo__iconURL = ($device=='mobile') ? 'img/siteLogo__icon-mobile.png' : 'img/siteLogo__icon.png';
+          //$siteLogo__iconURL = ($device=='mobile') ? 'img/blocks/l-siteLogo/l-siteLogo-logo-mobile.png' : 'img/blocks/l-siteLogo/l-siteLogo-logo.png';
         ?>
         <?php if($isHomepage): ?>
           <h1 class="b-siteLogo" itemscope itemtype="http://schema.org/Organization">
@@ -104,7 +104,7 @@
 
       <div class="l-siteSearch">
         <form class="b-siteSearch" role="search" method="post" action="#">
-          <label class="b-siteSearch__label g-visuallyhidden" for="search-text">Найти:</label>
+          <label class="b-siteSearch__label g-visuallyhidden" for="search-text">Search:</label>
           <input class="b-siteSearch__input" type="search" spellcheck="true" value="" name="search" id="search-text" />
           <input class="b-siteSearch__button" type="submit" value="Search" />
         </form>
@@ -114,9 +114,6 @@
         <ul class="b-mainNavigation">
           <li class="b-mainNavigation__item<?php echo ($uri=='home')?' -state_current':''; ?>">
             <a class="b-mainNavigation__link" href="index.html">Home</a>
-          </li>
-          <li class="b-mainNavigation__item">
-            <a class="b-mainNavigation__link" href="#"></a>
           </li>
         </ul>
       </nav>

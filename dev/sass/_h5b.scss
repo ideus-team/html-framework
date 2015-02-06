@@ -1,6 +1,6 @@
+/*! HTML5 Boilerplate v5.0.0 | MIT License | http://h5bp.com/ */
+
 /*
- * HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/
- *
  * What follows is the result of much research on cross-browser styling.
  * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
  * Kroc Camen, and the H5BP dev community and team.
@@ -10,33 +10,28 @@
    Base styles: opinionated defaults
    ========================================================================== */
 
-html,
-button,
-input,
-select,
-textarea {
-  color: #222;
-}
-
 html {
-  font-size: 1em;
-  line-height: 1.4;
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
 }
 
 /*
- * Remove text-shadow in selection highlight: h5bp.com/i
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
  * These selection rule sets have to be separate.
  * Customize the background color to match your design.
  */
 
 ::-moz-selection {
-  background: #b3d4fc;
-  text-shadow: none;
+    background: #b3d4fc;
+    text-shadow: none;
 }
 
 ::selection {
-  background: #b3d4fc;
-  text-shadow: none;
+    background: #b3d4fc;
+    text-shadow: none;
 }
 
 /*
@@ -44,24 +39,27 @@ html {
  */
 
 hr {
-  display: block;
-  height: 1px;
-  border: 0;
-  border-top: 1px solid #ccc;
-  margin: 1em 0;
-  padding: 0;
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
 }
 
 /*
- * Remove the gap between images, videos, audio and canvas and the bottom of
- * their containers: h5bp.com/i/440
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
  */
 
 audio,
 canvas,
+iframe,
 img,
+svg,
 video {
-  vertical-align: middle;
+    vertical-align: middle;
 }
 
 /*
@@ -69,9 +67,9 @@ video {
  */
 
 fieldset {
-  border: 0;
-  margin: 0;
-  padding: 0;
+    border: 0;
+    margin: 0;
+    padding: 0;
 }
 
 /*
@@ -79,126 +77,72 @@ fieldset {
  */
 
 textarea {
-  resize: vertical;
+    resize: vertical;
 }
 
 /* ==========================================================================
-   Browse Happy prompt
+   Browser Upgrade Prompt
    ========================================================================== */
 
-.browsehappy {
-  margin: 0.2em 0;
-  background: #ccc;
-  color: #000;
-  padding: 0.2em 0;
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
 }
 
 /* ==========================================================================
    Helper classes
    ========================================================================== */
-/*
-### `.g-ir`
-
-Add the `.g-ir` class to any element you are applying image-replacement to. When
-replacing an element's content with an image, make sure to also set a specific
-`background-image: url(pathtoimage.png);`, `width`, and `height` so that your
-replacement image appears.
-
-#### `.g-hidden`
-
-Add the `.g-hidden` class to any elements that you want to hide from all
-presentations, including screen readers. It could be an element that will be
-populated later with JavaScript or an element you will hide with JavaScript. Do
-not use this for SEO keyword stuffing. That is just not cool.
-
-#### `.g-visuallyhidden`
-
-Add the `.g-visuallyhidden` class to hide text from browsers but make it
-available for screen readers. You can use this to hide text that is specific to
-screen readers but that other users should not see. [About invisible
-content](http://www.webaim.org/techniques/css/invisiblecontent/), [Hiding content for
-accessibility](http://snook.ca/archives/html_and_css/hiding-content-for-accessibility),
-[HTML5 Boilerplate issue/research](https://github.com/h5bp/html5-boilerplate/issues/194/).
-
-#### `.g-invisible`
-
-Add the `.g-invisible` class to any element you want to hide without affecting
-layout. When you use `display: none` an element is effectively removed from the
-layout. But in some cases you want the element to simply be invisible while
-remaining in the flow and not affecting the positioning of surrounding content.
-
-#### `.g-clearfix`
-
-Adding `.g-clearfix` to an element will ensure that it always fully contains its
-floated children. There have been many variants of the clearfix hack over the
-years, and there are other hacks that can also help you to contain floated
-children, but the HTML5 Boilerplate currently uses the [micro clearfix]
-(http://nicolasgallagher.com/micro-clearfix-hack/). */
 
 /*
- * Image replacement
- */
-
-.g-ir {
-  background-color: transparent;
-  border: 0;
-  overflow: hidden;
-  /* IE 6/7 fallback */
-  *text-indent: -9999px;
-}
-
-.g-ir:before {
-  content: "";
-  display: block;
-  width: 0;
-  height: 150%;
-}
-
-/*
- * Hide from both screenreaders and browsers: h5bp.com/u
+ * Hide visually and from screen readers:
+ * http://juicystudio.com/article/screen-readers-display-none.php
  */
 
 .g-hidden {
-  display: none !important;
-  visibility: hidden;
+    display: none !important;
+    visibility: hidden;
 }
 
 /*
- * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ * Hide only visually, but have it available for screen readers:
+ * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
  */
 
 .g-visuallyhidden {
-  border: 0;
-  clip: rect(0 0 0 0);
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  width: 1px;
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
 }
 
 /*
- * Extends the .visuallyhidden class to allow the element to be focusable
- * when navigated to via the keyboard: h5bp.com/p
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
  */
 
 .g-visuallyhidden.focusable:active,
 .g-visuallyhidden.focusable:focus {
-  clip: auto;
-  height: auto;
-  margin: 0;
-  overflow: visible;
-  position: static;
-  width: auto;
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
 }
 
 /*
- * Hide visually and from screenreaders, but maintain layout
+ * Hide visually and from screen readers, but maintain layout
  */
 
 .g-invisible {
-  visibility: hidden;
+    visibility: hidden;
 }
 
 /*
@@ -215,19 +159,10 @@ children, but the HTML5 Boilerplate currently uses the [micro clearfix]
 
 .g-clearfix:before,
 .g-clearfix:after {
-  content: " "; /* 1 */
-  display: table; /* 2 */
+    content: " "; /* 1 */
+    display: table; /* 2 */
 }
 
 .g-clearfix:after {
-  clear: both;
-}
-
-/*
- * For IE 6/7 only
- * Include this rule to trigger hasLayout and contain floats.
- */
-
-.g-clearfix {
-  *zoom: 1;
+    clear: both;
 }
