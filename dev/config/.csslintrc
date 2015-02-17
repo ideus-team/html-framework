@@ -8,6 +8,7 @@
   "unique-headings": false,
   "compatible-vendor-prefixes": false,
   "empty-rules": false,
+  "fallback-colors": false,
 
   "text-indent": false,
   "outline-none": false,
