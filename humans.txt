@@ -28,4 +28,4 @@
 # TECHNOLOGY COLOPHON
 
     BEM
-    HTML5, CSS3, Node.js, Grunt, SASS, Compass, CSSLint, JSHint, Dalek.JS, phpMobileDetect, Normalize.css, jQuery, Modernizr, Autoprefixer
+    HTML5, CSS3, Node.js, Grunt, SASS, Compass, CSSLint, JSHint, phpMobileDetect, Normalize.css, jQuery, Modernizr, Autoprefixer

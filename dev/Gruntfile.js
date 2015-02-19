@@ -38,6 +38,5 @@ module.exports = function(grunt) {
   grunt.registerTask('default', ['datauri', 'datauriMobile', 'compass', 'csslint', 'autoprefixer', 'cssmin', 'jshint', 'concat', 'uglify']);
   grunt.registerTask('dev',     ['datauri', 'datauriMobile', 'compass', 'csslint', 'autoprefixer', 'jshint', 'concat']);
   grunt.registerTask('comb',    ['compass', 'csslint', 'autoprefixer', 'cssmin', 'csscomb']); // не работает
-  grunt.registerTask('test',    ['dalek']);
   grunt.registerTask('speed',   ['pagespeed']);
 };
