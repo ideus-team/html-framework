@@ -6,11 +6,12 @@ module.exports = function(grunt) {
     // Пути к файлам и папкам
     configDir: 'config',
 
+    // имена генерируемых css файлоы берутся из имен scss файлов в /dev/sass
     sassDir: 'sass',
-    sassFiles: '<%= sassDir %>' + '/main.scss',
+    sassFiles: '<%= sassDir %>' + '/main.scss', // файлы что должны обрабатьваться CSSComb и тп.
     sassBase64: '<%= sassDir %>' + '/_base64.scss',
     cssDir: '../css',
-    cssFiles: '<%= cssDir %>' + '/main.css',
+    cssFiles: '<%= cssDir %>' + '/main.css', // файлы что передаются различным обработчикам после компиляции готового CSS
 
     jsSourceFiles: [
       'js/*.js',
