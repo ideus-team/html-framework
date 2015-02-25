@@ -10,3 +10,19 @@
     font-style: $style;
   }
 }
+
+@mixin clearfix {
+  &:before,
+  &:after {
+    content: " ";
+    display: table;
+  }
+  & {*zoom: 1;}
+}
+
+@mixin aligncenter {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
