@@ -7,5 +7,5 @@
 * @include font-face('PTSans', 'PTSansItalic-webfont', normal, italic);
 * @include font-face('PTSans', 'PTSansBold-webfont', bold);
 */
-$fontArial   : Arial, Helvetica, sans-serif;
-$fontOpenSans: 'Open Sans', sans-serif;
+$Arial   : Arial,"Helvetica Neue",Helvetica,sans-serif;
+$OpenSans: 'Open Sans', $Arial;
