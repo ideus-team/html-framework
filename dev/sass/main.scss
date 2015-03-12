@@ -23,6 +23,18 @@ $siteWidth: 980px;
 */
 
 
+/**
+* @section Sprites
+*
+* $icons: sprite-map('../img/sprites/icons/*.png', $spacing: 20px);
+* 
+* .b-icon {
+*   &.-type_example {background-position: sprite-position($map, $sprite, $offset-x, $offset-y, $use-percentages);}
+*   &.-type_arrow {background-position: sprite-position($icons, arrow);}
+*   &.-type_login {background-position: sprite-position($icons, login-ico, 3px, -2px);}
+* }
+*/
+
 
 
 /* ==|== primary styles =====================================================
