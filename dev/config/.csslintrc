@@ -9,6 +9,7 @@
   "compatible-vendor-prefixes": false,
   "empty-rules": false,
   "fallback-colors": false,
+  "duplicate-background-images": false,
 
   "text-indent": false,
   "outline-none": false,
