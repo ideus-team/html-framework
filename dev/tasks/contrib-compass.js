@@ -9,6 +9,7 @@ module.exports = function(grunt) {
         imagesDir: '<%= imgDir %>',
         outputStyle: 'expanded',
         force: true,
+        relativeAssets: true,
       },
     },
   });
