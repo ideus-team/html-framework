@@ -1,3 +1,31 @@
+/*
+ * Image replacement 
+.g-ir
+
+Add the `.g-ir` class to any element you are applying image-replacement to. When
+replacing an element's content with an image, make sure to also set a specific
+`background-image: url(pathtoimage.png);`, `width`, and `height` so that your
+replacement image appears.
+*/
+.g-ir {
+  background-color: transparent;
+  border: 0;
+  overflow: hidden;
+  /* IE 6/7 fallback */
+  *text-indent: -9999px;
+}
+
+.g-ir:before {
+  content: "";
+  display: block;
+  width: 0;
+  height: 150%;
+}
+
+
+/*
+ * Telephone number
+ */
 .g-tel {
   color: inherit;
   cursor: default;
