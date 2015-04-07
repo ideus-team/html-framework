@@ -1,5 +1,5 @@
 /*
- * Image replacement 
+ * Image replacement
 .g-ir
 
 Add the `.g-ir` class to any element you are applying image-replacement to. When
@@ -13,19 +13,19 @@ replacement image appears.
   overflow: hidden;
   /* IE 6/7 fallback */
   *text-indent: -9999px;
-}
 
-.g-ir:before {
-  content: "";
-  display: block;
-  width: 0;
-  height: 150%;
+  &:before {
+    content: '';
+    display: block;
+    width: 0;
+    height: 150%;
+  }
 }
 
 
 /*
  * Telephone number
- */
+*/
 .g-tel {
   color: inherit;
   cursor: default;

@@ -27,7 +27,7 @@ $siteWidth: 980px;
 * @section Sprites
 *
 * $icons: sprite-map('blocks/block/icons/*.png', $spacing: 20px);
-* 
+*
 * .b-icon {
     background: $icons no-repeat;
 *   &.-type_example {background-position: sprite-position($map, $sprite, $offset-x, $offset-y, $use-percentages);}

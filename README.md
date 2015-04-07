@@ -31,7 +31,7 @@ grunt watch:dev
 _dev/sass/_base64.scss_
 ```scss
 %data-testImg {
-	background-image: url("data:image/png;base64,iVBORw0KGgoAAAAN.....") !important;
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAAN.....") !important;
   .-device_mobile & {background-image: url("../img/base64/testImg.png") !important;}
 }
 ...
