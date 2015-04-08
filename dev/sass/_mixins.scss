@@ -37,7 +37,6 @@
 }
 
 @mixin beforeafter {
-  content: " ";
-  display: block;
+  content: '';
   position: absolute;
 }
