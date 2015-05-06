@@ -24,6 +24,13 @@
 }
 
 @mixin aligncenter {
+/*
+  Don't forget add styles to parent el:
+  // prevent elements to be blurry due to the element being placed on a “half pixel”
+  .parent-element {
+    transform-style: preserve-3d;
+  }
+*/
   position: absolute;
   top: 50%;
   left: 50%;
