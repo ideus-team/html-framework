@@ -23,6 +23,12 @@
   & {*zoom: 1;}
 }
 
+@mixin ir {
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
 @mixin aligncenter {
 /*
   NEED TEST
