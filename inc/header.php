@@ -1,4 +1,11 @@
 <?php
+  if (empty($_SERVER['HTTPS']) || $_SERVER['HTTPS'] === 'off') {
+      $protocol = 'http://';
+  } else {
+      $protocol = 'https://';
+  }
+  $BASE_URL = $protocol . $_SERVER['SERVER_NAME'] . dirname($_SERVER['PHP_SELF']);
+
   require_once 'inc/vendor/Mobile_Detect.php';
   $detect = new Mobile_Detect();
 
@@ -29,6 +36,8 @@
 
   <title><?php echo $title; ?></title>
   <meta name="description" content="" />
+
+  <meta property="og:image" content="<?php echo $BASE_URL; ?>img/userfiles/og-image.png" />
 
   <meta name="viewport" content="width=<?php echo $viewport; ?>" />
   <?php if($detect->isMobile() && $detect->isIE()): ?>
