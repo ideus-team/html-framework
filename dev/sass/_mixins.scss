@@ -67,3 +67,10 @@
     text-decoration: underline;
   }
 }
+
+@mixin underline-hover {
+  text-decoration: underline;
+  &:hover {
+    text-decoration: none;
+  }
+}
