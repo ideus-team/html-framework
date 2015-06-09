@@ -3,9 +3,9 @@
 *
 * You can add fonts by mixin:
 * @include font-face($name, $file, $weight: normal, $style: normal);
-* @include font-face('PTSans', 'PTSansRegular-webfont');
-* @include font-face('PTSans', 'PTSansItalic-webfont', normal, italic);
-* @include font-face('PTSans', 'PTSansBold-webfont', bold);
+* @include font-face('PTSans', 'PTSansRegular');
+* @include font-face('PTSans', 'PTSansItalic', normal, italic);
+* @include font-face('PTSans', 'PTSansBold', bold);
 */
 $Arial   : Arial, 'Helvetica Neue', Helvetica, sans-serif;
 $OpenSans: 'Open Sans', $Arial;
