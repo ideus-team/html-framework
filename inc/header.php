@@ -18,7 +18,7 @@
       $viewport = '1024';
       break;
     case 'tablet':
-      $viewport = '1024';
+      $viewport = 'device-width';
       break;
     case 'desktop':
     default:
@@ -40,9 +40,12 @@
   <meta property="og:image" content="<?php echo $BASE_URL; ?>img/userfiles/og-image.png" />
 
   <meta name="viewport" content="width=<?php echo $viewport; ?>" />
-  <?php if($detect->isMobile() && $detect->isIE()): ?>
+  <?php if($detect->isMobile()): ?>
     <style>
       @-ms-viewport {
+        width: <?php echo $viewport; ?>px;
+      }
+      @viewport {
         width: <?php echo $viewport; ?>px;
       }
     </style>
