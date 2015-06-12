@@ -24,8 +24,8 @@
 # THANKS
 
     HTML5 Boilerplate Team
+    BEM TEAM
 
 # TECHNOLOGY COLOPHON
 
-    BEM
-    HTML5, CSS3, Node.js, Grunt, SASS, Compass, CSSLint, JSHint, phpMobileDetect, Normalize.css, jQuery, Modernizr, Autoprefixer
+    BEM, Grunt, SASS, Compass, MobileDetect, Autoprefixer
