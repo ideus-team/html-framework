@@ -37,7 +37,7 @@
   <title><?php echo $title; ?></title>
   <meta name="description" content="" />
 
-  <meta property="og:image" content="<?php echo $BASE_URL; ?>img/userfiles/og-image.png" />
+  <!-- <meta property="og:image" content="<?php echo $BASE_URL; ?>img/userfiles/og-image.png" /> -->
 
   <meta name="viewport" content="width=<?php echo $viewport; ?>" />
   <?php if($detect->isMobile()): ?>
