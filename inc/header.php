@@ -67,7 +67,7 @@
     <script>window.jQuery || document.write('<script src="js/vendor/jquery-2.1.3.min.js"><\/script>')</script>
   <!--<![endif]-->
 </head>
-<body class="-page_<?php echo $uri; ?><?php echo (!$isHomepage) ? ' -page_inner' : ''; ?> -page_lang_en">
+<body class="-page_<?php echo $uri; ?><?php echo (!$isHomepage) ? ' -page_inner' : ''; ?>">
   <!--[if lt IE 8]>
     <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
   <![endif]-->
