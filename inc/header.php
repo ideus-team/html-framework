@@ -15,14 +15,17 @@
 
   switch ($device) {
     case 'mobile':
-      $viewport = '1024';
+      $viewport     = '1024px';
+      $viewportMeta = '1024';
       break;
     case 'tablet':
-      $viewport = 'device-width';
+      $viewport     = 'device-width';
+      $viewportMeta = 'device-width';
       break;
     case 'desktop':
     default:
-      $viewport = 'device-width';
+      $viewport     = 'device-width';
+      $viewportMeta = 'device-width';
       break;
   }
   $isHomepage = (basename($_SERVER['PHP_SELF']) == 'index.php');
@@ -39,21 +42,21 @@
 
   <!-- <meta property="og:image" content="<?php echo $BASE_URL; ?>/img/userfiles/og-image.png" /> -->
 
-  <meta name="viewport" content="width=<?php echo $viewport; ?>" />
-  <?php if($detect->isMobile()): ?>
-    <style>
-      @-ms-viewport {
-        width: <?php echo $viewport; ?>px;
-      }
-      @viewport {
-        width: <?php echo $viewport; ?>px;
-      }
-    </style>
-  <?php endif; ?>
+  <meta name="viewport" content="width=<?php echo $viewportMeta; ?>" />
+  <style>
+    @-ms-viewport {
+      width: <?php echo $viewport; ?>;
+    }
+    @viewport {
+      width: <?php echo $viewport; ?>;
+    }
+  </style>
 
   <link rel="shortcut icon" href="favicon.ico" />
   <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+
   <link rel="stylesheet" href="css/main.css?<?php echo filemtime('css/main.css'); ?>" />
+
   <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
   <script>window.Modernizr || document.write('<script src="js/vendor/modernizr-2.8.3.min.js"><\/script>')</script>
 
