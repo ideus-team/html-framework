@@ -7,9 +7,9 @@ module.exports = {
         },
         files: [{
             expand: true,
-            cwd: 'src/sass',
+            cwd: '<%= sassDir %>',
             src: ['*.scss'],
-            dest: '../res/css',
+            dest: '<%= cssDir %>',
             ext: '.css'
         }]
     },
@@ -21,9 +21,9 @@ module.exports = {
         },
         files: [{
             expand: true,
-            cwd: 'src/sass',
+            cwd: '<%= sassDir %>',
             src: ['*.scss'],
-            dest: '../res/css',
+            dest: '<%= cssDir %>',
             ext: '.css'
         }]
     }
