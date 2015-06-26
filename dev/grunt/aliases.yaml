@@ -5,12 +5,12 @@ default:
 dev:
   description: 'Development build'
   tasks:
-    - 'concurrent:devFirst'
-    - 'concurrent:devSecond'
+    - 'newer:concurrent:devFirst'
+    - 'newer:concurrent:devSecond'
 img:
   description: 'Image tasks'
   tasks:
-    - 'concurrent:imgFirst'
+    - 'newer:concurrent:imgFirst'
 devimg:
   description: 'Development build and image tasks'
   tasks:
@@ -19,6 +19,6 @@ devimg:
 prod:
   description: 'Production build'
   tasks:
-    - 'concurrent:prodFirst'
-    - 'concurrent:prodSecond'
+    - 'newer:concurrent:prodFirst'
+    - 'newer:concurrent:prodSecond'
     - img
