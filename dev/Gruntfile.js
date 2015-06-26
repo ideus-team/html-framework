@@ -34,7 +34,8 @@ module.exports = function(grunt) {
       jsSourceFile: 'src/js/main.js',
       jsResultFile: '../res/js/scripts.js',
 
-      imgDir: 'src/img',
+      imgSourceDir: 'src/img',
+      imgResultDir: '../res/img',
       imgBaseFiles: '<%= imgDir %>' + '/base64/*.{png,jpg,gif}',
 
       // Pagespeed options

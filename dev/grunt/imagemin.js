@@ -2,9 +2,9 @@ module.exports = {
     all: {
         files: [{
             expand: true,
-            cwd: 'src/',
-            src: ['img/*.{png,jpg,gif}'],
-            dest: '../res/'
+            cwd: '<%= imgSourceDir %>' + '/',
+            src: ['**/*.{png,jpg,gif}'],
+            dest: '<%= imgResultDir %>' + '/'
         }]
     }
 };
