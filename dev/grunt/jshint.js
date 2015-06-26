@@ -1,10 +1,11 @@
 module.exports = {
 
     options: {
-        reporter: require('jshint-stylish')
+        reporter: require('jshint-stylish'),
+        jshintrc: '<%= configDir %>' + '/.jshintrc',
     },
 
-    main: [
-        'src/js/*.js'
+    files: [
+        '<%= jsSourceFiles %>'
     ]
 };

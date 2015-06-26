@@ -13,7 +13,7 @@ module.exports = function(grunt) {
       // data passed into config.  Can use with <%= test %>
 
       // Путь к конфигам плагинов (CSSLint,JsHint, etc)
-      configDir: 'config',
+      configDir: 'grunt/config',
 
       // имена генерируемых css файлов берутся из имен scss файлов в /dev/sass
       sassDir: 'src/sass',
