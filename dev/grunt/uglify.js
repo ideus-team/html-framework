@@ -1,11 +1,10 @@
 module.exports = {
     all: {
+        options: {
+          mangle: false,
+        },
         files: [{
-            expand: true,
-            cwd: 'src/js',
-            src: '**/*.js',
-            dest: '../res/js',
-            ext: '.min.js'
+            '<%= jsResultFile %>': '<%= jsSourceFile %>'
         }]
     }
 };

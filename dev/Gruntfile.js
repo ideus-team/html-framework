@@ -31,6 +31,7 @@ module.exports = function(grunt) {
         'src/js/plugins/*.js',
         'src/js/plugins/helpers/*.js',
       ],
+      jsSourceFile: 'src/js/main.js',
       jsResultFile: '../res/js/scripts.js',
 
       imgDir: 'src/img',
