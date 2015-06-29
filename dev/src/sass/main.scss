@@ -5,10 +5,14 @@
 
 /* Import Bourbon */
 @import 'bourbon';
-/* Import Bourbon:Bitters */
-@import 'base/base';
+/* Import Bourbon:Refills */
+// Neat Settings -- must be imported before Neat
+// If you want to use Neat functions in Bitters, you can @import "grid-settings"; before Neat and import the rest of bitters after.
+@import "base/grid-settings";
 /* Import Bourbon:Neat */
 @import 'neat';
+/* Import Bourbon:Bitters */
+@import 'base/base';
 
 @import 'mixins';
 @import 'base64';
@@ -21,6 +25,8 @@
 #test_neat    {@include outer-container;}
 /* bitters test */
 #test_bitters {font-size: $base-font-size;}
+/* refills test */
+#test_refills {width: $medium-screen};
 
 
 /**
