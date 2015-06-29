@@ -4,7 +4,7 @@ module.exports = {
     dev: {
         options: {
             sourceMap: true,
-            loadPath: require('node-bourbon').includePaths
+            loadPath: require('node-neat').includePaths
         },
         files: [{
             expand: true,
@@ -19,7 +19,7 @@ module.exports = {
     prod: {
         options: {
             sourceMap: false,
-            loadPath: require('node-bourbon').includePaths
+            loadPath: require('node-neat').includePaths
         },
         files: [{
             expand: true,

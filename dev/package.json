@@ -14,7 +14,8 @@
     "grunt-newer": "^1.1.1",
     "grunt-notify": "^0.4.1",
     "load-grunt-config": "^0.17.1",
-    "node-bourbon": "^4.2.3"
+    "node-bourbon": "^4.2.3",
+    "node-neat": "^1.7.2"
   },
   "dependencies": {
     "jshint-stylish": "^2.0.0",
