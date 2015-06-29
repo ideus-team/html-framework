@@ -3,13 +3,25 @@
 @import 'normalize';
 @import 'h5b';
 
+/* Import Bourbon */
 @import 'bourbon';
+/* Import Bourbon:Neat */
 @import 'neat';
+/* Import Bourbon:Bitters */
+@import 'base/base';
 
 @import 'mixins';
 @import 'base64';
 @import 'blocks/g-blocks';
 @import 'fonts';
+
+/* bourbon test */
+#test_bourbon {font-size: golden-ratio(14px,  1);}
+/* neat test */
+#test_neat    {@include outer-container;}
+/* bitters test */
+#test_bitters {font-size: $base-font-size;}
+
 
 /**
 * @section Settings
@@ -22,7 +34,6 @@ $siteWidth: 980px;
 * %gradient1 {…}
 * %gradient2 {…}
 */
-
 
 /**
 * @section Sprites

@@ -4,7 +4,7 @@ module.exports = {
     dev: {
         options: {
             sourceMap: true,
-            loadPath: require('node-neat').includePaths
+            loadPath: require('node-refills').includePaths
         },
         files: [{
             expand: true,
@@ -19,7 +19,7 @@ module.exports = {
     prod: {
         options: {
             sourceMap: false,
-            loadPath: require('node-neat').includePaths
+            loadPath: require('node-refills').includePaths
         },
         files: [{
             expand: true,
