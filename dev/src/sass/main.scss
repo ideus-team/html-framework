@@ -2,17 +2,18 @@
 
 @import 'normalize';
 @import 'h5b';
+
+@import "bourbon";
+
 @import 'mixins';
 @import 'base64';
 @import 'blocks/g-blocks';
 @import 'fonts';
 
-
 /**
 * @section Settings
 */
 $siteWidth: 980px;
-
 
 /**
 * @section Gradients

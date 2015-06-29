@@ -3,7 +3,8 @@ module.exports = {
     // Development settings
     dev: {
         options: {
-            sourceMap: true
+            sourceMap: true,
+            loadPath: require('node-bourbon').includePaths
         },
         files: [{
             expand: true,
@@ -17,7 +18,8 @@ module.exports = {
     // Production settings
     prod: {
         options: {
-            sourceMap: false
+            sourceMap: false,
+            loadPath: require('node-bourbon').includePaths
         },
         files: [{
             expand: true,
