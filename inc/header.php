@@ -55,7 +55,7 @@
   <link rel="shortcut icon" href="favicon.ico" />
   <link rel="apple-touch-icon" href="apple-touch-icon.png" />
 
-  <link rel="stylesheet" href="css/main.css?<?php echo filemtime('css/main.css'); ?>" />
+  <link rel="stylesheet" href="res/css/main.css?<?php echo filemtime('res/css/main.css'); ?>" />
 
   <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
   <script>window.Modernizr || document.write('<script src="js/vendor/modernizr-2.8.3.min.js"><\/script>')</script>
