@@ -77,41 +77,43 @@
 
   <div class="l-wrapper">
     <header class="l-siteHeader" role="banner">
-      <div class="l-siteLogo">
-        <?php
-          $siteLogo__iconURL = 'img/blocks/l-siteLogo/l-siteLogo-logo.png';
-          //$siteLogo__iconURL = ($device=='mobile') ? 'img/blocks/l-siteLogo/l-siteLogo-logo-mobile.png' : 'img/blocks/l-siteLogo/l-siteLogo-logo.png';
-        ?>
-        <?php if($isHomepage): ?>
-          <h1 class="b-siteLogo" itemscope itemtype="http://schema.org/Organization">
-            <a class="b-siteLogo__link" itemprop="url">
-              <img class="b-siteLogo__icon" src="<?php echo $siteLogo__iconURL; ?>" alt="<?php echo $siteName; ?>" title="<?php echo $siteName; ?>" itemprop="logo" />
-            </a>
-          </h1>
-        <?php else: ?>
-          <div class="b-siteLogo" itemscope itemtype="http://schema.org/Organization">
-            <a class="b-siteLogo__link" href="index.html" itemprop="url">
-              <img class="b-siteLogo__icon" src="<?php echo $siteLogo__iconURL; ?>" alt="<?php echo $siteName; ?>" title="<?php echo $siteName; ?>" itemprop="logo" />
-            </a>
-          </div>
-        <?php endif; ?>
-      </div>
+      <div class="b-siteHeader">
+        <div class="l-siteLogo">
+          <?php
+            $siteLogo__iconURL = 'img/blocks/l-siteLogo/l-siteLogo-logo.png';
+            //$siteLogo__iconURL = ($device=='mobile') ? 'img/blocks/l-siteLogo/l-siteLogo-logo-mobile.png' : 'img/blocks/l-siteLogo/l-siteLogo-logo.png';
+          ?>
+          <?php if($isHomepage): ?>
+            <h1 class="b-siteLogo" itemscope itemtype="http://schema.org/Organization">
+              <a class="b-siteLogo__link" itemprop="url">
+                <img class="b-siteLogo__icon" src="<?php echo $siteLogo__iconURL; ?>" alt="<?php echo $siteName; ?>" title="<?php echo $siteName; ?>" itemprop="logo" />
+              </a>
+            </h1>
+          <?php else: ?>
+            <div class="b-siteLogo" itemscope itemtype="http://schema.org/Organization">
+              <a class="b-siteLogo__link" href="index.html" itemprop="url">
+                <img class="b-siteLogo__icon" src="<?php echo $siteLogo__iconURL; ?>" alt="<?php echo $siteName; ?>" title="<?php echo $siteName; ?>" itemprop="logo" />
+              </a>
+            </div>
+          <?php endif; ?>
+        </div>
 
-      <div class="l-siteSearch">
-        <form class="b-siteSearch" role="search" method="post" action="#">
-          <label class="b-siteSearch__label g-visuallyhidden" for="search-text">Search:</label>
-          <input class="b-siteSearch__input" type="search" spellcheck="true" value="" name="search" id="search-text" />
-          <input class="b-siteSearch__button" type="submit" value="Search" />
-        </form>
-      </div>
+        <div class="l-siteSearch">
+          <form class="b-siteSearch" role="search" method="post" action="#">
+            <label class="b-siteSearch__label g-visuallyhidden" for="search-text">Search:</label>
+            <input class="b-siteSearch__input" type="search" spellcheck="true" value="" name="search" id="search-text" />
+            <input class="b-siteSearch__button" type="submit" value="Search" />
+          </form>
+        </div>
 
-      <nav class="l-siteNavigation" role="navigation">
-        <ul class="b-mainNavigation">
-          <li class="b-mainNavigation__item<?php echo ($uri=='index')?' -state_current':''; ?>">
-            <a class="b-mainNavigation__link" href="index.html">Home</a>
-          </li>
-        </ul>
-      </nav>
+        <nav class="l-siteNavigation" role="navigation">
+          <ul class="b-mainNavigation">
+            <li class="b-mainNavigation__item<?php echo ($uri=='index')?' -state_current':''; ?>">
+              <a class="b-mainNavigation__link" href="index.html">Home</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
     <div class="l-content">
