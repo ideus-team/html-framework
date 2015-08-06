@@ -5,28 +5,18 @@ module.exports = {
         limit: 4
     },
 
-    // Dev tasks
-    devFirst: [
-        //'clean',
-        'newer:jshint'
-    ],
-    devSecond: [
-        'newer:sass:dev',
-        'newer:uglify'
-    ],
-
     // Production tasks
     prodFirst: [
         //'clean',
-        'newer:jshint'
+        'jshint'
     ],
     prodSecond: [
-        'newer:sass:prod',
-        'newer:uglify'
+        'sass:prod',
+        'uglify'
     ],
 
     // Image tasks
     imgFirst: [
-        'newer:imagemin'
+        'imagemin'
     ]
 };
