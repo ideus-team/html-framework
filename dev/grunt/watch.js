@@ -27,7 +27,7 @@ module.exports = {
             'src/sass/*.scss'
         ],
         tasks: [
-            'sass:dev'
+            'prod'
         ]
     },
 };
