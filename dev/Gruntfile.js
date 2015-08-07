@@ -14,12 +14,12 @@ module.exports = function(grunt) {
 
       // Paths for Watch:
         gruntSettings: [
-          /* Grunt config          */ 'Gruntfile.js',
-          /* Grunt modules         */ 'package.json',
-          /* Build settings        */ 'grunt/aliases.yaml',
-          /* Grunt tasks           */ 'grunt/*.js',
-          /* Grunt plugins configs */ 'grunt/config/*',          
+          /* Grunt config   */ 'Gruntfile.js',
+          /* Grunt modules  */ 'package.json',
+          /* Build settings */ 'grunt/aliases.yaml',
+          /* Grunt tasks    */ 'grunt/*.js',       
         ],
+        gruntPluginsSettings:  'grunt/config/*',
         sourceCSSFiles: [
           'src/sass/**/*.scss',
         ],
