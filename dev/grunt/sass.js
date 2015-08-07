@@ -8,9 +8,9 @@ module.exports = {
         },
         files: [{
             expand: true,
-            cwd: '<%= sassDir %>',
+            cwd: '<%= sourceCSSDir %>',
             src: ['*.scss'],
-            dest: '<%= cssDir %>',
+            dest: '<%= destCSSDir %>',
             ext: '.css'
         }]
     }

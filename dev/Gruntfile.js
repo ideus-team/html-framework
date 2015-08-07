@@ -20,23 +20,22 @@ module.exports = function(grunt) {
           /* Grunt tasks           */ 'grunt/*.js',
           /* Grunt plugins configs */ 'grunt/config/*',          
         ],
-        sourceCSSDir: [
-          'src/sass',
-        ],      
         sourceCSSFiles: [
           'src/sass/**/*.scss',
         ],
         sourceJS : [
           'src/js/**/.js',
-        ],     
+        ],        
       
-      // имена генерируемых css файлов берутся из имен scss файлов в /dev/sass
-      sassDir: 'src/sass',
-        sassFiles: '<%= sassDir %>' + '/main.scss', // файлы что должны обрабатьваться CSSComb и тп.
-        sassBase64: '<%= sassDir %>' + '/_base64.scss',
-
-      cssDir: '../res/css',
-        cssFiles: '<%= cssDir %>' + '/main.css', // файлы что передаются различным обработчикам после компиляции готового CSS
+      // Paths for Compile:
+        sourceCSSDir : 'src/sass',        
+        destCSSDir   : '../res/css', // generated css-files names taked from scss files in %sourceCSSDir
+      
+      // Paths for custom plugins:
+        sourceBase64: '<%= sourceCSSDir %>' + '/_base64.scss',
+      
+      // Paths for PostCSS
+        destCSS     : '<%= destCSSDir %>' + '/main.css', // файлы что передаются различным обработчикам после компиляции готового CSS
 
       jsSourceFiles: [
 
