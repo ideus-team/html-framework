@@ -8,15 +8,15 @@ module.exports = {
     // Production tasks
     prodFirst: [
         //'clean',
-        'jshint'
+        'newer:jshint'
     ],
     prodSecond: [
-        'sass:prod',
-        'uglify'
+        'newer:sass:prod',
+        'newer:uglify'
     ],
 
     // Image tasks
     imgFirst: [
-        'imagemin'
+        'newer:imagemin'
     ]
 };
