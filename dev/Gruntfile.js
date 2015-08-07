@@ -20,7 +20,10 @@ module.exports = function(grunt) {
           /* Grunt tasks           */ 'grunt/*.js',
           /* Grunt plugins configs */ 'grunt/config/*',          
         ],
-        sourceCSS: [
+        sourceCSSDir: [
+          'src/sass',
+        ],      
+        sourceCSSFiles: [
           'src/sass/**/*.scss',
         ],
         sourceJS : [

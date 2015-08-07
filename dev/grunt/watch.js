@@ -15,7 +15,7 @@ module.exports = {
 
     files: [
       '<%= gruntSettings %>',
-      '<%= sourceCSS %>',
+      '<%= sourceCSSFiles %>',
       '<%= sourceJS %>'
     ],
     tasks: [
