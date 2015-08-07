@@ -13,22 +13,11 @@ module.exports = {
         // livereload: true
     },
 
-    scripts: {
-        files: [
-            'src/js/*.js'
-        ],
-        tasks: [
-            'jshint',
-            'uglify'
-        ]
-    },
-
-    styles: {
-        files: [
-            'src/sass/*.scss'
-        ],
-        tasks: [
-            'prod'
-        ]
-    },
+    files: [
+        'src/js/*.js'          
+        'src/sass/*.scss'
+    ],
+    tasks: [
+        'prod'
+    ]
 };
