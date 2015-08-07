@@ -15,6 +15,8 @@ module.exports = {
 
     files: [
       '<%= gruntSettings %>',
+      '<%= gruntPluginsSettings %>',
+      
       '<%= sourceCSSFiles %>',
       '<%= sourceJS %>'
     ],
