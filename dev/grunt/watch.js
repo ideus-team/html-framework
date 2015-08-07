@@ -14,6 +14,14 @@ module.exports = {
     },
 
     files: [
+      //  '<%= sassDir %>' + '/**/*.scss',
+      //  '<%= csslint.main.options.csslintrc %>',
+      //  '<%= jsSourcePlugins %>',
+      //  '<%= jsSourceFiles %>',
+      //  '<%= jshint.options.jshintrc %>',
+      //  'Gruntfile.js',
+      //  'tasks/*.js',         
+                  
         'src/js/*.js'          
         'src/sass/*.scss'
     ],
