@@ -1,6 +1,7 @@
 module.exports = {
 
     options: {
+        atBegin: true,
         spawn: false,
         /**
          * Uncomment `livereload: true` if you want to use it. More details and config options can be found here:
