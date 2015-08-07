@@ -30,8 +30,8 @@ module.exports = function(grunt) {
       // Paths for Compile:
         gruntPluginsDir : 'grunt/config',
         sourceCSSDir    : 'src/sass',              
-        destCSSDir      : '../res/css', // generated css-files names taked from scss files in %sourceCSSDir
-        destJSDir       : '../res/js',
+        destCSSDir      : '../assets/css', // generated css-files names taked from scss files in %sourceCSSDir
+        destJSDir       : '../assets/js',
       
       // Paths for custom plugins:
         sourceBase64: '<%= sourceCSSDir %>' + '/_base64.scss',
@@ -44,7 +44,7 @@ module.exports = function(grunt) {
       jsSourceFile: 'src/js/main.js',
 
       imgSourceDir: 'src/img',
-      imgResultDir: '../res/img',
+      imgResultDir: '../assets/img',
       imgBaseFiles: '<%= imgDir %>' + '/base64/*.{png,jpg,gif}',
 
       // Pagespeed options
