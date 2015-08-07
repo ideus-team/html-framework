@@ -4,7 +4,6 @@ module.exports = {
     prod: {
         options: {
             trace: true,
-            sourcemap: true,
             loadPath: require('node-refills').includePaths,
             style: 'expanded',
             update: true,
