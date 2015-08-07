@@ -1,6 +1,6 @@
 module.exports = function(grunt) {
 
-  // Конфигурация
+  // Grunt config - declared in Load-Grunt-Config
   grunt.initConfig({
 
   });
@@ -10,11 +10,23 @@ module.exports = function(grunt) {
     jitGrunt: true,
 
     data: {
-      // data passed into config.  Can use with <%= test %>
+      // Data passed into config.  Can use with <%= test %>
 
-      // Путь к конфигам плагинов (CSSLint,JsHint, etc)
-      configDir: 'grunt/config',
-
+      // Paths for Watch:
+        gruntSettings: [
+          /* Grunt config          */ 'Gruntfile.js',
+          /* Grunt modules         */ 'package.json',
+          /* Build settings        */ 'grunt/aliases.yaml',
+          /* Grunt tasks           */ 'grunt/*.js',
+          /* Grunt plugins configs */ 'grunt/config/*',          
+        ],
+        sourceCSS: [
+          'src/sass/**/*.scss',
+        ],
+        sourceJS : [
+          'src/js/**/.js',
+        ],     
+      
       // имена генерируемых css файлов берутся из имен scss файлов в /dev/sass
       sassDir: 'src/sass',
         sassFiles: '<%= sassDir %>' + '/main.scss', // файлы что должны обрабатьваться CSSComb и тп.
@@ -24,12 +36,10 @@ module.exports = function(grunt) {
         cssFiles: '<%= cssDir %>' + '/main.css', // файлы что передаются различным обработчикам после компиляции готового CSS
 
       jsSourceFiles: [
-        'src/js/*.js',
-        'src/js/blocks/*.js',
+
       ],
       jsSourcePlugins: [
-        'src/js/plugins/*.js',
-        'src/js/plugins/helpers/*.js',
+
       ],
       jsSourceFile: 'src/js/main.js',
       jsResultFile: '../res/js/scripts.js',

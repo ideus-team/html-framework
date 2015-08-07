@@ -14,15 +14,14 @@ module.exports = {
     },
 
     files: [
+      '<%= gruntSettings %>',
+      
       //  '<%= sassDir %>' + '/**/*.scss',
-      //  '<%= csslint.main.options.csslintrc %>',
+
       //  '<%= jsSourcePlugins %>',
-      //  '<%= jsSourceFiles %>',
-      //  '<%= jshint.options.jshintrc %>',
-      //  'Gruntfile.js',
-      //  'tasks/*.js',         
+      //  '<%= jsSourceFiles %>',       
                   
-        'src/js/*.js'          
+        'src/js/*.js',          
         'src/sass/*.scss'
     ],
     tasks: [
