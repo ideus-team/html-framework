@@ -2,7 +2,7 @@ module.exports = {
 
     options: {
         reporter: require('jshint-stylish'),
-        jshintrc: '<%= gruntPluginsSettings %>' + '/.jshintrc',
+        jshintrc: '<%= gruntPluginsDir %>' + '/.jshintrc',
     },
 
     files: [

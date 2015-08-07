@@ -28,23 +28,20 @@ module.exports = function(grunt) {
         ],        
       
       // Paths for Compile:
-        sourceCSSDir : 'src/sass',        
-        destCSSDir   : '../res/css', // generated css-files names taked from scss files in %sourceCSSDir
+        gruntPluginsDir : 'grunt/config',
+        sourceCSSDir    : 'src/sass',              
+        destCSSDir      : '../res/css', // generated css-files names taked from scss files in %sourceCSSDir
+        destJSDir       : '../res/js',
       
       // Paths for custom plugins:
         sourceBase64: '<%= sourceCSSDir %>' + '/_base64.scss',
       
-      // Paths for PostCSS
-        destCSS     : '<%= destCSSDir %>' + '/main.css', // файлы что передаются различным обработчикам после компиляции готового CSS
-
-      jsSourceFiles: [
-
-      ],
-      jsSourcePlugins: [
-
-      ],
+      // Paths for PostCSS & Minify:
+        destCSS : '<%= destCSSDir %>' + '/main.css',
+        destJS  : '<%= destJSDir %>'  + '/scripts.js',
+      
+      // Paths for Minify:
       jsSourceFile: 'src/js/main.js',
-      jsResultFile: '../res/js/scripts.js',
 
       imgSourceDir: 'src/img',
       imgResultDir: '../res/img',

@@ -4,7 +4,7 @@ module.exports = {
           mangle: false,
         },
         files: [{
-            '<%= jsResultFile %>': '<%= jsSourceFile %>'
+            '<%= destJS %>': '<%= jsSourceFile %>'
         }]
     }
 };
