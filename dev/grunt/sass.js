@@ -3,7 +3,8 @@ module.exports = {
     // Production settings
     prod: {
         options: {
-            sourceMap: true,
+            trace: true,
+            sourcemap: true,
             loadPath: require('node-refills').includePaths,
             style: 'expanded',
             update: true,
