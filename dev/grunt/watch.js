@@ -24,7 +24,7 @@ module.exports = {
   
     scripts: {
         files: [
-            '<%= sourceJS %>'
+            '<%= sourceJSFiles %>'
         ],
         tasks: [
             'jshint',

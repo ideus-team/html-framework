@@ -23,7 +23,7 @@ module.exports = function(grunt) {
         sourceCSSFiles: [
           'src/sass/**/*.scss',
         ],
-        sourceJS : [
+        sourceJSFiles : [
           'src/js/**/.js',
         ],        
       
