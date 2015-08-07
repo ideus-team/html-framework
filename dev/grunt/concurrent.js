@@ -5,18 +5,18 @@ module.exports = {
         limit: 4
     },
 
-    // Production tasks
-    prodFirst: [
-        //'clean',
-        'newer:jshint'
-    ],
-    prodSecond: [
-        'newer:sass:prod',
+    // Tasks
+    // CSS/JS sections below should correspond CSS/JS sections in Grunt:Watch!
+    prod_css: [
+        'newer:sass:prod'
+    ],    
+    prod_js: [
+        'newer:jshint',      
         'newer:uglify'
-    ],
+    ],      
 
     // Image tasks
-    imgFirst: [
+    imgMin: [
         'newer:imagemin'
     ]
 };

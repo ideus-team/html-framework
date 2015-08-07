@@ -5,10 +5,11 @@ default:
 img:
   description: 'Image tasks'
   tasks:
-    - 'concurrent:imgFirst'
+    - 'concurrent:imgMin'
 prod:
   description: 'Production build'
   tasks:
-    - 'concurrent:prodFirst'
-    - 'concurrent:prodSecond'
+    - clean
+    - 'concurrent:prod_css'
+    - 'concurrent:prod_js'
     - img
