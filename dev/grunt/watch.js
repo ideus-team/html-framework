@@ -13,14 +13,32 @@ module.exports = {
         // livereload: true
     },
 
-    files: [
-      '<%= gruntSettings %>',
-      '<%= gruntPluginsSettings %>',
-      
-      '<%= sourceCSSFiles %>',
-      '<%= sourceJS %>'
-    ],
-    tasks: [
-        'prod'
-    ]
+    configs: {
+        files: [
+          '<%= gruntSettings %>',
+          '<%= gruntPluginsSettings %>',
+        ],
+        tasks: [
+          'prod'
+        ]
+    },  
+  
+    scripts: {
+        files: [
+            '<%= sourceJS %>'
+        ],
+        tasks: [
+            'jshint',
+            'uglify'
+        ]
+    },
+
+    styles: {
+        files: [
+            '<%= sourceCSSFiles %>',
+        ],
+        tasks: [
+            'sass:prod'
+        ]
+    },  
 };
