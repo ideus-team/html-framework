@@ -15,14 +15,8 @@ module.exports = {
 
     files: [
       '<%= gruntSettings %>',
-      
-      //  '<%= sassDir %>' + '/**/*.scss',
-
-      //  '<%= jsSourcePlugins %>',
-      //  '<%= jsSourceFiles %>',       
-                  
-        'src/js/*.js',          
-        'src/sass/*.scss'
+      '<%= sourceCSS %>',
+      '<%= sourceJS %>'
     ],
     tasks: [
         'prod'
