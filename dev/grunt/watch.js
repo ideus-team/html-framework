@@ -27,9 +27,7 @@ module.exports = {
             '<%= sourceJSFiles %>'
         ],
         tasks: [
-            'jshint',
-            'concat',
-            'uglify'
+            'prod_js'
         ]
     },
 
@@ -38,7 +36,7 @@ module.exports = {
             '<%= sourceCSSFiles %>',
         ],
         tasks: [
-            'sass:prod'
+            'prod_css'
         ]
     },  
 };
