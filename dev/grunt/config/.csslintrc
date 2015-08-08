@@ -1,3 +1,14 @@
 {
-  
+  // No old IE support
+  "box-model": false,
+  "box-sizing": false,
+  "adjoining-classes": false,
+
+  // Allow Safety CSS Hacks
+  "star-property-hack": false,
+
+  // Stupid rules
+  "unique-headings": false,
+  "font-sizes": false,
+  "empty-rules": false
 }

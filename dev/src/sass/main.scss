@@ -1,18 +1,30 @@
 @charset "utf-8";
 
+// CSSLint Embedded Rulesets to pass Normalize.css and H5BP.css
+/*csslint unqualified-attributes: false,
+          outline-none: false,
+          compatible-vendor-prefixes: false,
+          important: false,
+          overqualified-elements: false,
+          universal-selector: false,
+          regex-selectors: false
+*/
 @import 'normalize';
 @import 'h5b';
 
 /* Import Bourbon */
-@import 'bourbon';
-/* Import Bourbon:Refills */
-// Neat Settings -- must be imported before Neat
-// If you want to use Neat functions in Bitters, you can @import "grid-settings"; before Neat and import the rest of bitters after.
-@import "base/grid-settings";
-/* Import Bourbon:Neat */
-@import 'neat';
-/* Import Bourbon:Bitters */
-@import 'base/base';
+  @import 'bourbon';
+  /* Import Bourbon:Refills */
+  // Neat Settings -- must be imported before Neat
+  $border-box-sizing: false;
+
+  // If you want to use Neat functions in Bitters, you can @import "grid-settings"; before Neat and import the rest of bitters after.
+  @import "base/grid-settings";
+  /* Import Bourbon:Neat */
+  @import 'neat';
+  /* Import Bourbon:Bitters */
+  @import 'base/base';
+
 
 @import 'mixins';
 @import 'base64';
@@ -22,13 +34,14 @@
 @import 'fonts';
 
 /* bourbon test */
-#test_bourbon {font-size: golden-ratio(14px,  1);}
+.test_bourbon {font-size: golden-ratio(14px,  1);}
 /* neat test */
-#test_neat    {@include outer-container;}
+.test_neat    {@include outer-container;}
 /* bitters test */
-#test_bitters {font-size: $base-font-size;}
+.test_bitters {font-size: $base-font-size;}
 /* refills test */
-#test_refills {width: $medium-screen};
+.test_refills {width: $medium-screen};
+
 
 /**
 * @section Settings
