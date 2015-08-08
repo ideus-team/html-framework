@@ -6,6 +6,6 @@ module.exports = {
     },
 
     files: [
-        '<%= sourceJSFiles %>'
+        '<%= sourceJSMy %>'
     ]
 };

@@ -13,18 +13,29 @@ module.exports = function(grunt) {
       // Data passed into config.  Can use with <%= test %>
 
       // Paths for Watch:
-        gruntSettings: [
-          /* Grunt config   */ 'Gruntfile.js',
-          /* Grunt modules  */ 'package.json',
-          /* Build settings */ 'grunt/aliases.yaml',
-          /* Grunt tasks    */ 'grunt/*.js',       
-        ],
-        gruntPluginsSettings:  'grunt/config/*',
-        sourceCSSFiles: [
-          'src/sass/**/*.scss',
-        ],
+        // Grunt
+            gruntSettings: [
+              /* Grunt config   */ 'Gruntfile.js',
+              /* Grunt modules  */ 'package.json',
+              /* Build settings */ 'grunt/aliases.yaml',
+              /* Grunt tasks    */ 'grunt/*.js'   
+            ],
+            gruntPluginsSettings:  'grunt/config/*',
+        // CSS
+            sourceCSSFiles: [
+              'src/sass/**/*.scss'
+            ],
+        // JS
+            sourceJSPlugins : [
+              'src/js/plugins/**/*.js'
+            ],              
+            sourceJSMy : [
+              'src/js/blocks/**/*.js',          
+              'src/js/main.js'
+            ],                    
         sourceJSFiles : [
-          'src/js/**/*.js',
+          '<%= sourceJSPlugins %>',
+          '<%= sourceJSMy %>'
         ],        
       
       // Paths for Compile:
@@ -38,11 +49,9 @@ module.exports = function(grunt) {
       
       // Paths for PostCSS & Minify:
         destCSS : '<%= destCSSDir %>' + '/main.css',
-        destJS  : '<%= destJSDir %>'  + '/scripts.js',
-      
-      // Paths for Minify:
-      jsSourceFile: 'src/js/main.js',
+        destJS  : '<%= destJSDir %>'  + '/scripts.js',      
 
+      // Img
       imgSourceDir: 'src/img',
       imgResultDir: '../assets/img',
       imgBaseFiles: '<%= imgDir %>' + '/base64/*.{png,jpg,gif}',
