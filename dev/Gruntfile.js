@@ -24,7 +24,7 @@ module.exports = function(grunt) {
           'src/sass/**/*.scss',
         ],
         sourceJSFiles : [
-          'src/js/**/.js',
+          'src/js/**/*.js',
         ],        
       
       // Paths for Compile:
