@@ -2,6 +2,4 @@
 # Read about how to use .gitignore: https://help.github.com/articles/ignoring-files
 error_log
 Thumbs.db
-assets/css/main.css
-assets/css/main.css.map
-assets/js/scripts.js
+assets/*
