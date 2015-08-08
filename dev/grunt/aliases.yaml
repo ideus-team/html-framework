@@ -2,14 +2,31 @@ default:
   description: 'Default (production) build'
   tasks:
     - prod
-img:
-  description: 'Image tasks'
-  tasks:
-    - 'concurrent:imgMin'
+
 prod:
   description: 'Production build'
   tasks:
     - clean
-    - 'concurrent:prod_css'
-    - 'concurrent:prod_js'
+    - css
+    - js
     - img
+
+css:
+  description: 'CSS Tasks'
+  tasks:
+    - 'concurrent:css_preprocess'
+    - 'concurrent:css_postprocess'
+    - 'concurrent:css_min'
+    
+js:
+  description: 'JS Tasks'
+  tasks:
+    - 'concurrent:js_preprocess'
+    - 'concurrent:js_postprocess'
+    - 'concurrent:js_merge'
+    - 'concurrent:js_min'    
+
+img:
+  description: 'Image tasks'
+  tasks:
+    - 'concurrent:imgMin'

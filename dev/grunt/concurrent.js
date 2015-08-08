@@ -6,14 +6,31 @@ module.exports = {
     },
 
     // Tasks
-    // CSS/JS sections below should correspond CSS/JS sections in Grunt:Watch!
-    prod_css: [
+    // all tasks inside one section run in parallel!
+    
+    // CSS    
+    css_preprocess: [
         'newer:sass:prod'
+    ],
+    css_postprocess: [
+        
+    ],   
+    css_min: [
+        
     ],    
-    prod_js: [
+  
+    // JS
+    js_preprocess: [
         'newer:jshint',      
-        'newer:concat',
-        'newer:uglify'
+    ],     
+    js_postprocess: [
+        
+    ],   
+    js_merge: [
+        'newer:concat',        
+    ],      
+    js_min: [
+        'newer:uglify'        
     ],      
 
     // Image tasks

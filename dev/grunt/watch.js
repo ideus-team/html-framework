@@ -27,7 +27,7 @@ module.exports = {
             '<%= sourceJSFiles %>'
         ],
         tasks: [
-            'prod_js'
+            'js'
         ]
     },
 
@@ -36,7 +36,7 @@ module.exports = {
             '<%= sourceCSSFiles %>',
         ],
         tasks: [
-            'prod_css'
+            'css'
         ]
     },  
 };
