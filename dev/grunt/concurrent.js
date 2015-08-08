@@ -13,7 +13,7 @@ module.exports = {
         'newer:sass:prod'
     ],
     css_postprocess: [
-        
+        'newer:csslint'        
     ],   
     css_min: [
         
