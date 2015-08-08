@@ -7,31 +7,50 @@ module.exports = {
 
     // Tasks
     // all tasks inside one section run in parallel!
-    
-    // CSS    
+
+    // -- Compile --
+    all_preprocess: [
+        // CSS
+        'newer:sass:prod',
+        // JS
+        'newer:jshint',
+    ],
+    all_postprocess: [
+        // CSS
+        'newer:csslint',
+    ],
+    all_min: [
+        // JS
+        'newer:uglify',
+        // IMG
+        'newer:imagemin',
+    ],
+
+    // -- Watch --
+    // CSS
     css_preprocess: [
-        'newer:sass:prod'
+        'newer:sass:prod',
     ],
     css_postprocess: [
-        'newer:csslint'        
-    ],   
+        'newer:csslint',
+    ],
     css_min: [
-        
-    ],    
-  
+
+    ],
+
     // JS
     js_preprocess: [
-        'newer:jshint',      
-    ],     
+        'newer:jshint',
+    ],
     js_postprocess: [
-        
-    ],   
+
+    ],
     js_merge: [
-        'newer:concat',        
-    ],      
+        'newer:concat',
+    ],
     js_min: [
-        'newer:uglify'        
-    ],      
+        'newer:uglify',
+    ],
 
     // Image tasks
     imgMin: [

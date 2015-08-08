@@ -7,9 +7,36 @@ prod:
   description: 'Production build'
   tasks:
     - clean
-    - css
-    - js
-    - img
+    - preprocess
+    - postprocess
+    - merge
+    - min
+
+
+preprocess:
+  description: 'All Preprocess tasks'
+  tasks:
+    - 'concurrent:all_preprocess'
+
+postprocess:
+  description: 'All Postprocess tasks'
+  tasks:
+    - 'concurrent:all_postprocess'
+
+merge:
+  description: 'All Merge tasks'
+  tasks:
+    - 'concurrent:js_merge'
+
+min:
+  description: 'All Minify tasks'
+  tasks:
+    - 'concurrent:all_min'
+
+img:
+  description: 'Image tasks'
+  tasks:
+    - 'concurrent:imgMin'
 
 css:
   description: 'CSS Tasks'
@@ -17,16 +44,11 @@ css:
     - 'concurrent:css_preprocess'
     - 'concurrent:css_postprocess'
     - 'concurrent:css_min'
-    
+
 js:
   description: 'JS Tasks'
   tasks:
     - 'concurrent:js_preprocess'
     - 'concurrent:js_postprocess'
     - 'concurrent:js_merge'
-    - 'concurrent:js_min'    
-
-img:
-  description: 'Image tasks'
-  tasks:
-    - 'concurrent:imgMin'
+    - 'concurrent:js_min'
