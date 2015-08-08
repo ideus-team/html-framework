@@ -20,8 +20,8 @@ module.exports = {
         tasks: [
           'prod'
         ]
-    },  
-  
+    },
+
     scripts: {
         files: [
             '<%= sourceJSFiles %>'
@@ -38,5 +38,14 @@ module.exports = {
         tasks: [
             'css'
         ]
-    },  
+    },
+
+    images: {
+        files: [
+            '<%= sourceIMGFiles %>',
+        ],
+        tasks: [
+            'img'
+        ]
+    },
 };

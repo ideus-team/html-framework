@@ -39,12 +39,13 @@ module.exports = function(grunt) {
               'src/js/blocks/**/*.js',
               'src/js/main.js'
             ],
-                sourceJSFiles : [
+                sourceJSFiles  : [
                   '<%= sourceJSPlugins %>',
                   '<%= sourceJSMy %>'
                 ],
             // IMG
-            sourceIMGDir    : 'src/img',
+            sourceIMGDir       : 'src/img',
+                sourceIMGFiles : '<%= sourceIMGDir %>' + '/**/*.{png,jpg,gif}',
 
           // Destination:
             destCSSDir      : '../assets/css', // generated css-files names taked from scss files in %sourceCSSDir
