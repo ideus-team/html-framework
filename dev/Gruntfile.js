@@ -41,29 +41,20 @@ module.exports = function(grunt) {
           '<%= sourceJSMy %>'
         ],        
       
+      // Paths for Settings:
+        gruntPluginsDir : 'grunt/config',      
+      
       // Paths for Compile:
-        gruntPluginsDir : 'grunt/config',
+        // Source
         sourceCSSDir    : 'src/sass',              
+        sourceIMGDir    : 'src/img',              
+        // Destination
         destCSSDir      : '../assets/css', // generated css-files names taked from scss files in %sourceCSSDir
+            destCSS     : '<%= destCSSDir %>' + '/main.css',
         destJSDir       : '../assets/js',
+            destJS      : '<%= destJSDir %>'  + '/scripts.js',      
+        destIMGDir      : '../assets/img',    
       
-      // Paths for custom plugins:
-      // sourceBase64: '<%= sourceCSSDir %>' + '/_base64.scss',
-      
-      // Paths for PostCSS & Minify:
-        destCSS : '<%= destCSSDir %>' + '/main.css',
-        destJS  : '<%= destJSDir %>'  + '/scripts.js',      
-
-      // Img
-      imgSourceDir: 'src/img',
-      imgResultDir: '../assets/img',
-      imgBaseFiles: '<%= imgDir %>' + '/base64/*.{png,jpg,gif}',
-
-      // Pagespeed options
-      pageUrl: 'https://developers.google.com',
-      pageThreshold: 70,
-      pageDevice: 'desktop'
     }
   });
-
 };
