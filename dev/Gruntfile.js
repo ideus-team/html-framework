@@ -20,7 +20,10 @@ module.exports = function(grunt) {
               /* Build settings */ 'grunt/aliases.yaml',
               /* Grunt tasks    */ 'grunt/*.js'   
             ],
-            gruntPluginsSettings:  'grunt/config/*',
+            gruntPluginsSettings: [              
+              '<%= csslint.options.csslintrc %>',
+              '<%= jshint.options.jshintrc %>',
+            ],
         // CSS
             sourceCSSFiles: [
               'src/sass/**/*.scss'

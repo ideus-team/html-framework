@@ -15,7 +15,7 @@ module.exports = {
     configs: {
         files: [
           '<%= gruntSettings %>',
-          '<%= gruntPluginsSettings %>',
+          '<%= gruntPluginsSettings %>'
         ],
         tasks: [
           'prod'
