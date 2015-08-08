@@ -28,6 +28,7 @@ module.exports = {
         ],
         tasks: [
             'jshint',
+            'concat',
             'uglify'
         ]
     },
