@@ -31,6 +31,7 @@ module.exports = function(grunt) {
         gruntPluginsDir : 'grunt/config',
         sourceCSSDir    : 'src/sass',              
         destCSSDir      : '../assets/css', // generated css-files names taked from scss files in %sourceCSSDir
+        destJSDir       : '../assets/js',
       
       // Paths for custom plugins:
       // sourceBase64: '<%= sourceCSSDir %>' + '/_base64.scss',
