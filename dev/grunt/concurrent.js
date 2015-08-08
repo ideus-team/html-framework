@@ -12,6 +12,7 @@ module.exports = {
     ],    
     prod_js: [
         'newer:jshint',      
+        'newer:concat',
         'newer:uglify'
     ],      
 
