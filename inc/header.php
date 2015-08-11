@@ -77,6 +77,7 @@
 
   <div class="l-wrapper">
     <header class="l-siteHeader" role="banner">
+      <div class="b-siteHeader">
       <div class="l-siteLogo">
         <?php
           $siteLogo__iconURL = 'img/blocks/l-siteLogo/l-siteLogo-logo.png';
@@ -112,6 +113,7 @@
           </li>
         </ul>
       </nav>
+      </div>
     </header>
 
     <div class="l-content">
