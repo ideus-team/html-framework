@@ -1,5 +1,7 @@
 module.exports = {
-
+  options: {
+    sourceMap: true
+  },
   target: {
     files: [{
       expand: true,
