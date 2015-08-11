@@ -13,7 +13,7 @@ module.exports = {
             cwd: '<%= sourceCSSDir %>',
             src: ['*.scss'],
             dest: '<%= destCSSDir %>',
-            ext: '.css'
+            ext:  '<%= destCSSExt %>'
         }]
     }
 };

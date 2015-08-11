@@ -14,8 +14,8 @@ module.exports = {
             'ios 4',
             'android 2.3'
           ]
-        })//,
-        //require('cssnano')() // minify the result
+        }),
+        require('cssnano')() // minify the result
       ]
     },
     dist: {

@@ -21,8 +21,6 @@ module.exports = {
         'newer:postcss',
     ],
     all_min: [
-        // CSS
-        'newer:cssmin',
         // JS
         'newer:uglify',
         // IMG
@@ -37,9 +35,6 @@ module.exports = {
     css_postprocess: [
         'newer:csslint',
         'newer:postcss',
-    ],
-    css_min: [
-        'newer:cssmin',
     ],
 
     // JS
