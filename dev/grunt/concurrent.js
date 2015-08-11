@@ -20,6 +20,8 @@ module.exports = {
         'newer:csslint',
     ],
     all_min: [
+        // CSS
+        'newer:cssmin',
         // JS
         'newer:uglify',
         // IMG
@@ -35,7 +37,7 @@ module.exports = {
         'newer:csslint',
     ],
     css_min: [
-
+        'newer:cssmin',
     ],
 
     // JS
