@@ -8,7 +8,7 @@ module.exports = {
     // Tasks
     // all tasks inside one section run in parallel!
 
-    // -- Compile --
+    // ===== Compile =====
     all_preprocess: [
         // CSS
         'newer:sass:prod',
@@ -18,6 +18,7 @@ module.exports = {
     all_postprocess: [
         // CSS
         'newer:csslint',
+        'newer:postcss',
     ],
     all_min: [
         // CSS
@@ -28,13 +29,14 @@ module.exports = {
         'newer:imagemin',
     ],
 
-    // -- Watch --
+    // ----- Watch -----
     // CSS
     css_preprocess: [
         'newer:sass:prod',
     ],
     css_postprocess: [
         'newer:csslint',
+        'newer:postcss',
     ],
     css_min: [
         'newer:cssmin',
