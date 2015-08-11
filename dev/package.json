@@ -1,6 +1,6 @@
 {
   "name": "ideus-html-framework",
-  "version": "1.4.0",
+  "version": "1.5.0",
   "description": "Our HTML5 boilerplate",
   "devDependencies": {
     "autoprefixer-core": "^5.2.1",
@@ -12,12 +12,12 @@
     "grunt-contrib-csslint": "^0.5.0",
     "grunt-contrib-imagemin": "^0.9.4",
     "grunt-contrib-jshint": "^0.11.2",
-    "grunt-contrib-sass": "^0.9.2",
     "grunt-contrib-uglify": "^0.9.1",
     "grunt-contrib-watch": "^0.6.1",
     "grunt-newer": "^1.1.1",
     "grunt-notify": "^0.4.1",
     "grunt-postcss": "^0.5.5",
+    "grunt-sass": "^1.0.0",
     "grunt-shell": "^1.1.2",
     "load-grunt-config": "^0.17.1",
     "node-bourbon": "^4.2.3",
@@ -32,6 +32,6 @@
   "scripts": {},
   "author": {
     "name": "iDeus",
-    "url": "http://ideus.biz/"
+    "url": "https://github.com/ideus-team/html-framework"
   }
 }

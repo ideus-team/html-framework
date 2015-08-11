@@ -1,13 +1,10 @@
 module.exports = {
 
-    // Production settings
-    prod: {
-        options: {
-            trace: true,
-            loadPath: require('node-refills').includePaths,
-            style: 'expanded',
-            update: true,
-        },
+    options: {
+        sourceMap: true,
+        includePaths: require('node-refills').includePaths
+    },
+    dist: {
         files: [{
             expand: true,
             cwd: '<%= sourceCSSDir %>',

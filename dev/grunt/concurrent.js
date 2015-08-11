@@ -11,7 +11,7 @@ module.exports = {
     // ===== Compile =====
     all_preprocess: [
         // CSS
-        'newer:sass:prod',
+        'newer:sass',
         // JS
         'newer:jshint',
     ],
@@ -30,7 +30,7 @@ module.exports = {
     // ----- Watch -----
     // CSS
     css_preprocess: [
-        'newer:sass:prod',
+        'newer:sass',
     ],
     css_postprocess: [
         'newer:csslint',
