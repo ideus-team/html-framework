@@ -42,6 +42,10 @@
 /* refills test */
 .test_refills {width: $medium-screen};
 
+/* Test PostCSS */
+footer {
+  background: linear-gradient(to top, black, white);
+}
 
 /**
 * @section Settings
