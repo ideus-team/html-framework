@@ -15,17 +15,21 @@ prod:
 preprocess:
   description: 'All Preprocess tasks'
   tasks:
-    - 'concurrent:all_preprocess'
+    - 'newer:sass'
+    - 'newer:jshint'
 
 postprocess:
   description: 'All Postprocess tasks'
   tasks:
-    - 'concurrent:all_postprocess'
+    - 'newer:csslint'
+    - 'newer:postcss'
+    - 'newer:uglify'
+    - 'newer:imagemin'
 
 merge:
   description: 'All Merge tasks'
   tasks:
-    - 'concurrent:all_merge'
+    - 'newer:concat'
 
 
 
@@ -33,17 +37,18 @@ merge:
 css:
   description: 'CSS Tasks'
   tasks:
-    - 'concurrent:css_preprocess'
-    - 'concurrent:css_postprocess'
+    - 'newer:sass'
+    - 'newer:csslint'
+    - 'newer:postcss'
 
 js:
   description: 'JS Tasks'
   tasks:
-    - 'concurrent:js_preprocess'
-    - 'concurrent:js_postprocess'
-    - 'concurrent:js_merge'
+    - 'newer:jshint'
+    - 'newer:uglify'
+    - 'newer:concat'
 
 img:
   description: 'Image tasks'
   tasks:
-    - 'concurrent:images'
+    - 'newer:imagemin'
