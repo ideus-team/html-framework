@@ -29,6 +29,9 @@
 @import 'mixins';
 @import 'base64';
 
+/* Import generated sprites */
+@import 'sprites';
+
 /* Project files… */
 @import 'blocks/g-blocks';
 @import 'fonts';

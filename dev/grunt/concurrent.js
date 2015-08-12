@@ -11,6 +11,7 @@ module.exports = {
     // ===== Compile =====
     all_preprocess: [
         // CSS
+        'spritesmith',
         'newer:sass',
         // JS
         'newer:jshint',
@@ -30,6 +31,7 @@ module.exports = {
     // ----- Watch -----
     // CSS
     css_preprocess: [
+        'newer:spritesmith',
         'newer:sass',
     ],
     css_postprocess: [
@@ -51,8 +53,8 @@ module.exports = {
         'newer:uglify',
     ],
 
-    // Image tasks
-    imgMin: [
+    // Images
+    images: [
         'newer:imagemin'
     ]
 };
