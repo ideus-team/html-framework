@@ -11,7 +11,7 @@ module.exports = {
     // ===== Compile =====
     all_preprocess: [
         // CSS
-        'spritesmith',
+        //'newer:spritesmith',
         'newer:sass',
         // JS
         'newer:jshint',
@@ -31,7 +31,7 @@ module.exports = {
     // ----- Watch -----
     // CSS
     css_preprocess: [
-        'newer:spritesmith',
+        //'newer:spritesmith',
         'newer:sass',
     ],
     css_postprocess: [
