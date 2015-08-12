@@ -20,12 +20,14 @@ module.exports = {
         // CSS
         'newer:csslint',
         'newer:postcss',
-    ],
-    all_min: [
         // JS
         'newer:uglify',
         // IMG
         'newer:imagemin',
+    ],
+    all_merge: [
+        // JS
+        'newer:concat',
     ],
 
     // ----- Watch -----
@@ -44,13 +46,10 @@ module.exports = {
         'newer:jshint',
     ],
     js_postprocess: [
-
+        'newer:uglify',
     ],
     js_merge: [
         'newer:concat',
-    ],
-    js_min: [
-        'newer:uglify',
     ],
 
     // Images
