@@ -1,6 +1,5 @@
-/**
- *  Authors: %Author Name%
-*/
+// Authors: %Author Name%
+
 $(function() {
 
 
