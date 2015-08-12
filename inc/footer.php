@@ -19,7 +19,7 @@
   </div><!--wrapper-->
 
   <script src="assets/js/scripts.js?<?php echo filemtime('assets/js/scripts.js'); ?>"></script>
-  <!--<script src="js/scripts-extra.js?<?php echo filemtime('assets/js/scripts-extra.js'); ?>"></script>-->
+  <!--<script src="assets/js/scripts-extra.js?<?php echo filemtime('assets/js/scripts-extra.js'); ?>"></script>-->
 
   <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
   <script>
