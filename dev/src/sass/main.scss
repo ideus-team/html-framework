@@ -34,10 +34,10 @@
 @import 'mixins';
 
 /* Project files… */
-@import 'blocks/g-blocks';
-@import 'fonts';
-@import 'sprites';
-@import 'base64';
+  /* Generated… */
+  @import 'fonts';
+  @import 'sprites';
+  @import 'base64';
 
           ///* bourbon test */
           //.test_bourbon {font-size: golden-ratio(14px,  1);}
@@ -61,7 +61,10 @@
 * @section Settings
 */
 $siteWidth: 980px;
+  /* Framework Common Libraries */
+  @import 'blocks/g-blocks';
 
+/* Project only code */
 @import 'blocks/_common';
 @import 'blocks/l-siteHeader';
 @import 'blocks/l-siteLogo';
