@@ -1,19 +1,28 @@
-# html-framework
+#How to install and run HTML Framework
+Our HTML Framework based on H5BP+Grunt+SASS.
 
-Our HTML5 template, based on [HTML5Boilerplate](https://github.com/h5bp/html5-boilerplate)
+Instalation procedure is similar for Win/Mac/Linux.
 
-## Install
+##1. Install [Node.js](http://nodejs.org/download/)
+Windows Installer 64-bit (needed for Grunt).
 
-Run `dev\install.cmd` or execute in shell:
+##2. Install Grunt
+```
+npm install grunt-cli -g
+```
 
+##3. Get Framework
+Git Clone:
+- URL: https://github.com/ideus-team/html-framework.git
+
+##4. Install
+Once run `dev\install.cmd` or execute in shell:
 ```shell
 npm install --save-dev
 ```
 
-## Start
-
-Run `dev\start.ps1` → right click → `Run with power shell` or execute:
-
+##5. Run
+Start Grunt with `dev\start.ps1` → right click → `Run with power shell` or execute:
 ```shell
 grunt prod
 grunt watch
