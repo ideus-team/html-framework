@@ -22,7 +22,7 @@ npm install --save-dev
 ```
 
 ##5. Run
-Start Grunt with `dev\start.ps1` → right click → `Run with power shell` or execute:
+Start Grunt with `dev\start.cmd` or execute in shell:
 ```shell
 grunt prod
 grunt watch
