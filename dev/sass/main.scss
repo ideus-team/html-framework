@@ -26,13 +26,13 @@ $siteWidth: 980px;
 /**
 * @section Sprites
 *
-* $icons: sprite-map('blocks/block/icons/*.png', $spacing: 20px);
+* $sprite: sprite-map('blocks/block/sprite/*.png', $spacing: 20px);
 *
 * .b-icon {
-    background: $icons no-repeat;
-*   &.-type_example {background-position: sprite-position($map, $sprite, $offset-x, $offset-y, $use-percentages);}
-*   &.-type_arrow {background-position: sprite-position($icons, arrow);}
-*   &.-type_login {background-position: sprite-position($icons, login-ico, 3px, -2px);}
+    background: $sprite no-repeat;
+*   &.-type_example {background-position: sprite-position($spriteMap, $filename, $offset-x, $offset-y, $use-percentages);}
+*   &.-type_arrow {background-position: sprite-position($sprite, arrow);}
+*   &.-type_login {background-position: sprite-position($sprite, login-ico, 3px, -2px);}
 * }
 */
 
