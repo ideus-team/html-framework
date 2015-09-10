@@ -1,0 +1,19 @@
+{
+  // We didn't support IE7!
+  "box-sizing": false,
+  "adjoining-classes": false,
+
+  // Allow Safety CSS Hacks
+  "star-property-hack": false,        // IE8-
+  "underscore-property-hack": false,  // IE7-
+
+  // Stupid rules
+  "box-model": false,     // Developers know what is box model!
+  "empty-rules": false,   // Empty rules are useful for describing the layout
+  "floats": false,        // Grids can't fully replace floats
+
+  // OOCSS didn't suitable for real life. BEM does.
+  "qualified-headings": false,
+  "unique-headings": false,
+  "font-sizes": false
+}

@@ -1,72 +1,29 @@
-# html-framework
+#How to install and run HTML Framework
+Our HTML Framework based on H5BP+Grunt+SASS.
 
-Our HTML5 template, based on [HTML5Boilerplate](https://github.com/h5bp/html5-boilerplate)
+Instalation procedure is similar for Win/Mac/Linux.
 
-## Install
+##1. Install [Node.js](http://nodejs.org/download/)
+Windows Installer 64-bit (needed for Grunt).
 
-Для установки Grunt и плагинов к нему необходимо запустить файл `install.bat` в директории `dev` или выполнить там же следующую команду:
+##2. Install Grunt
+```
+npm install grunt-cli -g
+```
 
+##3. Get Framework
+Git Clone:
+- URL: https://github.com/ideus-team/html-framework.git
+
+##4. Install
+Once run `dev\install.cmd` or execute in shell:
 ```shell
 npm install --save-dev
 ```
 
-## Start
-
-Для начала работы с Grunt необходимо запустить файл `start.bat` в директории `dev` или выполнить там же следующую команду:
-
+##5. Run
+Start Grunt with `dev\start.cmd` or execute in shell:
 ```shell
-grunt watch:main
-```
-
-Если необходимость в минимизации CSS и JS отсутствует, то нужно запустить файл `start-dev.bat` в директории `dev` или выполнить там же следующую команду:
-
-```shell
-grunt watch:dev
-```
-
-### Data URIs
-
-Для автоматической генерации Data URI для изображений следует положить файлы изображений в директорию `img/base64`, требуемый код в виде [Sass placeholders](http://sass-lang.com/docs/yardoc/file.SASS_REFERENCE.html#placeholder_selectors_) будет помещён в файл `dev/sass/_base64.scss`. Например для изображения `img/base64/testImg.png` будет сгенерирован следующий код:
-
-_dev/sass/_base64.scss_
-```scss
-%data-testImg {
-  background-image: url("data:image/png;base64,iVBORw0KGgoAAAAN.....") !important;
-  .-device_mobile & {background-image: url("../img/base64/testImg.png") !important;}
-}
-...
-```
-
-### Imagemin
-
-В случае, если необходимо произвести минимизацию изображений в директории `img`, нужно запустить файл `imagemin.bat` в директории `dev` или выполнить там же следующую команду:
-
-```shell
-grunt imagemin
-```
-
-
-### Pagespeed
-
-Анализ производительности клиентской части Web-приложения. В файл `Gruntfile.js` устанавливаем настройки:
-
-_Адрес анализируемого сайта_
-```js
-pageUrl: 'http://ideus.biz'
-```
-
-_Сколько баллов нужно получить чтобы пройти тест. Максимум 100 (супероптимизированный сайт)_
-```js
-pageThreshold: 70
-```
-
-_Какой девайс используем, `desktop` или `mobile`_
-```js
-pageDevice: 'desktop'
-```
-
-Для анализа необходимо запустить `pagespeed.bat` в директории `dev` или выполнить там же следующую команду:
-
-```shell
-grunt speed
+grunt prod
+grunt watch
 ```

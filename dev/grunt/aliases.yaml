@@ -1,0 +1,54 @@
+default:
+  description: 'Default (production) build'
+  tasks:
+    - prod
+
+prod:
+  description: 'Production build'
+  tasks:
+    - clean
+    - preprocess
+    - postprocess
+    - merge
+
+
+preprocess:
+  description: 'All Preprocess tasks'
+  tasks:
+    - 'newer:sass'
+    - 'newer:jshint'
+
+postprocess:
+  description: 'All Postprocess tasks'
+  tasks:
+    - 'newer:csslint'
+    - 'newer:postcss'
+    - 'newer:uglify'
+    - 'newer:imagemin'
+
+merge:
+  description: 'All Merge tasks'
+  tasks:
+    - 'newer:concat'
+
+
+
+
+css:
+  description: 'CSS Tasks'
+  tasks:
+    - 'newer:sass'
+    - 'newer:csslint'
+    - 'newer:postcss'
+
+js:
+  description: 'JS Tasks'
+  tasks:
+    - 'newer:jshint'
+    - 'newer:uglify'
+    - 'newer:concat'
+
+img:
+  description: 'Image tasks'
+  tasks:
+    - 'newer:imagemin'

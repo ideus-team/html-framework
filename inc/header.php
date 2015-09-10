@@ -55,19 +55,19 @@
   <link rel="shortcut icon" href="favicon.ico" />
   <link rel="apple-touch-icon" href="apple-touch-icon.png" />
 
-  <link rel="stylesheet" href="css/main.css?<?php echo filemtime('css/main.css'); ?>" />
+  <link rel="stylesheet" href="assets/css/main.min.css?<?php echo filemtime('assets/css/main.min.css'); ?>" />
 
   <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
-  <script>window.Modernizr || document.write('<script src="js/vendor/modernizr-2.8.3.min.js"><\/script>')</script>
+  <script>window.Modernizr || document.write('<script src="assets/js/vendor/modernizr-2.8.3.min.js"><\/script>')</script>
 
   <!--[if lte IE 8]>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.3.min.js"><\/script>')</script>
+    <script>window.jQuery || document.write('<script src="assets/js/vendor/jquery-1.11.3.min.js"><\/script>')</script>
     <script src="js/legacy/ie8.js"></script>
   <![endif]-->
   <!--[if gte IE 9]><!-->
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="js/vendor/jquery-2.1.4.min.js"><\/script>')</script>
+    <script>window.jQuery || document.write('<script src="assets/js/vendor/jquery-2.1.4.min.js"><\/script>')</script>
   <!--<![endif]-->
 </head>
 <body class="-page_<?php echo $uri; ?><?php echo (!$isHomepage) ? ' -page_inner' : ''; ?>">
@@ -78,41 +78,41 @@
   <div class="l-wrapper">
     <header class="l-siteHeader" role="banner">
       <div class="b-siteHeader">
-        <div class="l-siteLogo">
-          <?php
-            $siteLogo__iconURL = 'img/blocks/l-siteLogo/l-siteLogo-logo.png';
-            //$siteLogo__iconURL = ($device=='mobile') ? 'img/blocks/l-siteLogo/l-siteLogo-logo-mobile.png' : 'img/blocks/l-siteLogo/l-siteLogo-logo.png';
-          ?>
-          <?php if($isHomepage): ?>
-            <h1 class="b-siteLogo" itemscope itemtype="http://schema.org/Organization">
-              <a class="b-siteLogo__link" itemprop="url">
-                <img class="b-siteLogo__icon" src="<?php echo $siteLogo__iconURL; ?>" alt="<?php echo $siteName; ?>" title="<?php echo $siteName; ?>" itemprop="logo" />
-              </a>
-            </h1>
-          <?php else: ?>
-            <div class="b-siteLogo" itemscope itemtype="http://schema.org/Organization">
-              <a class="b-siteLogo__link" href="index.html" itemprop="url">
-                <img class="b-siteLogo__icon" src="<?php echo $siteLogo__iconURL; ?>" alt="<?php echo $siteName; ?>" title="<?php echo $siteName; ?>" itemprop="logo" />
-              </a>
-            </div>
-          <?php endif; ?>
-        </div>
+      <div class="l-siteLogo">
+        <?php
+          $siteLogo__iconURL = 'img/blocks/l-siteLogo/l-siteLogo-logo.png';
+          //$siteLogo__iconURL = ($device=='mobile') ? 'img/blocks/l-siteLogo/l-siteLogo-logo-mobile.png' : 'img/blocks/l-siteLogo/l-siteLogo-logo.png';
+        ?>
+        <?php if($isHomepage): ?>
+          <h1 class="b-siteLogo" itemscope itemtype="http://schema.org/Organization">
+            <a class="b-siteLogo__link" itemprop="url">
+              <img class="b-siteLogo__icon" src="<?php echo $siteLogo__iconURL; ?>" alt="<?php echo $siteName; ?>" title="<?php echo $siteName; ?>" itemprop="logo" />
+            </a>
+          </h1>
+        <?php else: ?>
+          <div class="b-siteLogo" itemscope itemtype="http://schema.org/Organization">
+            <a class="b-siteLogo__link" href="index.html" itemprop="url">
+              <img class="b-siteLogo__icon" src="<?php echo $siteLogo__iconURL; ?>" alt="<?php echo $siteName; ?>" title="<?php echo $siteName; ?>" itemprop="logo" />
+            </a>
+          </div>
+        <?php endif; ?>
+      </div>
 
-        <div class="l-siteSearch">
-          <form class="b-siteSearch" role="search" method="post" action="#">
-            <label class="b-siteSearch__label g-visuallyhidden" for="search-text">Search:</label>
-            <input class="b-siteSearch__input" type="search" spellcheck="true" value="" name="search" id="search-text" />
-            <input class="b-siteSearch__button" type="submit" value="Search" />
-          </form>
-        </div>
+      <div class="l-siteSearch">
+        <form class="b-siteSearch" role="search" method="post" action="#">
+          <label class="b-siteSearch__label g-visuallyhidden" for="search-text">Search:</label>
+          <input class="b-siteSearch__input" type="search" spellcheck="true" value="" name="search" id="search-text" />
+          <input class="b-siteSearch__button" type="submit" value="Search" />
+        </form>
+      </div>
 
-        <nav class="l-siteNavigation" role="navigation">
-          <ul class="b-mainNavigation">
-            <li class="b-mainNavigation__item<?php echo ($uri=='index')?' -state_current':''; ?>">
-              <a class="b-mainNavigation__link" href="index.html">Home</a>
-            </li>
-          </ul>
-        </nav>
+      <nav class="l-siteNavigation" role="navigation">
+        <ul class="b-mainNavigation">
+          <li class="b-mainNavigation__item<?php echo ($uri=='index')?' -state_current':''; ?>">
+            <a class="b-mainNavigation__link" href="index.html">Home</a>
+          </li>
+        </ul>
+      </nav>
       </div>
     </header>
 
