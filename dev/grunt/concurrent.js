@@ -11,49 +11,49 @@ module.exports = {
     // ===== Compile =====
     all_preprocess: [
         // CSS
-        //'newer:spritesmith',
-        'newer:sass',
+        //'spritesmith',
+        'sass',
         // JS
-        'newer:jshint',
+        'jshint',
     ],
     all_postprocess: [
         // CSS
-        'newer:csslint',
-        'newer:postcss',
+        'csslint',
+        'postcss',
         // JS
-        'newer:uglify',
+        'uglify',
         // IMG
-        'newer:imagemin',
+        'imagemin',
     ],
     all_merge: [
         // JS
-        'newer:concat',
+        'concat',
     ],
 
     // ----- Watch -----
     // CSS
     css_preprocess: [
-        //'newer:spritesmith',
-        'newer:sass',
+        //'spritesmith',
+        'sass',
     ],
     css_postprocess: [
-        'newer:csslint',
-        'newer:postcss',
+        'csslint',
+        'postcss',
     ],
 
     // JS
     js_preprocess: [
-        'newer:jshint',
+        'jshint',
     ],
     js_postprocess: [
-        'newer:uglify',
+        'uglify',
     ],
     js_merge: [
-        'newer:concat',
+        'concat',
     ],
 
     // Images
     images: [
-        'newer:imagemin'
+        'imagemin'
     ]
 };
