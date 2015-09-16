@@ -1,7 +1,8 @@
 {
-  // We didn't support IE7!
+  // We didn't support IE7 & IE8!
   "box-sizing": false,
   "adjoining-classes": false,
+  "fallback-colors": false,
 
   // Allow Safety CSS Hacks
   "star-property-hack": false,        // IE8-
