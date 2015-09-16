@@ -15,5 +15,13 @@
   // OOCSS didn't suitable for real life. BEM does.
   "qualified-headings": false,
   "unique-headings": false,
-  "font-sizes": false
+  "font-sizes": false,
+
+  "unqualified-attributes": false,
+  "outline-none": false,
+  "compatible-vendor-prefixes": false,
+  "important": false,
+  "overqualified-elements": false,
+  "universal-selector": false,
+  "regex-selectors": false
 }
