@@ -61,11 +61,14 @@
 * @section Settings
 */
 $siteWidth: 980px;
-  /* Framework Common Libraries */
-  @import 'blocks/g-blocks';
+
+
+/* Framework Common Libraries */
+@import 'blocks/g-blocks';
 
 /* Project only code */
-@import 'blocks/_common';
+@import 'blocks/common';
+@import 'blocks/b-text';
 @import 'blocks/l-siteHeader';
 @import 'blocks/l-siteLogo';
 @import 'blocks/l-siteSearch';
