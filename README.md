@@ -11,17 +11,13 @@ Windows Installer 64-bit (needed for Grunt).
 npm install grunt-cli -g
 ```
 
-##3. Get Framework
-Git Clone:
-- URL: https://github.com/ideus-team/html-framework.git
-
-##4. Install
+##3. Install Framework
 Once run `dev\install.cmd` or execute in shell:
 ```shell
 npm install --save-dev
 ```
 
-##5. Run
+##4. Run
 Start Grunt with `dev\start.cmd` or execute in shell:
 ```shell
 grunt prod
