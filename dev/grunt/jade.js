@@ -1,12 +1,14 @@
 module.exports = {
     compile: {
       options: {
-        data: {
-          debug: false
-        }
+        pretty: true
       },
-      files: {
-        '<%= destHTMLDir %>': ['<%= sourceHTMLDir %>']
-      }
+      files: [{
+        expand: true,
+        cwd: '<%= sourceHTMLDir %>',
+        src: ['*.jade'],
+        dest: '<%= destHTMLDir %>',
+        ext: '.html'
+      }]
     }
 };

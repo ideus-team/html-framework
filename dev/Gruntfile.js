@@ -31,7 +31,7 @@ module.exports = function(grunt) {
         // Compile:
           // Source:
             // HTML
-              sourceHTMLDir   : 'src/jade/index.jade',
+              sourceHTMLDir   : 'src/jade',
               sourceHTMLFiles : '<%= sourceHTMLDir %>' + '/**/*.jade',
             // CSS
             sourceCSSDir       : 'src/sass',
@@ -52,7 +52,7 @@ module.exports = function(grunt) {
                 sourceIMGFiles        : '<%= sourceIMGDir %>' + '/**/*.{png,jpg,gif}',
 
           // Destination:
-            destHTMLDir     : '../assets/html/index.html',
+            destHTMLDir     : '../assets/html',
             destCSSDir      : '../assets/css', // generated css-files names taked from scss files in %sourceCSSDir
                 destCSSExt  : '.min.css',
                 destCSS     : '<%= destCSSDir %>' + '/main' + '<%= destCSSExt %>',
