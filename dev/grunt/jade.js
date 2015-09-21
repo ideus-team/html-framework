@@ -6,8 +6,7 @@ module.exports = {
         }
       },
       files: {
-        //'<%= destHTMLDir %>': ['<%= sourceHTMLDir %>']
-        "../assets/html/index.html": ["src/jade/index.jade"]
+        '<%= destHTMLDir %>': ['<%= sourceHTMLDir %>']
       }
     }
 };
