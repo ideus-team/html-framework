@@ -15,6 +15,7 @@ prod:
 preprocess:
   description: 'All Preprocess tasks'
   tasks:
+    - 'jade'
     - 'sass'
     - 'jshint'
 
@@ -32,7 +33,10 @@ merge:
     - 'concat'
 
 
-
+html:
+  description: 'HTML Tasks'
+  tasks:
+    - 'jade'
 
 css:
   description: 'CSS Tasks'

@@ -22,13 +22,13 @@ module.exports = {
         ]
     },
 
-    scripts: {
-        files: [
-            '<%= sourceJSFiles %>'
-        ],
-        tasks: [
-            'js'
-        ]
+    html: {
+      files: [
+        '<%= sourceHTMLFiles %>'
+      ],
+      tasks: [
+        'jade'
+      ]
     },
 
     styles: {
@@ -38,6 +38,15 @@ module.exports = {
         tasks: [
             'css'
         ]
+    },
+
+    scripts: {
+      files: [
+        '<%= sourceJSFiles %>'
+      ],
+      tasks: [
+        'js'
+      ]
     },
 
     images: {
