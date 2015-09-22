@@ -1,0 +1,8 @@
+mixin siteCopyright
+  address.l-siteCopyright.vcard(itemscope, itemtype='http://schema.org/Organization')
+    .b-siteCopyright © 2015
+      a.b-siteCopyright__link.fn.n.org.url.work(rel='me', itemprop='name', href='/')
+      = siteName + '. All Rights Reserved'
+    .b-developerCopyright
+      Developed by
+      a.b-developerCopyright__link(rel='friend', href='http://epam.com', target='_blank') EPAM

@@ -1,10 +1,13 @@
 include ./siteNavigationBottom.jade
+include ./siteCopyright.jade
 
 footer.l-siteFooter(role='contentinfo')
   .b-siteFooter
     block navigationBottom
       //- +siteNavigationBottom
 
+    block copyright
+      +siteCopyright
 
 script(src='assets/js/scripts.js')
 //- script(src='assets/js/scripts-extra.js')
