@@ -10,7 +10,7 @@ prod:
     - preprocess
     - postprocess
     - merge
-    - webserver
+    - 'watch'
 
 
 preprocess:

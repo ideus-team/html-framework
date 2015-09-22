@@ -5,7 +5,7 @@ module.exports = {
       port: 8000,
       base: '../',
       keepalive: true,
-      open: true,
+      open: true
     }
   }
 };
