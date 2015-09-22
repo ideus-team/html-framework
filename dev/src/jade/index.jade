@@ -1,12 +1,7 @@
 doctype html
 html(class='no-js')
-  include ./includes/header.jade
+  include ./includes/head.jade
   body
-    <!--[if lte IE 9]>
-    div.browserupgrade.
-      You are using an <strong>outdated</strong> browser.
-      Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.
-    <![endif]-->
-    h1 My Site
-    p Welcome to my super lame site.
-    include ./includes/footer.jade
+    include ./includes/blocks/header.jade
+
+    include ./includes/blocks/footer.jade
