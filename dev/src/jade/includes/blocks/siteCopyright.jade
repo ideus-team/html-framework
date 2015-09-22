@@ -1,8 +1,11 @@
 mixin siteCopyright
   address.l-siteCopyright.vcard(itemscope, itemtype='http://schema.org/Organization')
-    .b-siteCopyright © 2015
+    .b-siteCopyright
+      | © 2015&nbsp;
       a.b-siteCopyright__link.fn.n.org.url.work(rel='me', itemprop='name', href='/')
-      = siteName + '. All Rights Reserved'
-    .b-developerCopyright
-      Developed by
-      a.b-developerCopyright__link(rel='friend', href='http://epam.com', target='_blank') EPAM
+        = siteName
+      | . All Rights Reserved
+    //-
+      .b-developerCopyright
+        | Developed by&nbsp;
+        a.b-developerCopyright__link(rel='friend', href='/', target='_blank') DeveloperName

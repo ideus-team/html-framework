@@ -1,5 +1,5 @@
-#How to install and run HTML Framework
-Our HTML Framework based on H5BP+Grunt+SASS.
+#How to install and run HTML Build
+We use H5BP+Jade+SASS on Grunt.
 
 Instalation procedure is similar for Win/Mac/Linux.
 
@@ -11,7 +11,7 @@ Windows Installer 64-bit (needed for Grunt).
 npm install grunt-cli -g
 ```
 
-##3. Install Framework
+##3. Install Environment
 Once run `dev\install.cmd` or execute in shell:
 ```shell
 npm install --save-dev

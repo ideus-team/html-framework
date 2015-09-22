@@ -62,19 +62,12 @@ $siteWidth: 980px;
 @import 'blocks/b-text';
 @import 'blocks/l-siteHeader';
 @import 'blocks/l-siteLogo';
-@import 'blocks/l-siteSearch';
-@import 'blocks/l-siteNavigation';
 @import 'blocks/l-siteFooter';
-@import 'blocks/l-siteNavigationBottom';
 @import 'blocks/l-siteCopyright';
-@import 'blocks/b-developerCopyright';
 
 
 /**
 * Responsive & Print styles
 */
-@import 'responsive/device_desktop';
-@import 'responsive/device_tablet';
-@import 'responsive/device_mobile';
 @import 'responsive/media_queries';
 @import 'print';
