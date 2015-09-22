@@ -2,9 +2,10 @@ module.exports = {
 
   server: {
     options: {
-      port: 9001,
+      port: 8000,
       base: '../',
       keepalive: true,
+      open: true,
     }
   }
 };
