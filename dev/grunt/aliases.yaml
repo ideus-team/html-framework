@@ -10,6 +10,7 @@ prod:
     - preprocess
     - postprocess
     - merge
+    - webserver
 
 
 preprocess:
@@ -31,6 +32,11 @@ merge:
   description: 'All Merge tasks'
   tasks:
     - 'concat'
+
+webserver:
+  description: 'Web server'
+  tasks:
+    - 'connect'
 
 
 html:
