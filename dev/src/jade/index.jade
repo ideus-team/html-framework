@@ -1,12 +1,7 @@
-doctype html
-html(class='no-js')
-  include ./includes/head.jade
-  body
-    include ./includes/warning-old-IE.jade
-    div.l-wrapper
-      include ./includes/blocks/header.jade
+extends ./includes/layout.jade
+block title
+  title Site title
 
-      div.l-content
-        main.l-contentText(role='main')
-
-      include ./includes/blocks/footer.jade
+block main
+  main.l-contentText(role='main').
+    Main site content

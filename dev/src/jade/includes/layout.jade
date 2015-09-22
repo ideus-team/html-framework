@@ -1,0 +1,13 @@
+doctype html
+html(class='no-js')
+  include ./head.jade
+  body
+    include ./warning-old-IE.jade
+    div.l-wrapper
+      include ./blocks/header.jade
+
+      div.l-content
+        block main
+          main.l-contentText(role='main')
+
+      include ./blocks/footer.jade
