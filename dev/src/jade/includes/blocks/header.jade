@@ -1,5 +1,9 @@
 include ./siteLogo.jade
+include ./siteSearch.jade
 
 header.l-siteHeader(role='banner')
   block logo
-  +siteLogo(siteName)
+    +siteLogo(siteName)
+
+  block search
+    //- +siteSearch
