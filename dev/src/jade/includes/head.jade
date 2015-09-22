@@ -1,14 +1,15 @@
-//- includes/head.jade
 head
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  meta(charset='utf-8')
+  meta(http-equiv='X-UA-Compatible', content='IE=edge')
 
   title My Site
-  <meta name="description" content="" />
 
-  <!-- <meta property="og:image" content="<?php echo $BASE_URL; ?>/img/userfiles/og-image.png" /> -->
+  link(rel='shortcut icon', href='favicon.ico')
+  link(rel='apple-touch-icon', href='apple-touch-icon.png')
+  meta(property='og:image', content='img/userfiles/og-image.png')
 
-  <meta name="viewport" content="width=device-width" />
+  link(rel='stylesheet', href='assets/css/main.min.css')
+  meta(name='viewport', content='width=device-width')
   style.
     @-ms-viewport {
     width: device-width;
@@ -17,20 +18,18 @@ head
     width: device-width;
     }
 
-  <link rel="shortcut icon" href="favicon.ico" />
-  <link rel="apple-touch-icon" href="apple-touch-icon.png" />
-
-  <link rel="stylesheet" href="assets/css/main.min.css?<?php echo filemtime('assets/css/main.min.css'); ?>" />
-
-  <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
-  <script>window.Modernizr || document.write('<script src="assets/js/vendor/modernizr-2.8.3.min.js"><\/script>')</script>
+  script(src='//cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js')
+  script.
+    window.Modernizr || document.write('<script src="assets/js/vendor/modernizr-2.8.3.min.js"><\/script>')
 
   <!--[if lte IE 8]>
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-  <script>window.jQuery || document.write('<script src="assets/js/vendor/jquery-1.11.3.min.js"><\/script>')</script>
-  <script src="js/legacy/ie8.js"></script>
+  script(src='//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js')
+  script.
+    window.jQuery || document.write('<script src="assets/js/vendor/jquery-1.11.3.min.js"><\/script>')
+  script(src='js/legacy/ie8.js')
   <![endif]-->
   <!--[if gte IE 9]><!-->
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-  <script>window.jQuery || document.write('<script src="assets/js/vendor/jquery-2.1.4.min.js"><\/script>')</script>
+  script(src='//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js')
+  script.
+    window.jQuery || document.write('<script src="assets/js/vendor/jquery-2.1.4.min.js"><\/script>')
   <!--<![endif]-->
