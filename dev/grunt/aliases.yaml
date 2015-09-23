@@ -33,6 +33,7 @@ postprocess:
   tasks:
     - 'csslint'
     - 'postcss'
+    - 'cssnext'
     - 'uglify'
     - 'imagemin'
 
@@ -55,6 +56,7 @@ css:
     - 'sass'
     - 'csslint'
     - 'postcss'
+    - 'cssnext'
 
 js:
   description: 'JS Tasks'
