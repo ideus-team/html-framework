@@ -1,12 +1,12 @@
 default:
-  description: 'Default (production) build'
+  description: 'Start webserver and build prod'
   tasks:
+    - webserver
     - prod
 
 prod:
   description: 'Production build'
   tasks:
-    - webserver
     - clean
     - preprocess
     - postprocess

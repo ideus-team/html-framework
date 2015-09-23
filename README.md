@@ -23,5 +23,5 @@ npm install --save-dev
 ##4. Run
 Start Grunt with `dev\start.cmd` or execute in shell:
 ```
-grunt prod
+grunt
 ```
