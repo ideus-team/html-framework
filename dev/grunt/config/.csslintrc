@@ -18,6 +18,7 @@
   "unique-headings": false,
   "font-sizes": false,
 
+  // Rulesets to pass Normalize.css and H5BP.css
   "unqualified-attributes": false,
   "outline-none": false,
   "compatible-vendor-prefixes": false,
