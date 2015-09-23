@@ -7,12 +7,9 @@ module.exports = {
         require('autoprefixer-core')({
           // add vendor prefixes
           browsers: [
-            'last 3 version',
-            'ie 8',
-            'ff 3.6',
-            'opera 11.1',
-            'ios 4',
-            'android 2.3'
+            '> 1%',
+            'Last 2 versions',
+            'IE 8'
           ]
         }),
         require('cssnano')() // minify the result
