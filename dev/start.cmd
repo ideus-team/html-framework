@@ -1,5 +1,4 @@
 @echo off
-call grunt webserver
 call grunt prod
-call grunt watch
+call grunt server
 pause

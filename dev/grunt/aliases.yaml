@@ -1,17 +1,23 @@
 default:
-  description: 'Start webserver and build prod'
+  description: 'Start without options'
   tasks:
-    - webserver
     - prod
-    - watch
+    - server
+
 
 prod:
-  description: 'Production build'
+  description: 'All build tasks'
   tasks:
     - clean
     - preprocess
     - postprocess
     - merge
+
+server:
+  description: 'Start webserver & Watch'
+  tasks:
+    - connect
+    - watch
 
 
 preprocess:
@@ -35,10 +41,6 @@ merge:
   tasks:
     - 'concat'
 
-webserver:
-  description: 'Web server'
-  tasks:
-    - 'connect'
 
 
 html:
