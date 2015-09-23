@@ -25,3 +25,10 @@ Start Grunt with `dev\start.cmd` or execute in shell:
 ```
 grunt
 ```
+
+Note: If you run Grunt from shell by `grunt` you willn't see Execution Timings. If you want see timings execute this commands instead:
+```
+call grunt webserver
+call grunt prod
+call grunt watch
+```

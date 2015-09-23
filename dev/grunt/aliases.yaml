@@ -3,6 +3,7 @@ default:
   tasks:
     - webserver
     - prod
+    - watch
 
 prod:
   description: 'Production build'
@@ -11,7 +12,6 @@ prod:
     - preprocess
     - postprocess
     - merge
-    - 'watch'
 
 
 preprocess:
