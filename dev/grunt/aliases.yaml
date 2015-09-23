@@ -18,6 +18,7 @@ preprocess:
   description: 'All Preprocess tasks'
   tasks:
     - 'jade'
+    - 'htmllint'
     - 'sass'
     - 'jshint'
 
@@ -44,6 +45,7 @@ html:
   description: 'HTML Tasks'
   tasks:
     - 'jade'
+    - 'htmllint'
 
 css:
   description: 'CSS Tasks'

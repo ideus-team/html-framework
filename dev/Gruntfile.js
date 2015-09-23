@@ -7,7 +7,11 @@ module.exports = function(grunt) {
 
   require('time-grunt')(grunt);
   require('load-grunt-config')(grunt, {
-    jitGrunt: true,
+    jitGrunt: {
+      staticMappings: {
+        htmllint: 'grunt-html'
+      }
+    },
 
     data: {
       // Data passed into config.  Can use with <%= test %>
@@ -53,6 +57,7 @@ module.exports = function(grunt) {
 
           // Destination:
             destHTMLDir     : '../',
+              destHTML      : '<%= destHTMLDir %>' + '*.html',
             destCSSDir      : '../assets/css', // generated css-files names taked from scss files in %sourceCSSDir
                 destCSSExt  : '.min.css',
                 destCSS     : '<%= destCSSDir %>' + '/main' + '<%= destCSSExt %>',
