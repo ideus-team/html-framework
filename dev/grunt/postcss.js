@@ -15,7 +15,9 @@ module.exports = {
             'android 2.3'
           ]
         }),
-        require('cssnano')() // minify the result
+        require('cssnano')({
+          convertValues: false
+        }) // minify the result
       ]
     },
     dist: {
