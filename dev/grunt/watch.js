@@ -9,7 +9,7 @@ module.exports = {
          * The easiest way to get Livereload working is to install the browser extension. Details here:
          *   http://feedback.livereload.com/knowledgebase/articles/86242
          */
-        // livereload: true
+        livereload: true
     },
 
     configs: {

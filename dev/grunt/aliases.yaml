@@ -6,6 +6,7 @@ default:
 prod:
   description: 'Production build'
   tasks:
+    - webserver
     - clean
     - preprocess
     - postprocess
