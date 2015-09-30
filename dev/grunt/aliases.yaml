@@ -23,13 +23,13 @@ postprocess:
   tasks:
     - 'csslint'
     - 'postcss'
-    - 'uglify'
     - 'imagemin'
 
 merge:
   description: 'All Merge tasks'
   tasks:
     - 'concat'
+    - 'uglify'
 
 
 
@@ -45,8 +45,8 @@ js:
   description: 'JS Tasks'
   tasks:
     - 'jshint'
-    - 'uglify'
     - 'concat'
+    - 'uglify'
 
 img:
   description: 'Image tasks'
