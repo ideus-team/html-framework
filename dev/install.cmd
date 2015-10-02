@@ -12,9 +12,6 @@ call gem update bourbon
 call gem update neat
 call gem update bitters
 
-echo Update Compass...
-call gem update compass
-
 echo Update Grunt...
 call npm update grunt-cli -g
 
