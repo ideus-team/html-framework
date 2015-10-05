@@ -10,8 +10,7 @@
     // Neat Settings -- must be imported before Neat
     $border-box-sizing: false;
 
-  @import "base/grid-settings"; // If you want to use Neat functions in Bitters,
-                                // you can @import "grid-settings"; before Neat and import the rest of bitters after.
+  @import "base/grid-settings"; // If you want to use Neat functions in Bitters, you can @import "grid-settings"; before Neat and import the rest of bitters after.
   /* Import Bourbon:Neat */
   @import 'neat';
 
@@ -24,6 +23,7 @@
 
 @import 'mixins';
 @import 'fonts';
+@import 'settings';
 
 /* Project files… */
   /* Generated… */
@@ -48,11 +48,6 @@
 /* ==|== primary styles =====================================================
    Authors: %Author Name%
    ========================================================================== */
-/**
-* @section Settings
-*/
-$siteWidth: 980px;
-
 
 /* Framework Common Libraries */
 @import 'blocks/g-blocks';
