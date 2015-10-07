@@ -83,3 +83,9 @@
     margin-bottom: 0;
   }
 }
+
+@mixin responsive($breakpoint) {
+  @media screen and #{$breakpoint} {
+    @content;
+  }
+}

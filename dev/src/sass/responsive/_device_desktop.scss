@@ -4,6 +4,6 @@
    Modify as content requires.
    ========================================================================== */
 
-.-device_desktop {
-
+@include responsive($breakpoint-desktop) {
+  
 }

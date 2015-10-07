@@ -4,6 +4,6 @@
    Modify as content requires.
    ========================================================================== */
 
-.-device_mobile {
-
+@include responsive($breakpoint-mobile) {
+  
 }
