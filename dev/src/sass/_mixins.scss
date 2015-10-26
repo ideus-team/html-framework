@@ -85,7 +85,7 @@
 }
 
 @mixin responsive($breakpoint) {
-  @media screen and #{$breakpoint} {
+  @media screen and (#{$breakpoint}) {
     @content;
   }
 }
