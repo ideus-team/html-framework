@@ -35,7 +35,7 @@
 <html class="-device_<?php echo $device; ?> no-js" lang="">
 <head>
   <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
 
   <title><?php echo $title; ?></title>
   <meta name="description" content="" />
