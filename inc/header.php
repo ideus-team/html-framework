@@ -80,7 +80,7 @@
       <div class="b-siteHeader">
       <div class="l-siteLogo">
         <?php
-          $siteLogo__iconURL = 'img/blocks/l-siteLogo/l-siteLogo-logo.png';
+          $siteLogo__iconURL = 'assets/img/blocks/l-siteLogo/l-siteLogo-logo.png';
           //$siteLogo__iconURL = ($device=='mobile') ? 'img/blocks/l-siteLogo/l-siteLogo-logo-mobile.png' : 'img/blocks/l-siteLogo/l-siteLogo-logo.png';
           $siteLogo__tag  = ($isHomepage) ? 'h1' : 'div';
           $siteLogo__link = ($isHomepage) ? '' : ' href="index.html"';
