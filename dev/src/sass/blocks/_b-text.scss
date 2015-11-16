@@ -23,10 +23,10 @@
   dt {}
   dd {}
 
-  blockquote
+  blockquote {}
 
   a {
-    @include hover-underline;
+    @include underline-hover;
   }
 
   img {
