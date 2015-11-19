@@ -4,7 +4,7 @@ module.exports = {
 
       processors: [
         require('pixrem')(), // add fallbacks for rem units
-        require('autoprefixer-core')({
+        require('autoprefixer')({
           // add vendor prefixes
           browsers: [
             'last 3 version',
