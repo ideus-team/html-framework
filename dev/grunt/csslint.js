@@ -1,10 +1,9 @@
 module.exports = {
+  options: {
+    csslintrc: '<%= gruntPluginsDir %>' + '/.csslintrc',
+  },
 
-    options: {
-        csslintrc: '<%= gruntPluginsDir %>' + '/.csslintrc',
-    },
-
-    src: [
-        '<%= destCSS %>'
-    ]
+  src: [
+    '<%= destCSS %>',
+  ],
 };

@@ -1,10 +1,10 @@
 module.exports = {
-    all: {
-        options: {
-          mangle: false,
-        },
-        files: [{
-            '<%= destJS %>': '<%= destJS %>'
-        }]
-    }
+  all: {
+    options: {
+      mangle: false,
+    },
+    files: [{
+      '<%= destJS %>': '<%= destJS %>',
+    }],
+  },
 };

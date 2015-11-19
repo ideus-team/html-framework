@@ -16,49 +16,55 @@ module.exports = function(grunt) {
       gruntPluginsDir : 'grunt/config',
 
       // Paths for Watch:
-        // Grunt
-        gruntSettings: [
-          /* Grunt config   */ 'Gruntfile.js',
-          /* Grunt modules  */ 'package.json',
-          /* Build settings */ 'grunt/aliases.yaml',
-          /* Grunt tasks    */ 'grunt/*.js'
-        ],
-        gruntPluginsSettings: [
-          '<%= csslint.options.csslintrc %>',
-          '<%= jshint.options.jshintrc %>',
-        ],
+      // Grunt
+      gruntSettings: [
+        /* Grunt config   */ 'Gruntfile.js',
+        /* Grunt modules  */ 'package.json',
+        /* Build settings */ 'grunt/aliases.yaml',
+        /* Grunt tasks    */ 'grunt/*.js',
+      ],
+      gruntPluginsSettings: [
+        '<%= csslint.options.csslintrc %>',
+        '<%= jshint.options.jshintrc %>',
+      ],
 
-        // Compile:
-          // Source:
-            // CSS
-            sourceCSSDir       : 'src/sass',
-                sourceCSSFiles : '<%= sourceCSSDir %>' + '/**/*.scss',
-            // JS
-            sourceJSPlugins    : [
-              'src/js/plugins/*.js',
-              'src/js/plugins/helpers/*.js',
-            ],
-            sourceJSMy         : [
-              'src/js/blocks/**/*.js',
-              'src/js/main.js'
-            ],
-                sourceJSFiles  : [
-                  '<%= sourceJSPlugins %>',
-                  '<%= sourceJSMy %>'
-                ],
-            // IMG
-            sourceIMGDir              : 'src/img',
-                sourceIMGSpritesDir   : '<%= sourceIMGDir %>' + '/sprites',
-                sourceIMGFiles        : '<%= sourceIMGDir %>' + '/**/*.{png,jpg,gif}',
+      // Compile:
+        // Source:
+          // CSS
+          sourceCSSDir   : 'src/sass',
+          sourceCSSFiles : '<%= sourceCSSDir %>' + '/**/*.scss',
 
-          // Destination:
-            destCSSDir      : '../assets/css', // generated css-files names taked from scss files in %sourceCSSDir
-                destCSSExt  : '.min.css',
-                destCSS     : '<%= destCSSDir %>' + '/main' + '<%= destCSSExt %>',
-            destJSDir       : '../assets/js',
-                destJS      : '<%= destJSDir %>'  + '/scripts.js',
-            destIMGDir      : '../assets/img',
+          // JS
+          sourceJSPlugins : [
+            'src/js/plugins/*.js',
+            'src/js/plugins/helpers/*.js',
+          ],
+          sourceJSMy      : [
+            'src/js/blocks/**/*.js',
+            'src/js/main.js',
+          ],
+          sourceJSFiles   : [
+            '<%= sourceJSPlugins %>',
+            '<%= sourceJSMy %>',
+          ],
 
-    }
+          // IMG
+          sourceIMGDir        : 'src/img',
+          sourceIMGSpritesDir : '<%= sourceIMGDir %>' + '/sprites',
+          sourceIMGFiles      : '<%= sourceIMGDir %>' + '/**/*.{png,jpg,gif}',
+
+        // Destination:
+          // CSS
+          destCSSDir : '../assets/css', // generated css-files names taked from scss files in %sourceCSSDir
+          destCSSExt : '.min.css',
+          destCSS    : '<%= destCSSDir %>' + '/main' + '<%= destCSSExt %>',
+
+          // JS
+          destJSDir  : '../assets/js',
+          destJS     : '<%= destJSDir %>'  + '/scripts.js',
+
+          // IMG
+          destIMGDir : '../assets/img',
+    },
   });
 };

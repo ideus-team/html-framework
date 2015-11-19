@@ -1,6 +1,9 @@
 module.exports = {
-    options: { force: true },
-    all: [
-        "../assets/css/"
-    ]
+  options: {
+    force: true,
+  },
+
+  all: [
+    '../assets/css/',
+  ],
 };
