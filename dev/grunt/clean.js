@@ -5,5 +5,6 @@ module.exports = {
 
   all: [
     '../assets/css/',
+    '../assets/img/',
   ],
 };
