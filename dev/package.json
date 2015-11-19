@@ -15,7 +15,6 @@
     "grunt-contrib-uglify": "^0.10.1",
     "grunt-contrib-watch": "^0.6.1",
     "grunt-newer": "^1.1.1",
-    "grunt-notify": "^0.4.1",
     "grunt-postcss": "^0.7.1",
     "grunt-sass": "^1.0.0",
     "grunt-shell": "^1.1.2",
