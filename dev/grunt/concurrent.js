@@ -10,7 +10,6 @@ module.exports = {
   // ===== Compile =====
   all_preprocess: [
     // CSS
-    //'spritesmith',
     'sass',
     // JS
     'jshint',

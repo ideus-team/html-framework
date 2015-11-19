@@ -50,7 +50,6 @@ module.exports = function(grunt) {
 
           // IMG
           sourceIMGDir        : 'src/img',
-          sourceIMGSpritesDir : '<%= sourceIMGDir %>' + '/sprites',
           sourceIMGFiles      : '<%= sourceIMGDir %>' + '/**/*.{png,jpg,gif}',
 
         // Destination:
