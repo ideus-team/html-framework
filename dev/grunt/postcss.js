@@ -1,6 +1,8 @@
 module.exports = {
   options: {
-    map: true, // inline sourcemaps
+    map: {
+      inline: false,
+    },
 
     processors: [
       require('pixrem')(), // add fallbacks for rem units
@@ -24,6 +26,8 @@ module.exports = {
   },
 
   dist: {
-    src: '<%= destCSSDir %>' + '/*.css',
+    files: {
+      '<%= destMinCSS %>' : '<%= destCSS %>',
+    },
   },
 };

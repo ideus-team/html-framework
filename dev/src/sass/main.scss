@@ -3,46 +3,18 @@
 @import 'normalize';
 @import 'h5b';
 
-/* Import Bourbon */
-  @import 'bourbon';
-
-  /* Import Bourbon:Refills */
-    // Neat Settings -- must be imported before Neat
-    $border-box-sizing: false;
-
-  @import "base/grid-settings"; // If you want to use Neat functions in Bitters, you can @import "grid-settings"; before Neat and import the rest of bitters after.
-  /* Import Bourbon:Neat */
-  @import 'neat';
-
-///* Library files… */
-  ///* Import Bourbon:Bitters */
-  //@import 'base/base';
-  ///* Import Google MDL */
-  //@import 'plugins/_material.min';
-
+/* Import Compass */
+@import 'compass/css3/images';
 
 @import 'mixins';
-@import 'fonts';
-@import 'settings';
 
 /* Project files… */
-  /* Generated… */
-  @import 'base64';
+@import 'fonts';
+@import 'settings';
+@import 'sprites';
 
-          ///* bourbon test */
-          //.test_bourbon {font-size: golden-ratio(14px,  1);}
-          ///* neat test */
-          //.test_neat    {@include outer-container;}
-          ///* bitters test */
-          //.test_bitters {font-size: $base-font-size;}
-          ///* refills test */
-          //.test_refills {width: $medium-screen};
-          ///* test PostCSS */
-          //footer {
-          //  background: linear-gradient(to top, black, white);
-          //}
-          ///* Test Watch */
-          //.test_watch {color: #f00;}
+/* Generated… */
+@import 'base64';
 
 /* ==|== primary styles =====================================================
    Authors: %Author Name%

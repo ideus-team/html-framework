@@ -15,7 +15,7 @@ prod:
 preprocess:
   description: 'All Preprocess tasks'
   tasks:
-    - 'sass'
+    - 'compass'
     - 'jshint'
 
 postprocess:
@@ -37,7 +37,7 @@ merge:
 css:
   description: 'CSS Tasks'
   tasks:
-    - 'sass'
+    - 'compass'
     - 'csslint'
     - 'postcss'
 
