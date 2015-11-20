@@ -7,6 +7,7 @@ module.exports = {
       outputStyle: 'expanded',
       force: true,
       relativeAssets: true,
+      sourcemap: true,
     },
   },
 };
