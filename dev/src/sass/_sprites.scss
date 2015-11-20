@@ -1,0 +1,12 @@
+/**
+* @section Sprites
+*
+* $sprite-test: sprite-map('sprites/test/*.png', $spacing: 20px);
+*
+* .b-icon {
+    background: $sprite-test no-repeat;
+*   &.-type_example {background-position: sprite-position($spriteMap, $filename, $offset-x, $offset-y, $use-percentages);}
+*   &.-type_arrow {background-position: sprite-position($sprite-test, 'arrow');}
+*   &.-type_login {background-position: sprite-position($sprite-test, 'login', 3px, -2px);}
+* }
+*/
