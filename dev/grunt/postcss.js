@@ -24,6 +24,8 @@ module.exports = {
   },
 
   dist: {
-    src: '<%= destCSSDir %>' + '/*.css',
+    files: {
+      '<%= destMinCSS %>' : '<%= destCSS %>',
+    },
   },
 };
