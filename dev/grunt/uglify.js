@@ -1,5 +1,5 @@
 module.exports = {
-  all: {
+  main: {
     options: {
       mangle: false,
     },

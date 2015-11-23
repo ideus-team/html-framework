@@ -25,7 +25,7 @@ module.exports = {
     ],
   },
 
-  dist: {
+  main: {
     files: {
       '<%= destMinCSS %>' : '<%= destCSS %>',
     },

@@ -1,5 +1,5 @@
 module.exports = {
-  all: {
+  main: {
     files: [{
       expand: true,
       cwd: '<%= sourceIMGDir %>' + '/',

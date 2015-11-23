@@ -3,7 +3,7 @@ module.exports = {
     force: true,
   },
 
-  all: [
+  main: [
     '../assets/css/',
     '../assets/img/',
   ],

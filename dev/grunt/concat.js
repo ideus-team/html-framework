@@ -3,7 +3,7 @@ module.exports = {
     separator: ';',
   },
 
-  dist: {
+  main: {
     src: [
       '<%= sourceJSFiles %>',
     ],

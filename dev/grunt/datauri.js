@@ -1,5 +1,5 @@
 module.exports = {
-  all: {
+  main: {
     options: {
       classPrefix: 'data-',
       checkFilesize: true,
