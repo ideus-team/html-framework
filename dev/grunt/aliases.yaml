@@ -22,6 +22,7 @@ preprocess:
     - 'base64'
     - 'compass'
     - 'jshint'
+    - 'jscs'
 
 postprocess:
   description: 'All Postprocess tasks'
@@ -50,6 +51,7 @@ js:
   description: 'JS Tasks'
   tasks:
     - 'jshint'
+    - 'jscs'
     - 'concat'
     - 'uglify'
 
