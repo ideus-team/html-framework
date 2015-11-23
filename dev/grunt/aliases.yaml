@@ -11,10 +11,15 @@ prod:
     - postprocess
     - merge
 
+base64:
+  description: 'Base64 task'
+  tasks:
+    - 'datauri'
 
 preprocess:
   description: 'All Preprocess tasks'
   tasks:
+    - 'base64'
     - 'compass'
     - 'jshint'
 
@@ -51,4 +56,5 @@ js:
 img:
   description: 'Image tasks'
   tasks:
+    - 'base64'
     - 'imagemin'
