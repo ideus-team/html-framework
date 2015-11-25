@@ -12,6 +12,9 @@ module.exports = {
   },
 
   configs: {
+    options: {
+      reload: true,
+    },
     files: [
       '<%= gruntSettings %>',
       '<%= gruntPluginsSettings %>',
