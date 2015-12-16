@@ -20,7 +20,8 @@ module.exports = {
       }),
 
       require('cssnano')({
-        convertValues: false
+        convertValues: false,
+        zindex: false,
       }), // minify the result
     ],
   },
