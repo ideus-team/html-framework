@@ -18,6 +18,10 @@
   "unique-headings": false,
   "font-sizes": false,
 
+  // For Compass gradients
+  "gradients": false,
+  "duplicate-properties": false,
+
   "unqualified-attributes": false,
   "outline-none": false,
   "compatible-vendor-prefixes": false,
