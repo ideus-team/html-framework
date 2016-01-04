@@ -78,35 +78,35 @@
   <div class="l-wrapper">
     <header class="l-siteHeader" role="banner">
       <div class="b-siteHeader">
-      <div class="l-siteLogo">
-        <?php
-          $siteLogo__iconURL = 'assets/img/blocks/l-siteLogo/l-siteLogo-logo.png';
-          //$siteLogo__iconURL = ($device=='mobile') ? 'assets/img/blocks/l-siteLogo/l-siteLogo-logo-mobile.png' : 'assets/img/blocks/l-siteLogo/l-siteLogo-logo.png';
-          $siteLogo__tag  = ($isHomepage) ? 'h1' : 'div';
-          $siteLogo__link = ($isHomepage) ? '' : ' href="index.html"';
-        ?>
-        <<?php echo $siteLogo__tag; ?> class="b-siteLogo" itemscope itemtype="http://schema.org/Organization">
-          <a class="b-siteLogo__link"<?php echo $siteLogo__link; ?> itemprop="url">
-            <img class="b-siteLogo__icon" src="<?php echo $siteLogo__iconURL; ?>" alt="<?php echo $siteName; ?>" title="<?php echo $siteName; ?>" itemprop="logo" />
-          </a>
-        </<?php echo $siteLogo__tag; ?>>
-      </div>
+        <div class="l-siteLogo">
+          <?php
+            $siteLogo__iconURL = 'assets/img/blocks/l-siteLogo/l-siteLogo-logo.png';
+            //$siteLogo__iconURL = ($device=='mobile') ? 'assets/img/blocks/l-siteLogo/l-siteLogo-logo-mobile.png' : 'assets/img/blocks/l-siteLogo/l-siteLogo-logo.png';
+            $siteLogo__tag  = ($isHomepage) ? 'h1' : 'div';
+            $siteLogo__link = ($isHomepage) ? '' : ' href="index.html"';
+          ?>
+          <<?php echo $siteLogo__tag; ?> class="b-siteLogo" itemscope itemtype="http://schema.org/Organization">
+            <a class="b-siteLogo__link"<?php echo $siteLogo__link; ?> itemprop="url">
+              <img class="b-siteLogo__icon" src="<?php echo $siteLogo__iconURL; ?>" alt="<?php echo $siteName; ?>" title="<?php echo $siteName; ?>" itemprop="logo" />
+            </a>
+          </<?php echo $siteLogo__tag; ?>>
+        </div>
 
-      <div class="l-siteSearch">
-        <form class="b-siteSearch" role="search" method="post" action="#">
-          <label class="b-siteSearch__label g-visuallyhidden" for="search-text">Search:</label>
-          <input class="b-siteSearch__input" type="search" spellcheck="true" value="" name="search" id="search-text" />
-          <input class="b-siteSearch__button" type="submit" value="Search" />
-        </form>
-      </div>
+        <div class="l-siteSearch">
+          <form class="b-siteSearch" role="search" method="post" action="#">
+            <label class="b-siteSearch__label g-visuallyhidden" for="search-text">Search:</label>
+            <input class="b-siteSearch__input" type="search" spellcheck="true" value="" name="search" id="search-text" />
+            <input class="b-siteSearch__button" type="submit" value="Search" />
+          </form>
+        </div>
 
-      <nav class="l-siteNavigation" role="navigation">
-        <ul class="b-mainNavigation">
-          <li class="b-mainNavigation__item<?php echo ($uri=='home')?' -state_current':''; ?>">
-            <a class="b-mainNavigation__link" href="index.html">Home</a>
-          </li>
-        </ul>
-      </nav>
+        <nav class="l-siteNavigation" role="navigation">
+          <ul class="b-mainNavigation">
+            <li class="b-mainNavigation__item<?php echo ($uri=='home')?' -state_current':''; ?>">
+              <a class="b-mainNavigation__link" href="index.html">Home</a>
+            </li>
+          </ul>
+        </nav>
       </div>
     </header>
 
