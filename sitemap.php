@@ -51,7 +51,7 @@
 				<main class="b-sitemapContent" role="main">
 
 					<div class="l-clientLogo">
-            <a class="b-clientLogo__link" itemprop="url">
+            <a class="b-clientLogo__link" itemprop="url" href="">
               <img class="b-clientLogo__icon" src="assets/img/blocks/siteLogo/client-logo.png" alt="" title="" itemprop="logo" />
             </a>
 	        </div>
