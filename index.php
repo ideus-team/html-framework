@@ -5,7 +5,7 @@
   require('inc/header.php');
 ?>
 
-<main class="l-contentText" role="main">
+<main class="b-content" role="main">
 
 </main>
 

@@ -2,8 +2,8 @@
 * @subsection Main Site Search
 */
 .l-siteSearch {
-  position: absolute;
-  top: 10px;
+  float: right;
+  overflow: hidden;
   right: 20px;
   width: 200px;
 }
