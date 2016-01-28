@@ -121,11 +121,11 @@
 	        			</table>
 	        		</div>
 
-	        		<div class="b-sitemapTabs__title js-sitemapTabs__title -state_active">
+	        		<div class="b-sitemapTabs__title js-sitemapTabs__title">
 	        			<div class="b-sitemapTabs__titleText">PAGES IN PROGRESS</div>
 	        			<div class="b-sitemapTabs__arrow"></div>
         			</div>
-	        		<div class="b-sitemapTabs__content js-sitemapTabs__content -state_active">
+	        		<div class="b-sitemapTabs__content js-sitemapTabs__content">
 	        			<table class="b-sitemapTabs__table">
 	        				<thead>
 	        					<tr>
@@ -144,11 +144,11 @@
 	        			</table>
 	        		</div>
 
-	        		<div class="b-sitemapTabs__title js-sitemapTabs__title -state_active">
+	        		<div class="b-sitemapTabs__title js-sitemapTabs__title">
 	        			<div class="b-sitemapTabs__titleText">FONTS</div>
 	        			<div class="b-sitemapTabs__arrow"></div>
         			</div>
-	        		<div class="b-sitemapTabs__content js-sitemapTabs__content -state_active">
+	        		<div class="b-sitemapTabs__content js-sitemapTabs__content">
 	        			<table class="b-sitemapTabs__table">
 	        				<thead>
 	        					<tr>

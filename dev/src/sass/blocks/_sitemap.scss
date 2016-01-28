@@ -116,15 +116,15 @@
     background: url('../img/blocks/sitemap/sitemapButton-ico.png') -21px 0 no-repeat; 
     content: '';
   }
-  &.-type_filled {
+  &:hover {
     background: #ed1b23;
     color: #fff;
     &:hover, &:focus, &:active, &:visited {
       color: #fff;
     }
-     &:before {
+    &:before {
       background-position: 0 0;
-     }
+    }
   }
 }
 
