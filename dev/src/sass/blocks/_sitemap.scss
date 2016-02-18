@@ -189,8 +189,21 @@
       border-bottom: 2px solid #d4d4d4;
       background: transparent;
       color: #ec1b23;
+
       .-type_netcraft & { 
         color: #3b6da3;
+      }
+
+      &:not(.-state_default) {
+        -webkit-animation: opacityAnimation 1.5s;
+        animation: opacityAnimation 1.5s;
+      }
+    }
+
+    &.-state_inactive {
+      &:not(.-state_default) {
+        -webkit-animation: opacityAnimationReverse 1.5s;
+        animation: opacityAnimationReverse 1.5s;
       }
     }
   }
@@ -241,7 +254,7 @@
   
     &.-state_active {
       display: block;
-      &:not(.-state_defaultActive) {
+      &:not(.-state_default) {
         -webkit-animation: opacityAnimation 1.5s;
         animation: opacityAnimation 1.5s;
       }
@@ -317,6 +330,21 @@
   75%  {opacity: 0.75;}
   100% {opacity: 1;}
 }
+
+@keyframes opacityAnimationReverse {
+  0%   {opacity: 1;}
+  50%  {opacity: 0.5;}
+  100% {opacity: 1;}
+}
+
+@-webkit-keyframes opacityAnimationReverse {
+  0%   {opacity: 1;}
+  50%  {opacity: 0.5;}
+  100% {opacity: 1;}
+}
+
+
+
 
 
 /**

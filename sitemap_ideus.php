@@ -59,11 +59,11 @@
 	        <div class="l-sitemapTabs">
 	        	<div class="b-sitemapTabs">
 
-	        		<div class="b-sitemapTabs__title js-sitemapTabs__title -state_active">
+	        		<div class="b-sitemapTabs__title js-sitemapTabs__title -state_active -state_default">
 	        			<div class="b-sitemapTabs__titleText">INFO</div>
 	        			<div class="b-sitemapTabs__arrow"></div>
         			</div>
-	        		<div class="b-sitemapTabs__content js-sitemapTabs__content -state_active -state_defaultActive">
+	        		<div class="b-sitemapTabs__content js-sitemapTabs__content -state_active -state_default">
 	        			<table class="b-sitemapTabs__table">
 	        				<tbody>
 	        					<tr>
@@ -82,11 +82,11 @@
 	        			</table>
 	        		</div>
 
-	        		<div class="b-sitemapTabs__title js-sitemapTabs__title -state_active">
+	        		<div class="b-sitemapTabs__title js-sitemapTabs__title -state_active -state_default">
 								<div class="b-sitemapTabs__titleText">COMPLETED PAGES</div>
 	        			<div class="b-sitemapTabs__arrow"></div>
 	        		</div>
-	        		<div class="b-sitemapTabs__content js-sitemapTabs__content -state_active -state_defaultActive">
+	        		<div class="b-sitemapTabs__content js-sitemapTabs__content -state_active -state_default">
 	        			<table class="b-sitemapTabs__table">
 	        				<thead>
 	        					<tr>
@@ -121,7 +121,7 @@
 	        			</table>
 	        		</div>
 
-	        		<div class="b-sitemapTabs__title js-sitemapTabs__title">
+	        		<div class="b-sitemapTabs__title js-sitemapTabs__title -state_inactive -state_default">
 	        			<div class="b-sitemapTabs__titleText">PAGES IN PROGRESS</div>
 	        			<div class="b-sitemapTabs__arrow"></div>
         			</div>
@@ -144,7 +144,7 @@
 	        			</table>
 	        		</div>
 
-	        		<div class="b-sitemapTabs__title js-sitemapTabs__title">
+	        		<div class="b-sitemapTabs__title js-sitemapTabs__title -state_inactive -state_default">
 	        			<div class="b-sitemapTabs__titleText">FONTS</div>
 	        			<div class="b-sitemapTabs__arrow"></div>
         			</div>
