@@ -184,7 +184,7 @@
 	     
 	        <address class="l-sitemapCopyright vcard" itemscope itemtype="http://schema.org/Organization">
 	          <div class="b-sitemapCopyright">
-	          	<a rel="me" itemprop="name" class="b-sitemapCopyright__link fn n org url work" href="http://ideus.biz/">www.ideus.biz</a>. All rights reserved.
+	          	<a rel="me" itemprop="name" class="b-sitemapCopyright__link fn n org url work" href="http://net-craft.com/">Net-Craft.com</a>. All rights reserved.
           	</div>
 	        </address>
 

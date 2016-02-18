@@ -24,6 +24,11 @@
 */
 .l-sitemapHeader {
   background: #2b2d31 url('../img/blocks/sitemap/siteHeader-bg.jpg') repeat;
+  .-type_netcraft & { 
+    background: #fff;
+    border-bottom: 3px solid #3b6da3;
+    box-shadow: 1px 1px 5px rgba(0,0,0,.3);
+  }
 }
 .b-sitemapHeader {
   max-width: $sitemap-width;
