@@ -35,12 +35,12 @@
 	    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
 	  <![endif]-->
 
-	  <div class="l-sitemapWrapper">
+	  <div class="l-sitemapWrapper -type_netcraft">
 	    <header class="l-sitemapHeader" role="banner">
 	      <div class="b-sitemapHeader">
 	        <div class="l-sitemapLogo">
             <a class="b-sitemapLogo__link" itemprop="url">
-              <img class="b-sitemapLogo__icon" src="assets/img/blocks/siteLogo/sitemap-logo.png" alt="" title="" itemprop="logo" />
+              <img class="b-sitemapLogo__icon" src="assets/img/blocks/siteLogo/sitemap-logo-netcraft.png" alt="" title="" itemprop="logo" />
             </a>
 	        </div>
 	      </div>
@@ -63,7 +63,7 @@
 	        			<div class="b-sitemapTabs__titleText">INFO</div>
 	        			<div class="b-sitemapTabs__arrow"></div>
         			</div>
-	        		<div class="b-sitemapTabs__content js-sitemapTabs__content -state_active">
+	        		<div class="b-sitemapTabs__content js-sitemapTabs__content -state_active -state_defaultActive">
 	        			<table class="b-sitemapTabs__table">
 	        				<tbody>
 	        					<tr>
@@ -86,7 +86,7 @@
 								<div class="b-sitemapTabs__titleText">COMPLETED PAGES</div>
 	        			<div class="b-sitemapTabs__arrow"></div>
 	        		</div>
-	        		<div class="b-sitemapTabs__content js-sitemapTabs__content -state_active">
+	        		<div class="b-sitemapTabs__content js-sitemapTabs__content -state_active -state_defaultActive">
 	        			<table class="b-sitemapTabs__table">
 	        				<thead>
 	        					<tr>

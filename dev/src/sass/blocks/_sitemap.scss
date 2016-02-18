@@ -39,6 +39,10 @@
   overflow: hidden;
   width: 131px;
   height: 47px;
+  .-type_netcraft & { 
+    width: 266px;
+    height: 50px;
+  }
 }
 .b-sitemapLogo {
   margin: 0;
@@ -129,6 +133,10 @@
   text-align: left;
   cursor: pointer;
 
+  .-type_netcraft & { 
+    border-color: #3b6da3;
+  }
+
   &:before {
     position: absolute;
     right: 28px;
@@ -144,6 +152,10 @@
     background: #ed1b23;
     color: #fff;
     text-decoration: none;
+
+    .-type_netcraft & { 
+      background-color: #3b6da3;
+    }
 
     &:before {
       background-position: 0 0;
@@ -177,6 +189,9 @@
       border-bottom: 2px solid #d4d4d4;
       background: transparent;
       color: #ec1b23;
+      .-type_netcraft & { 
+        color: #3b6da3;
+      }
     }
   }
 
@@ -197,7 +212,7 @@
       top: 23px;
       right: 20px;
       display: block;
-      width: 16px;
+      width: 18px;
       height: 16px;
       background: url('../img/blocks/sitemap/sitemapTabs__title-ico.png') -58px 0 no-repeat;
       content: '';
@@ -211,15 +226,25 @@
         right: 28px;
         background-position: -26px 0;
       }
+
+      .-type_netcraft & { 
+        &:before {
+          background-position: -83px 0;
+        }
+      }
     }
   }
   &__content {
     padding: 20px 0 0;
     margin: 0 0 20px;
     display: none;
-
+  
     &.-state_active {
       display: block;
+      &:not(.-state_defaultActive) {
+        -webkit-animation: opacityAnimation 1.5s;
+        animation: opacityAnimation 1.5s;
+      }
     }
   }
 
@@ -269,8 +294,28 @@
       &.-type_link {
         padding-right: 60px;
       }
+
+      .-type_netcraft & { 
+        color: #3b6da3;
+      }
     }
   }
+}
+
+@keyframes opacityAnimation {
+  0%   {opacity: 0;}
+  25%  {opacity: 0.25;}
+  50%  {opacity: 0.5;}
+  75%  {opacity: 0.75;}
+  100% {opacity: 1;}
+}
+
+@-webkit-keyframes opacityAnimation {
+  0%   {opacity: 0;}
+  25%  {opacity: 0.25;}
+  50%  {opacity: 0.5;}
+  75%  {opacity: 0.75;}
+  100% {opacity: 1;}
 }
 
 
