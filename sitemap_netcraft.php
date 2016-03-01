@@ -100,21 +100,21 @@
 	        						<td>About Us</td>
 	        						<td>19/01/2016</td>
 	        						<td class="-type_link">
-	        							<a href="" class="b-sitemapButton -type_filled">Go To Page</a>
+	        							<a href="" class="b-sitemapButton -type_filled" target="_blank">Go To Page</a>
 	        						</td>
 	        					</tr>
 	        					<tr>
 	        						<td>Contacts</td>
 	        						<td>19/01/2016</td>
 	        						<td class="-type_link">
-	        							<a href="" class="b-sitemapButton">Go To Page</a>
+	        							<a href="" class="b-sitemapButton" target="_blank">Go To Page</a>
 	        						</td>
 	        					</tr>
 	        					<tr>
 	        						<td>Privacy Policy</td>
 	        						<td>20/01/2016</td>
 	        						<td class="-type_link">
-	        							<a href="" class="b-sitemapButton">Go To Page</a>
+	        							<a href="" class="b-sitemapButton" target="_blank">Go To Page</a>
 	        						</td>
 	        					</tr>
 	        				</tbody>
