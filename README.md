@@ -18,6 +18,7 @@ If you get SSL error — foolow [this steps](https://gist.github.com/luislavena/
 Stable (latest features), Windows Installer 64-bit (needed for Grunt).
 
 ##4. Install Grunt
+Run cmd as administrator and execute:
 ```
 npm install grunt-cli -g
 ```
