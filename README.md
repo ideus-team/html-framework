@@ -14,7 +14,7 @@ gem install compass
 ```
 If you get SSL error — foolow [this steps](https://gist.github.com/luislavena/f064211759ee0f806c88#manual-solution-to-ssl-issue).
 
-##3. Install [Node.js](https://nodejs.org/en/download/)
+##3. Install [Node.js](https://nodejs.org/en/download/stable/)
 Stable (latest features), Windows Installer 64-bit (needed for Grunt).
 
 ##4. Install Grunt
