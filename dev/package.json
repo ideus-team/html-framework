@@ -6,7 +6,6 @@
     "autoprefixer": "^6.3.6",
     "cssnano": "^3.5.2",
     "grunt": "^1.0.1",
-    "grunt-concurrent": "^2.3.0",
     "grunt-contrib-clean": "^1.0.0",
     "grunt-contrib-compass": "^1.1.1",
     "grunt-contrib-concat": "^1.0.0",
