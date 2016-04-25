@@ -144,6 +144,7 @@
 	        			</table>
 	        		</div>
 
+
 	        		<div class="b-sitemapTabs__title js-sitemapTabs__title -state_inactive -state_default">
 	        			<div class="b-sitemapTabs__titleText">FONTS</div>
 	        			<div class="b-sitemapTabs__arrow"></div>
