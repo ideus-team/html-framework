@@ -1,10 +1,10 @@
 <!doctype html>
-<html class="l-html -page_iDeusSitemap" lang="">
+<html class="l-html" lang="">
 	<head>
 	  <meta charset="utf-8" />
 	  <meta http-equiv="x-ua-compatible" content="ie=edge">
 
-	  <title>iDeus - Site Map</title>
+	  <title>Net-Craft - Site Map</title>
 	  <meta name="description" content="" />
 
 	  <!-- <meta property="og:image" content="<?php echo $BASE_URL; ?>/img/userfiles/og-image.png" /> -->
@@ -30,7 +30,7 @@
 	    <script>window.jQuery || document.write('<script src="assets/js/vendor/jquery-2.2.0.min.js"><\/script>')</script>
 	  <!--<![endif]-->
 	</head>
-	<body class="l-body -page_iDeusSitemap">
+	<body class="l-body">
 	  <!--[if lt IE 8]>
 	    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
 	  <![endif]-->
