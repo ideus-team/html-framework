@@ -38,12 +38,12 @@
       });
     </script>
 	</head>
-	<body class="l-body">
+	<body class="l-body -type_<?php echo $type; ?>">
 	  <!--[if lt IE 8]>
 	    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
 	  <![endif]-->
 
-	  <div class="l-sitemapWrapper -type_<?php echo $type; ?>">
+	  <div class="l-sitemapWrapper">
 	    <header class="l-sitemapHeader" role="banner">
 	      <div class="b-sitemapHeader">
 	        <div class="l-sitemapLogo">
@@ -60,7 +60,7 @@
 
 					<div class="l-clientLogo">
             <a class="b-clientLogo__link" itemprop="url" href="">
-              <img class="b-clientLogo__icon" src="assets/img/blocks/siteLogo/client-logo.png" alt="" title="" itemprop="logo" />
+              <img class="b-clientLogo__icon" src="assets/img/sitemap/client-logo.png" alt="" title="" itemprop="logo" />
             </a>
 	        </div>
 
