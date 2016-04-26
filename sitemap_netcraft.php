@@ -9,25 +9,25 @@
 
 	  <!-- <meta property="og:image" content="<?php echo $BASE_URL; ?>/img/userfiles/og-image.png" /> -->
 
-	  <meta name="viewport" content="width=1024px" />
+	  <meta name="viewport" content="width=1024" />
 	  
 	  <link rel="shortcut icon" href="favicon.ico" />
 	  <link rel="apple-touch-icon" href="apple-touch-icon.png" />
 
 	  <link rel="stylesheet" href="assets/css/main.min.css" />
-	  <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700|Roboto:400,100,100italic,300,300italic,400italic,500italic,500,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+	  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700|Roboto:400,100,100italic,300,300italic,400italic,500italic,500,700,700italic,900,900italic" />
 
 	  <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
 	  <script>window.Modernizr || document.write('<script src="assets/js/vendor/modernizr-2.8.3.min.js"><\/script>')</script>
 
 	  <!--[if lte IE 8]>
-	    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-	    <script>window.jQuery || document.write('<script src="assets/js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
+	    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.3/jquery.min.js"></script>
+	    <script>window.jQuery || document.write('<script src="assets/js/vendor/jquery-1.12.3.min.js"><\/script>')</script>
 	    <script src="js/legacy/ie8.js"></script>
 	  <![endif]-->
 	  <!--[if gte IE 9]><!-->
-	    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-	    <script>window.jQuery || document.write('<script src="assets/js/vendor/jquery-2.2.0.min.js"><\/script>')</script>
+	    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
+	    <script>window.jQuery || document.write('<script src="assets/js/vendor/jquery-2.2.3.min.js"><\/script>')</script>
 	  <!--<![endif]-->
 	</head>
 	<body class="l-body">
