@@ -2,10 +2,10 @@
 * @subsection Main Site Logo
 */
 .l-siteLogo {
+  overflow: hidden;
   float: left;
   width: 200px;
   height: 150px;
-  overflow: hidden;
 }
 .b-siteLogo {
   margin: 0;
