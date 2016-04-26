@@ -10,32 +10,32 @@
 
 /* Project files… */
 @import 'fonts';
-@import 'settings';
 @import 'sprites';
 
 /* Generated… */
 @import 'base64';
 
-/* Plugins */
-
+/* Config */
+$site-width: 980px;
 
 /* ==|== primary styles =====================================================
    Authors: Daria Kaidalova, Valery Bogdanov
    ========================================================================== */
 
-.l-body, .l-html {
+.l-body,
+.l-html {
   height: 100%;
 }
 
 
 /**
-* @section sitemapWrapper
+* @section wrapper
 */
-.l-sitemapWrapper {
+.l-wrapper {
   position: relative;
+  margin: 0;
   width: 100%;
   min-height: 100%;
-  margin: 0;
   background: #fff;
   color: #292929;
   font: 15px/1.3 $Roboto;
@@ -43,9 +43,9 @@
 
 
 /**
-* @section sitemapHeader
+* @section siteHeader
 */
-.l-sitemapHeader {
+.l-siteHeader {
   box-shadow: 1px 1px 5px rgba(0, 0, 0, .3);
 
   .l-body.-type_ideus & {
@@ -57,18 +57,17 @@
     border-bottom: 3px solid #3b6da3;
   }
 }
-
-.b-sitemapHeader {
-  max-width: $sitemap-width;
+.b-siteHeader {
+  max-width: $site-width;
   margin: 0 auto;
   padding: 38px 20px 42px;
 }
 
 
 /**
-* @section sitemapLogo
+* @section siteLogo
 */
-.l-sitemapLogo {
+.l-siteLogo {
   overflow: hidden;
 
   .l-body.-type_ideus & {
@@ -81,7 +80,7 @@
     height: 50px;
   }
 }
-.b-sitemapLogo {
+.b-siteLogo {
   margin: 0;
   padding: 0;
   width: 100%;
@@ -103,13 +102,13 @@
 
 
 /**
-* @section sitemapContent
+* @section content
 */
-.l-sitemapContent {
+.l-content {
   padding: 0 0 185px;
 }
-.b-sitemapContent {
-  max-width: $sitemap-width;
+.b-content {
+  max-width: $site-width;
   margin: 0 auto;
   padding: 40px 20px;
 }
@@ -135,9 +134,9 @@
 
 
 /**
-* @section sitemapLink
+* @section link
 */
-.b-sitemapLink {
+.b-link {
   color: inherit;
   text-decoration: underline;
 
@@ -151,22 +150,22 @@
 
 
 /**
-* @section sitemapButton
+* @section button
 */
-.b-sitemapButton {
+.b-button {
   position: relative;
-  min-width: 155px;
   display: inline-block;
-  padding: 11px 37px 8px 30px;
   box-sizing: border-box;
+  box-shadow: none;
+  padding: 11px 37px 8px 30px;
+  min-width: 155px;
   border-radius: 18px;
   background: #fff;
-  box-shadow: none;
   color: #292929;
   font-size: 14px;
-  text-transform: uppercase;
-  text-decoration: none;
   text-align: left;
+  text-decoration: none;
+  text-transform: uppercase;
   cursor: pointer;
 
   .l-body.-type_ideus & {
@@ -184,7 +183,7 @@
     display: block;
     width: 6px;
     height: 10px;
-    background: url('../img/sitemap/sitemapButton-ico.png') -21px 0 no-repeat;
+    background: url('../img/sitemap/button-btn.png') -21px 0 no-repeat;
     content: '';
   }
 
@@ -214,10 +213,11 @@
 
 
 /**
-* @section sitemapTabs
+* @section tabs
 */
-.l-sitemapTabs {}
-.b-sitemapTabs {
+.l-tabs {}
+.b-tabs {
+  $parent: &;
 
   &__title {
     @include clearfix;
@@ -255,8 +255,9 @@
   }
 
   &__titleText {
-    padding: 20px 0 15px 20px;
     float: left;
+    padding: 20px 0 15px 20px;
+    text-transform: uppercase;
   }
 
   &__arrow {
@@ -273,11 +274,11 @@
       display: block;
       width: 18px;
       height: 16px;
-      background: url('../img/sitemap/sitemapTabs__title-ico.png') -58px 0 no-repeat;
+      background: url('../img/sitemap/tabs__title-ico.png') -58px 0 no-repeat;
       content: '';
     }
 
-    .-state_active & {
+    #{$parent}__title.-state_active & {
       background: transparent;
 
       &:before {
@@ -294,6 +295,7 @@
       }
     }
   }
+
   &__content {
     padding: 20px 0 0;
     margin: 0 0 20px;
@@ -394,30 +396,27 @@
 }
 
 
-
-
-
 /**
-* @section sitemapFooter
+* @section siteFooter
 */
-.l-sitemapFooter {
+.l-siteFooter {
   position: absolute;
   bottom: 0;
   left: 0;
   right: 0;
 }
-.b-sitemapFooter {
-  max-width: $sitemap-width;
+.b-siteFooter {
+  max-width: $site-width;
   margin: 0 auto;
   padding: 20px;
 }
 
 
 /**
-* @section sitemapCopyright
+* @section siteCopyright
 */
-.l-sitemapCopyright {}
-.b-sitemapCopyright {
+.l-siteCopyright {}
+.b-siteCopyright {
   color: #c1c1c1;
   text-align: center;
   font-style: normal;
