@@ -55,7 +55,7 @@
     </header>
 
     <div class="l-content">
-      <main class="b-content" role="main">
+      <main class="l-contentText" role="main">
 
         <div class="l-clientLogo">
           <a class="b-clientLogo__link" itemprop="url" href="#">

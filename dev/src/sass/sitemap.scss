@@ -107,7 +107,12 @@ $site-width: 980px;
 .l-content {
   padding: 0 0 185px;
 }
-.b-content {
+
+
+/**
+* @section main
+*/
+.l-contentText {
   max-width: $site-width;
   margin: 0 auto;
   padding: 40px 20px;
