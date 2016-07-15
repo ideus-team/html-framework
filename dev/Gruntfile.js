@@ -54,6 +54,10 @@ module.exports = function(grunt) {
           sourceIMGFiles    : '<%= sourceIMGDir %>' + '/**/*.{png,jpg,gif,svg}',
           sourceBase64Files : '<%= sourceIMGDir %>' + '/base64/*.{png,jpg,gif,svg}',
 
+        // Temp
+          tempDir       : '.temp',
+          tempJS        : '<%= tempDir %>' + '/js/main.js',
+
         // Destination:
           // CSS
           destCSSDir    : '../assets/css', // generated css-files names taked from scss files in %sourceCSSDir

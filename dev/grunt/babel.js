@@ -4,8 +4,8 @@ module.exports = {
       presets: ['es2015']
     },
     files: [{
-      src: 'es5/scripts.js',
-      dest: '../assets/js/scripts.js',
+      src: '<%= tempJS %>',
+      dest: '<%= destJS %>',
     }]
   },
 };
