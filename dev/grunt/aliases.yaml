@@ -22,9 +22,6 @@ preprocess:
     - 'base64'
     - 'compass'
     - 'jshint'
-    - 'concat'
-    - 'babel'
-    - 'uglify'
 
 postprocess:
   description: 'All Postprocess tasks'
