@@ -107,9 +107,10 @@ var uaInfo = {
 	}
 }
 
-if (typeof html =='undefined') { 
-	html=document.documentElement;
-}
+var html = document.documentElement;
+// if (html && typeof html === 'undefined') { 
+// 	html=document.documentElement;
+// }
 
 var screenInfo = {
 	width : (window.outerWidth || html.clientWidth) - 15,
