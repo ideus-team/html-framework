@@ -26,6 +26,7 @@ module.exports = function(grunt) {
       gruntPluginsSettings: [
         '<%= csslint.options.csslintrc %>',
         '<%= jshint.options.jshintrc %>',
+        '<%= jscs.options.config %>',
       ],
 
       // Compile:
