@@ -10,7 +10,7 @@
   <!-- <meta property="og:image" content="<?php echo $BASE_URL; ?>/img/userfiles/og-image.png" /> -->
 
   <meta name="viewport" content="width=1024" />
-  
+
   <link rel="shortcut icon" href="favicon.ico" />
   <link rel="apple-touch-icon" href="apple-touch-icon.png" />
 
@@ -189,7 +189,7 @@
 
     <footer class="l-siteFooter" role="contentinfo">
       <div class="b-siteFooter">
-     
+
         <address class="l-siteCopyright vcard" itemscope itemtype="http://schema.org/Organization">
           <div class="b-siteCopyright">
             <a rel="me" itemprop="name" class="b-siteCopyright__link fn n org url work" href="<?php echo $link; ?>"><?php echo $company; ?></a>. All rights reserved.
