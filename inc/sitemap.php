@@ -26,8 +26,8 @@
     <script src="js/legacy/ie8.js"></script>
   <![endif]-->
   <!--[if gte IE 9]><!-->
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="assets/js/vendor/jquery-2.2.3.min.js"><\/script>')</script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="assets/js/vendor/jquery-3.1.0.min.js"><\/script>')</script>
   <!--<![endif]-->
 
   <script>
