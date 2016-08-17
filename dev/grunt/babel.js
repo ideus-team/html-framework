@@ -3,9 +3,9 @@ module.exports = {
     options: {
       presets: ['es2015']
     },
-    files: [{
+    files: {
       src: 'es5/scripts.js',
       dest: '../assets/js/scripts.js',
-    }]
+    }
   },
 };
