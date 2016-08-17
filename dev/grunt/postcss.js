@@ -11,11 +11,9 @@ module.exports = {
         // add vendor prefixes
         browsers: [
           'last 3 version',
-          'ie 8',
-          'ff 3.6',
-          'opera 11.1',
-          'ios 4',
-          'android 2.3',
+          'ie >= 10',
+          'iOS 4',
+          'Android 2.3',
         ],
       }),
 

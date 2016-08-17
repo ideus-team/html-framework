@@ -26,6 +26,7 @@ module.exports = function(grunt) {
       gruntPluginsSettings: [
         '<%= csslint.options.csslintrc %>',
         '<%= jshint.options.jshintrc %>',
+        '<%= jscs.options.config %>',
       ],
 
       // Compile:
@@ -53,6 +54,10 @@ module.exports = function(grunt) {
           sourceIMGDir      : 'src/img',
           sourceIMGFiles    : '<%= sourceIMGDir %>' + '/**/*.{png,jpg,gif,svg}',
           sourceBase64Files : '<%= sourceIMGDir %>' + '/base64/*.{png,jpg,gif,svg}',
+
+        // Temp
+          tempDir       : '.temp',
+          tempJS        : '<%= tempDir %>' + '/js/main.js',
 
         // Destination:
           // CSS
