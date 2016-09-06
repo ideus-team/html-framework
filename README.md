@@ -4,7 +4,7 @@ Our HTML Framework based on H5BP+Grunt+SASS.
 Instalation procedure is similar for Win/Mac/Linux.
 
 ##1. Install [Ruby](http://rubyinstaller.org/downloads/)
-Ruby __2.2.X__ x64 installer (needed for SASS (grunt-contrib-sass).
+Ruby __2.3.X__ x64 installer (needed for SASS (grunt-contrib-sass).
  - Select __„Add Ruby executables to your PATH“__.
 
 ##2. Install SASS+Compass
