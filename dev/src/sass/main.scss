@@ -29,13 +29,14 @@
 /* Project only code */
 @import 'blocks/common';
 @import 'blocks/b-text';
-@import 'blocks/l-siteHeader';
-@import 'blocks/l-siteLogo';
-@import 'blocks/l-siteSearch';
-@import 'blocks/l-siteNavigation';
-@import 'blocks/l-siteFooter';
-@import 'blocks/l-siteNavigationBottom';
-@import 'blocks/l-siteCopyright';
+
+@import 'blocks/b-siteHeader';
+@import 'blocks/b-siteLogo';
+@import 'blocks/b-siteSearch';
+@import 'blocks/b-siteNavigation';
+@import 'blocks/b-siteFooter';
+@import 'blocks/b-siteNavigationBottom';
+@import 'blocks/b-siteCopyright';
 @import 'blocks/b-developerCopyright';
 
 
