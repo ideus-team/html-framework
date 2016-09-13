@@ -2,6 +2,8 @@
 * @section b-text
 */
 .b-text {
+  @include clearfix;
+
   h1, h2, h3, h4, h5, h6, p, ul, ol, dl, blockquote {
     margin: 1em 0;
     @include first-last-margin;
