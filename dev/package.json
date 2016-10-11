@@ -25,10 +25,7 @@
     "pixrem": "^3.0.1",
     "time-grunt": "^1.4.0"
   },
-  "dependencies": {
-    "grunt-concurrent": "^2.3.1",
-    "grunt-newer": "^1.2.0"
-  },
+  "dependencies": {},
   "scripts": {},
   "author": {
     "name": "iDeus",
