@@ -22,6 +22,10 @@
   "gradients": false,
   "duplicate-properties": false,
 
+  // Temp rules for csslint 2.0.0
+  "known-properties": false,
+  "order-alphabetical": false,
+
   "unqualified-attributes": false,
   "outline-none": false,
   "compatible-vendor-prefixes": false,
