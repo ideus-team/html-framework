@@ -12,7 +12,7 @@ Ruby __2.3.X__ x64 installer (needed for SASS (grunt-contrib-sass).
 gem install sass
 gem install compass
 ```
-If you get SSL error — foolow [this steps](https://gist.github.com/luislavena/f064211759ee0f806c88#manual-solution-to-ssl-issue).
+If you get SSL error — follow [this steps](https://gist.github.com/luislavena/f064211759ee0f806c88#manual-solution-to-ssl-issue).
 
 ##3. Install [Node.js](https://nodejs.org/en/download/current/)
 Current (latest features), Windows Installer 64-bit (needed for Grunt).
