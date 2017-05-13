@@ -32,3 +32,36 @@ Start Grunt with `dev\start.cmd` or execute in shell:
 grunt prod
 grunt watch
 ```
+
+## Use CSS-sprites
+
+Put PNG images (e.g. `file1.png` & `file2.png`) into `dev\src\img\sprites\` & use this example:
+
+```scss
+.b-icon {
+  &.-icon_file1 {
+    @include sprite($file1);
+  }
+  &.-icon_file2 {
+    @include sprite($file2);
+  }
+}
+```
+
+Generated code will look like this:
+
+```css
+.b-icon.-icon_file1 {
+  background-image: url(../img/spritesheet.png);
+  background-position: 0px 0px;
+  width: 28px;
+  height: 28px;
+}
+
+.b-icon.-icon_file2 {
+  background-image: url(../img/spritesheet.png);
+  background-position: -28px 0px;
+  width: 28px;
+  height: 28px;
+}
+```
