@@ -1,7 +1,7 @@
 module.exports = {
   main: {
-    src: 'src/img/sprites/*.png',
-    dest: 'src/img/spritesheet.png',
-    destCss: 'src/sass/_sprites.scss',
+    src: '<%= sourceIMGDir %>' + '/sprites/*.png',
+    dest: '<%= sourceIMGDir %>' + '/spritesheet.png',
+    destCss: '<%= sourceCSSDir %>' + '/_sprites.scss',
   },
 };
