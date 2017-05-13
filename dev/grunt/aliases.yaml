@@ -20,7 +20,7 @@ preprocess:
   description: 'All Preprocess tasks'
   tasks:
     - 'base64'
-    - 'compass'
+    - 'sass'
     - 'jshint'
     - 'jscs'
 
@@ -44,7 +44,7 @@ merge:
 css:
   description: 'CSS Tasks'
   tasks:
-    - 'compass'
+    - 'sass'
     - 'csslint'
     - 'postcss'
 
