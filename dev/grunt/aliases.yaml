@@ -19,6 +19,7 @@ base64:
 preprocess:
   description: 'All Preprocess tasks'
   tasks:
+    - 'sprite'
     - 'base64'
     - 'sass'
     - 'jshint'
@@ -60,5 +61,6 @@ js:
 img:
   description: 'Image tasks'
   tasks:
+    - 'sprite'
     - 'base64'
     - 'imagemin'

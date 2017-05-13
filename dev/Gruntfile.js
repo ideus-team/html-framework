@@ -7,7 +7,11 @@ module.exports = function(grunt) {
 
   require('time-grunt')(grunt);
   require('load-grunt-config')(grunt, {
-    jitGrunt: true,
+    jitGrunt: {
+      staticMappings: {
+        sprite: 'grunt-spritesmith',
+      },
+    },
 
     data: {
       // Data passed into config.  Can use with <%= test %>
