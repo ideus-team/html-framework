@@ -22,9 +22,12 @@
   "gradients": false,
   "duplicate-properties": false,
 
-  // Temp rules for csslint 2.0.0
+  // Rules for csslint 2.0.0
   "known-properties": false,
   "order-alphabetical": false,
+
+  // Rules for grunt-spritesmith
+  "zero-units": false,
 
   "unqualified-attributes": false,
   "outline-none": false,
