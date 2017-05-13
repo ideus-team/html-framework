@@ -1,5 +1,7 @@
 # HTML Framework
 Our HTML Framework based on H5BP+Grunt+SASS.
+* [How to install and run](#how-to-install-and-run)
+* [Use CSS-sprites](#use-css-sprites)
 
 ## How to install and run
 Instalation procedure is similar for Win/Mac/Linux.
