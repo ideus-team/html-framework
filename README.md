@@ -1,29 +1,33 @@
-# How to install and run HTML Framework
+# HTML Framework
 Our HTML Framework based on H5BP+Grunt+SASS.
 
+## How to install and run
 Instalation procedure is similar for Win/Mac/Linux.
 
-## 1. Install [Node.js](https://nodejs.org/en/download/current/)
+### 1. Install [Node.js](https://nodejs.org/en/download/current/)
 Current (latest features), Windows Installer 64-bit (needed for Grunt).
 
-## 2. Install Grunt
+### 2. Install Grunt
 Run cmd as administrator and execute:
-```
+
+```shell
 npm install grunt-cli -g
 ```
 
-## 3. Get Framework
+### 3. Get Framework
 Git Clone:
 - URL: https://github.com/ideus-team/html-framework.git
 
-## 4. Install
+### 4. Install
 Once run `dev\install.cmd` or execute in shell:
+
 ```shell
 npm install --save-dev
 ```
 
-## 5. Run
+### 5. Run
 Start Grunt with `dev\start.cmd` or execute in shell:
+
 ```shell
 grunt prod
 grunt watch
