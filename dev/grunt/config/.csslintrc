@@ -27,6 +27,7 @@
   "order-alphabetical": false,
 
   // Rules for grunt-spritesmith
+  "duplicate-background-images": false,
   "zero-units": false,
 
   "unqualified-attributes": false,
