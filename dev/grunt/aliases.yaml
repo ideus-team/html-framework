@@ -11,6 +11,14 @@ prod:
     - js
     - img
 
+dev:
+  description: 'Development build'
+  tasks:
+    - clean
+    - css
+    - devjs
+    - img
+
 css:
   description: 'CSS Tasks'
   tasks:
@@ -26,6 +34,14 @@ js:
     - 'concat'
     - 'babel'
     - 'uglify'
+
+devjs:
+  description: 'Development JS Tasks'
+  tasks:
+    - 'jshint'
+    - 'jscs'
+    - 'concat'
+    - 'babel'
 
 img:
   description: 'Image tasks'
