@@ -7,40 +7,9 @@ prod:
   description: 'Production build'
   tasks:
     - clean
-    - preprocess
-    - postprocess
-    - merge
-
-base64:
-  description: 'Base64 task'
-  tasks:
-    - 'datauri'
-
-preprocess:
-  description: 'All Preprocess tasks'
-  tasks:
-    - 'sprite'
-    - 'base64'
-    - 'sass'
-    - 'jshint'
-    - 'jscs'
-
-postprocess:
-  description: 'All Postprocess tasks'
-  tasks:
-    - 'csslint'
-    - 'postcss'
-    - 'imagemin'
-
-merge:
-  description: 'All Merge tasks'
-  tasks:
-    - 'concat'
-    - 'babel'
-    - 'uglify'
-
-
-
+    - css
+    - js
+    - img
 
 css:
   description: 'CSS Tasks'
@@ -62,5 +31,5 @@ img:
   description: 'Image tasks'
   tasks:
     - 'sprite'
-    - 'base64'
+    - 'datauri'
     - 'imagemin'
