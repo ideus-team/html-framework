@@ -21,14 +21,14 @@ Git Clone:
 - URL: https://github.com/ideus-team/html-framework.git
 
 ### 4. Install
-Once run `dev\install.cmd` or execute in shell:
+Once run `dev\_install.cmd` or execute in shell:
 
 ```shell
 npm install --save-dev
 ```
 
 ### 5. Run
-Start Grunt with `dev\start.cmd` or execute in shell:
+Start Grunt with `dev\_start.cmd` or execute in shell:
 
 ```shell
 grunt prod
