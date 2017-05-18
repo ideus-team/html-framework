@@ -1,3 +1,3 @@
 @echo off
 call grunt
-call grunt watch
+call grunt concurrent:main

@@ -33,6 +33,15 @@ module.exports = {
     ],
   },
 
+  devscripts: {
+    files: [
+      '<%= sourceJSFiles %>',
+    ],
+    tasks: [
+      'devjs',
+    ],
+  },
+
   styles: {
     files: [
       '<%= sourceCSSFiles %>',
