@@ -19,6 +19,7 @@
     "grunt-contrib-watch": "^1.0.0",
     "grunt-datauri": "^0.4.0",
     "grunt-jscs": "^3.0.1",
+    "grunt-notify": "^0.4.5",
     "grunt-postcss": "^0.8.0",
     "grunt-sass": "^2.0.0",
     "grunt-shell": "^2.1.0",
