@@ -59,4 +59,13 @@ module.exports = {
       'img',
     ],
   },
+
+  devimages: {
+    files: [
+      '<%= sourceIMGFiles %>',
+    ],
+    tasks: [
+      'devimg',
+    ],
+  },
 };

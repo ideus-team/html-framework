@@ -17,7 +17,7 @@ module.exports = {
       'watch:configs',
       'watch:devscripts',
       'watch:styles',
-      'watch:images',
+      'watch:devimages',
     ],
   },
 };

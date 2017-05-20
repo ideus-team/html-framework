@@ -17,7 +17,7 @@ dev:
     - clean
     - css
     - devjs
-    - img
+    - devimg
 
 css:
   description: 'CSS Tasks'
@@ -49,3 +49,10 @@ img:
     - 'sprite'
     - 'datauri'
     - 'imagemin'
+
+devimg:
+  description: 'Image tasks'
+  tasks:
+    - 'sprite'
+    - 'datauri'
+    - 'copy'
