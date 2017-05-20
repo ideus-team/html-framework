@@ -1,6 +1,6 @@
     </div><!--content-->
 
-    <footer class="l-siteFooter" role="contentinfo">
+    <footer class="l-siteFooter">
       <div class="b-siteFooter">
         <div class="l-siteNavigationBottom" role="navigation">
           <ul class="b-bottomNavigation">

@@ -37,7 +37,7 @@
   <![endif]-->
 
   <div class="l-wrapper">
-    <header class="l-siteHeader" role="banner">
+    <header class="l-siteHeader">
       <div class="b-siteHeader">
         <div class="l-siteLogo">
           <a class="b-siteLogo__link" itemprop="url">
@@ -48,7 +48,7 @@
     </header>
 
     <div class="l-content">
-      <main class="l-contentText" role="main">
+      <main class="l-contentText">
 
         <div class="l-clientLogo">
           <a class="b-clientLogo__link" itemprop="url" href="#">
@@ -180,7 +180,7 @@
       </main>
     </div><!--content-->
 
-    <footer class="l-siteFooter" role="contentinfo">
+    <footer class="l-siteFooter">
       <div class="b-siteFooter">
 
         <address class="l-siteCopyright vcard" itemscope itemtype="http://schema.org/Organization">

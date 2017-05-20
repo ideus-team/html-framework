@@ -70,7 +70,7 @@
   <![endif]-->
 
   <div class="l-wrapper">
-    <header class="l-siteHeader" role="banner">
+    <header class="l-siteHeader">
       <div class="b-siteHeader">
         <div class="l-siteLogo">
           <?php
@@ -94,7 +94,7 @@
           </form>
         </div>
 
-        <nav class="l-siteNavigation" role="navigation">
+        <nav class="l-siteNavigation">
           <ul class="b-mainNavigation">
             <li class="b-mainNavigation__item<?php echo ($uri=='home')?' -state_current':''; ?>">
               <a class="b-mainNavigation__link" href="index.html">Home</a>
