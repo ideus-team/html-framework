@@ -5,8 +5,6 @@ module.exports = function(grunt) {
 
   });
 
-  grunt.loadNpmTasks('grunt-notify');
-
   require('time-grunt')(grunt);
   require('load-grunt-config')(grunt, {
     jitGrunt: {
