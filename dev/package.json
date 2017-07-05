@@ -29,6 +29,12 @@
     "time-grunt": "^1.4.0"
   },
   "dependencies": {},
+  "browserslist": [
+    "last 3 version",
+    "ie >= 10",
+    "iOS 4",
+    "Android 2.3"
+  ],
   "scripts": {},
   "author": {
     "name": "iDeus",

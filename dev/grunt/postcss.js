@@ -7,15 +7,7 @@ module.exports = {
     processors: [
       require('pixrem')(), // add fallbacks for rem units
 
-      require('autoprefixer')({
-        // add vendor prefixes
-        browsers: [
-          'last 3 version',
-          'ie >= 10',
-          'iOS 4',
-          'Android 2.3',
-        ],
-      }),
+      require('autoprefixer')(),
 
       require('cssnano')({
         convertValues: false,
