@@ -4,7 +4,7 @@ module.exports = {
   },
 
   main: [
-    '../assets/css/',
-    '../assets/img/',
+    '<%= destCSSDir %>',
+    '<%= destIMGDir %>',
   ],
 };
