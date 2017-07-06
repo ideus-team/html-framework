@@ -6,7 +6,7 @@ module.exports = {
       usePlaceholder: true,
       variables: false,
     },
-    src: ['<%= sourceBase64Files %>'],
-    dest: ['<%= sourceCSSBase64 %>'],
+    src: '<%= sourceBase64Files %>',
+    dest: '<%= sourceCSSBase64 %>',
   },
 };

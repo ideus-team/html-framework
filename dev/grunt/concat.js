@@ -4,9 +4,7 @@ module.exports = {
   },
 
   main: {
-    src: [
-      '<%= sourceJSFiles %>',
-    ],
+    src: '<%= sourceJSFiles %>',
     dest: '<%= tempJS %>',
   },
 };
