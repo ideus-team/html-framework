@@ -4,6 +4,6 @@ module.exports = {
   },
 
   src: [
-    '<%= destCSS %>',
+    '<%= destCSSDir %>' + '/*' + '<%= destCSSExt %>',
   ],
 };

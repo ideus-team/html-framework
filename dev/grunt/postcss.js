@@ -17,8 +17,12 @@ module.exports = {
   },
 
   main: {
-    files: {
-      '<%= destMinCSS %>' : '<%= destCSS %>',
-    },
+    files: [{
+      expand: true,
+      cwd: '<%= destCSSDir %>',
+      src: '*' + '<%= destCSSExt %>',
+      dest: '<%= destCSSDir %>',
+      ext: '<%= destMinCSSExt %>',
+    }],
   },
 };
