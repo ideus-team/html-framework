@@ -3,5 +3,8 @@
 error_log
 Thumbs.db
 .idea
+
+# Remove this before passing the layout to the PHP department!
 assets/css/*
 assets/img/*
+assets/js/scripts.js
