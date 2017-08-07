@@ -28,11 +28,20 @@ npm install --save-dev
 ```
 
 ### 5. Run
+#### Dev
+Start Grunt with `dev\_dev.cmd` or execute in shell:
+
+```shell
+grunt dev
+grunt concurrent:dev
+```
+
+#### Prod
 Start Grunt with `dev\_start.cmd` or execute in shell:
 
 ```shell
-grunt prod
-grunt watch
+grunt
+grunt concurrent:main
 ```
 
 ## Use CSS-sprites
