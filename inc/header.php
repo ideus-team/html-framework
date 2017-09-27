@@ -6,33 +6,11 @@
   }
   $BASE_URL = $protocol . $_SERVER['SERVER_NAME'] . dirname($_SERVER['PHP_SELF']);
 
-  require_once 'inc/vendor/Mobile_Detect.php';
-  $detect = new Mobile_Detect();
-
-  $device = (!$detect->isMobile()) ? 'desktop' : ($detect->isTablet() ? 'tablet' : 'mobile');
-
-  $device = (isset($_COOKIE['device']) && $_COOKIE['device']) ? $_COOKIE['device'] : $device;
-
-  switch ($device) {
-    case 'mobile':
-      $viewport     = '1024px';
-      $viewportMeta = '1024';
-      break;
-    case 'tablet':
-      $viewport     = 'device-width';
-      $viewportMeta = 'device-width';
-      break;
-    case 'desktop':
-    default:
-      $viewport     = 'device-width';
-      $viewportMeta = 'device-width';
-      break;
-  }
   $isHomepage = (basename($_SERVER['PHP_SELF']) == 'index.php');
   $title = ($isHomepage) ? $siteName : $pageName.' : '.$siteName;
 ?>
 <!doctype html>
-<html class="l-html -device_<?php echo $device; ?> no-js" lang="">
+<html class="l-html no-js" lang="">
 <head>
   <meta charset="utf-8" />
   <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -42,13 +20,13 @@
 
   <!-- <meta property="og:image" content="<?php echo $BASE_URL; ?>/img/userfiles/og-image.png" /> -->
 
-  <meta name="viewport" content="width=<?php echo $viewportMeta; ?>" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
   <style>
     @-ms-viewport {
-      width: <?php echo $viewport; ?>;
+      width: device-width;
     }
     @viewport {
-      width: <?php echo $viewport; ?>;
+      width: device-width;
     }
   </style>
 
@@ -75,7 +53,6 @@
         <div class="l-siteLogo">
           <?php
             $siteLogo__iconURL = 'assets/img/blocks/siteLogo/siteLogo-logo.png';
-            //$siteLogo__iconURL = ($device=='mobile') ? 'assets/img/blocks/siteLogo/siteLogo-logo-mobile.png' : 'assets/img/blocks/siteLogo/siteLogo-logo.png';
             $siteLogo__tag  = ($isHomepage) ? 'h1' : 'div';
             $siteLogo__link = ($isHomepage) ? '' : ' href="index.html"';
           ?>
