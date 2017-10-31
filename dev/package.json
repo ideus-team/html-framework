@@ -3,7 +3,7 @@
   "version": "1.7.4",
   "description": "Our HTML5 boilerplate",
   "devDependencies": {
-    "autoprefixer": "7.1.4",
+    "autoprefixer": "7.1.6",
     "babel-core": "6.26.0",
     "babel-preset-es2015": "6.24.1",
     "cssnano": "3.10.0",
