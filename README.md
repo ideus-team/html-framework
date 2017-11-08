@@ -7,7 +7,7 @@ Our HTML Framework based on H5BP+Grunt+SASS.
 Instalation procedure is similar for Win/Mac/Linux.
 
 ### 1. Install [Node.js](https://nodejs.org/en/download/current/)
-Current (latest features), Windows Installer 64-bit (needed for Grunt).
+LTS (Recommended For Most Users), Windows Installer 64-bit (needed for Grunt).
 
 ### 2. Install Grunt
 Run cmd as administrator and execute:
