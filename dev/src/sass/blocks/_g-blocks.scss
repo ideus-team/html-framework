@@ -1,12 +1,12 @@
 /*
  * Image replacement
-.g-ir
+ * .g-ir
 
-Add the `.g-ir` class to any element you are applying image-replacement to. When
-replacing an element's content with an image, make sure to also set a specific
-`background-image: url(pathtoimage.png);`, `width`, and `height` so that your
-replacement image appears.
-*/
+ * Add the `.g-ir` class to any element you are applying image-replacement to. When
+ * replacing an element's content with an image, make sure to also set a specific
+ * `background-image: url(pathtoimage.png);`, `width`, and `height` so that your
+ * replacement image appears.
+ */
 .g-ir {
   text-indent: 100%;
   white-space: nowrap;
@@ -16,7 +16,7 @@ replacement image appears.
 
 /*
  * Telephone number
-*/
+ */
 .g-tel {
   color: inherit;
   cursor: default;
@@ -34,7 +34,7 @@ replacement image appears.
 
 /*
  * Overlay with loading icon
-*/
+ */
 .g-loading {
   position: relative;
 

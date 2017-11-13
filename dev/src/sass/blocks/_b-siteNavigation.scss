@@ -1,6 +1,6 @@
 /**
-* @subsection Main Site Nav
-*/
+ * @section siteNavigation
+ */
 .l-siteNavigation {
   clear: both;
   width: 100%;
@@ -25,6 +25,7 @@
 
     }
   }
+
   &__link {
     @include hover-underline;
     display: block;

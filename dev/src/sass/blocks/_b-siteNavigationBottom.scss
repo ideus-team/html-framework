@@ -1,6 +1,6 @@
 /**
-* @section Site Navigation Bottom
-*/
+ * @section siteNavigationBottom
+ */
 .l-siteNavigationBottom {
 
 }
@@ -16,6 +16,7 @@
 
     }
   }
+
   &__link {
     @include hover-underline;
     color: inherit;
