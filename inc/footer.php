@@ -18,19 +18,19 @@
     </footer>
   </div><!--wrapper-->
 
+  <script src="js/vendor/modernizr-3.5.0.min.js"></script>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script>window.jQuery || document.write('<script src="assets/js/vendor/jquery-3.2.1.min.js"><\/script>')</script>
+
   <script src="assets/js/scripts.js?<?php echo filemtime('assets/js/scripts.js'); ?>"></script>
   <!--<script src="assets/js/scripts-extra.js?<?php echo filemtime('assets/js/scripts-extra.js'); ?>"></script>-->
 
-  <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
   <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-    ga('create', 'UA-XXXXX-X', 'auto');
-    ga('send', 'pageview');
+    window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
+    ga('create','UA-XXXXX-Y','auto');ga('send','pageview')
   </script>
-  <!-- End Google Analytics -->
+  <script src="https://www.google-analytics.com/analytics.js" async defer></script>
 </body>
 </html>

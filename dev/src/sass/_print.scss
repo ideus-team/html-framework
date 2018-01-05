@@ -38,6 +38,9 @@
         content: "";
     }
 
+    pre {
+        white-space: pre-wrap !important;
+    }
     pre,
     blockquote {
         border: 1px solid #999;
@@ -56,10 +59,6 @@
     tr,
     img {
         page-break-inside: avoid;
-    }
-
-    img {
-        max-width: 100% !important;
     }
 
     p,
