@@ -2,6 +2,7 @@
 Our HTML Framework based on H5BP+Grunt+SASS.
 * [How to install and run](#how-to-install-and-run)
 * [Use CSS-sprites](#use-css-sprites)
+  * [CSS-sprites with retina support](#css-sprites-with-retina-support)
 
 ## How to install and run
 Instalation procedure is similar for Win/Mac/Linux.
@@ -77,6 +78,8 @@ Generated code will look like this:
   height: 28px;
 }
 ```
+
+### CSS-sprites with retina support
 
 For retina support you need uncomment some lines in `dev/grunt/sprite.js`, use additional images (e.g. `file1@2x.png` & `file2@2x.png`) & this example:
 
