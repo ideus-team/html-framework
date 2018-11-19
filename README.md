@@ -53,6 +53,7 @@ Put PNG images (e.g. `file1.png` & `file2.png`) into `dev\src\img\sprites\` & us
   &.-icon_file1 {
     @include sprite($file1);
   }
+
   &.-icon_file2 {
     @include sprite($file2);
   }
@@ -74,5 +75,49 @@ Generated code will look like this:
   background-position: -28px 0px;
   width: 28px;
   height: 28px;
+}
+```
+
+For retina support you need uncomment some lines in `dev/grunt/sprite.js`, use additional images (e.g. `file1@2x.png` & `file2@2x.png`) & this example:
+
+```scss
+.b-icon {
+  &.-icon_file1 {
+    @include retina-sprite($file1-group);
+  }
+
+  &.-icon_file2 {
+    @include retina-sprite($file2-group);
+  }
+}
+```
+
+Generated code will look like this:
+
+```css
+.b-icon.-icon_file1 {
+  background-image: url(../img/spritesheet.png);
+  background-position: 0px 0px;
+  width: 28px;
+  height: 28px;
+}
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .b-icon.-icon_file1 {
+    background-image: url(../img/spritesheet@2x.png);
+    background-size: 56px 28px;
+  }
+}
+
+.b-icon.-icon_file2 {
+  background-image: url(../img/spritesheet.png);
+  background-position: -28px 0px;
+  width: 28px;
+  height: 28px;
+}
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .b-icon.-icon_file2 {
+    background-image: url(../img/spritesheet@2x.png);
+    background-size: 56px 28px;
+  }
 }
 ```

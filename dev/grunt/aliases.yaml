@@ -7,17 +7,17 @@ prod:
   description: 'Production build'
   tasks:
     - clean
+    - img
     - css
     - js
-    - img
 
 dev:
   description: 'Development build'
   tasks:
     - clean
+    - devimg
     - css
     - devjs
-    - devimg
 
 css:
   description: 'CSS Tasks'
