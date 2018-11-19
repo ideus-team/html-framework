@@ -78,6 +78,8 @@ Generated code will look like this:
 }
 ```
 
+## CSS-sprites with retina support
+
 For retina support you need uncomment some lines in `dev/grunt/sprite.js`, use additional images (e.g. `file1@2x.png` & `file2@2x.png`) & this example:
 
 ```scss
