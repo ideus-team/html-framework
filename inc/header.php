@@ -48,13 +48,12 @@
       <div class="b-siteHeader">
         <div class="l-siteLogo">
           <?php
-            $siteLogo__iconURL = 'assets/img/blocks/siteLogo/siteLogo-logo.png';
             $siteLogo__tag  = ($isHomepage) ? 'h1' : 'div';
             $siteLogo__link = ($isHomepage) ? '' : ' href="index.html"';
           ?>
           <<?php echo $siteLogo__tag; ?> class="b-siteLogo" itemscope itemtype="http://schema.org/Organization">
             <a class="b-siteLogo__link"<?php echo $siteLogo__link; ?> itemprop="url">
-              <img class="b-siteLogo__icon" src="<?php echo $siteLogo__iconURL; ?>" alt="<?php echo $siteName; ?>" title="<?php echo $siteName; ?>" itemprop="logo" />
+              <img class="b-siteLogo__icon" src="assets/img/blocks/siteLogo/siteLogo-logo.png" alt="<?php echo $siteName; ?>" title="<?php echo $siteName; ?>" itemprop="logo" />
             </a>
           </<?php echo $siteLogo__tag; ?>>
         </div>
