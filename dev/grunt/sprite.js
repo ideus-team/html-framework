@@ -6,6 +6,5 @@ module.exports = {
 
     // retinaSrcFilter: ['<%= sourceIMGDir %>' + '/sprites/*@2x.png'],
     // retinaDest: '<%= sourceIMGDir %>' + '/spritesheet@2x.png',
-    // destCss: '<%= sourceCSSDir %>' + '/_sprites.scss',
   },
 };
