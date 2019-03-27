@@ -33,7 +33,7 @@
   "dependencies": {},
   "scripts": {
     "start-dev": "call grunt dev && call grunt concurrent:dev",
-    "start": "call grunt && call grunt concurrent:main",
+    "start": "call grunt && call grunt concurrent:main"
   },
   "author": {
     "name": "iDeus",
