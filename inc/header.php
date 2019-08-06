@@ -66,7 +66,7 @@
           </form>
         </div>
 
-        <nav class="l-siteNavigation">
+        <nav class="l-mainNavigation">
           <ul class="b-mainNavigation">
             <li class="b-mainNavigation__item<?php echo ($uri=='home')?' -state_current':''; ?>">
               <a class="b-mainNavigation__link" href="index.html">Home</a>
