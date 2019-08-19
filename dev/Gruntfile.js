@@ -55,9 +55,10 @@ module.exports = function(grunt) {
           ],
 
           // IMG
+          sourceIMGFormats  : '.{png,jpg,gif,svg,webp}',
           sourceIMGDir      : 'src/img',
-          sourceIMGFiles    : '<%= sourceIMGDir %>' + '/**/*.{png,jpg,gif,svg}',
-          sourceBase64Files : '<%= sourceIMGDir %>' + '/base64/*.{png,jpg,gif,svg}',
+          sourceIMGFiles    : '<%= sourceIMGDir %>' + '/**/*' + '<%= sourceIMGFormats %>',
+          sourceBase64Files : '<%= sourceIMGDir %>' + '/base64/*' + '<%= sourceIMGFormats %>',
 
         // Temp
           tempDir       : '.temp',
