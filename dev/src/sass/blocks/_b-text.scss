@@ -35,6 +35,10 @@
 
   a {
     @include underline-hover;
+
+    &[href ^= tel] {
+      @include tel;
+    }
   }
 
   img {
