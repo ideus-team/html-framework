@@ -15,10 +15,12 @@
 
 @mixin clearfix {
   &:before,
+
   &:after {
     content: " ";
     display: table;
   }
+
   &:after {
     clear: both;
   }
@@ -77,6 +79,7 @@
 
 @mixin hover-underline {
   text-decoration: none;
+
   &:hover {
     text-decoration: underline;
   }
@@ -84,6 +87,7 @@
 
 @mixin underline-hover {
   text-decoration: underline;
+
   &:hover {
     text-decoration: none;
   }
@@ -93,8 +97,19 @@
   &:first-child {
     margin-top: 0;
   }
+
   &:last-child {
     margin-bottom: 0;
+  }
+}
+
+@mixin first-last-hor-margin {
+  &:first-child {
+    margin-left: 0;
+  }
+
+  &:last-child {
+    margin-right: 0;
   }
 }
 
