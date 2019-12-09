@@ -8,7 +8,6 @@
 .b-siteCopyright {
   margin: 15px 0;
   @include first-last-margin;
-  text-transform: uppercase;
 
   &__link {
     @include hover-underline;
