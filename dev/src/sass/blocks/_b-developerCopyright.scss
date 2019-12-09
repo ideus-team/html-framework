@@ -4,7 +4,7 @@
 .b-developerCopyright {
 
   &__link {
-    @include hover-underline;
     color: inherit;
+    @include hover-underline;
   }
 }
