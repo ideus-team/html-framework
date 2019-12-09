@@ -12,7 +12,7 @@
 
         <address class="l-siteCopyright vcard" itemscope itemtype="http://schema.org/Organization">
           <div class="b-siteCopyright">© <?php echo date('Y'); ?> <a rel="me" itemprop="name" class="b-siteCopyright__link fn n org url work" href="<?php echo "http://".$_SERVER['HTTP_HOST']; ?>">%clientName%</a>. Все права защищены</div>
-          <div class="b-developerCopyright">Разработано в <a rel="friend" class="b-developerCopyright__link" href="https://ideus.biz/" target="_blank">iDeus</a></div>
+          <div class="b-developerCopyright">Разработано в <a class="b-developerCopyright__link" href="https://ideus.biz/" rel="friend" target="_blank">iDeus</a></div>
         </address>
       </div>
     </footer>
