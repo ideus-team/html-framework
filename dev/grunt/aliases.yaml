@@ -23,7 +23,6 @@ css:
   description: 'CSS Tasks'
   tasks:
     - 'sass'
-    - 'csslint'
     - 'postcss'
 
 js:

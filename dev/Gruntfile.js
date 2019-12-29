@@ -28,7 +28,6 @@ module.exports = function(grunt) {
         /* Grunt tasks    */ 'grunt/*.js',
       ],
       gruntPluginsSettings: [
-        '<%= csslint.options.csslintrc %>',
         '<%= jshint.options.jshintrc %>',
         '<%= jscs.options.config %>',
       ],
