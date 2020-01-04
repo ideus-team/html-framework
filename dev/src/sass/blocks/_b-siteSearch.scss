@@ -9,6 +9,12 @@
 }
 .b-siteSearch {
 
+  &__search {
+    display: block;
+  }
+
+  &__label {}
+
   &__input {
     box-sizing: border-box !important;
     margin: 0;
