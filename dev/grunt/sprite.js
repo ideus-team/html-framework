@@ -2,7 +2,7 @@ module.exports = {
   main: {
     src     : '<%= sourceIMGDir %>' + '/sprites/*.png',
     dest    : '<%= sourceIMGDir %>' + '/spritesheet.png',
-    imgPath : '<%= sourceIMGDir %>' + '/spritesheet.png?' + (new Date().getTime()),
+    imgPath : '<%= destIMGFromCSS %>' + '/spritesheet.png?' + (new Date().getTime()),
     destCss : '<%= sourceCSSDir %>' + '/_sprites.scss',
 
     // retinaSrcFilter : '<%= sourceIMGDir %>' + '/sprites/*@2x.png',

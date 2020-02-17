@@ -74,7 +74,8 @@ module.exports = function(grunt) {
           destJS     : '<%= destJSDir %>'  + '/scripts.js',
 
           // IMG
-          destIMGDir : '../assets/img',
+          destIMGDir     : '../assets/img',
+          destIMGFromCSS : '../img',
     },
   });
 };
