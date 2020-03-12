@@ -18,8 +18,11 @@ a {
  */
 .l-wrapper {
   position: relative;
+  display: flex;
+  flex-direction: column;
   margin: 0 auto;
   width: $site-width;
+  min-height: 100vh;
 }
 
 /**
@@ -27,6 +30,7 @@ a {
  */
 .l-content {
   position: relative;
+  flex: 1;
 }
 
 
