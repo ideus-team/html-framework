@@ -31,9 +31,9 @@
   },
   "dependencies": {},
   "browserslist": [
-    "last 5 version",
-    "> 1%",
-    "ie >= 10"
+    "last 2 version",
+    "not dead",
+    "not ie <= 11"
   ],
   "scripts": {
     "start-dev": "call grunt dev && call grunt concurrent:dev",
