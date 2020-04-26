@@ -9,7 +9,7 @@
          url('../fonts/#{$file}.svg##{$file}') format('svg');
     font-weight: $weight;
     font-style: $style;
-    font-display: auto;
+    font-display: swap;
   }
 }
 
