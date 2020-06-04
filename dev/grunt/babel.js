@@ -1,7 +1,7 @@
 module.exports = {
   main: {
     options: {
-      presets: ['es2015']
+      presets: ['@babel/preset-env']
     },
     files: [{
       src: '<%= tempJS %>',

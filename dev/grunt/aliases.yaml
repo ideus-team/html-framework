@@ -32,7 +32,7 @@ js:
     - 'jscs'
     - 'concat'
     - 'babel'
-    - 'uglify'
+    - 'terser'
 
 devjs:
   description: 'Development JS Tasks'
