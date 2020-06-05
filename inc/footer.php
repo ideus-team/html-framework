@@ -20,8 +20,8 @@
 
   <script src="assets/js/vendor/modernizr-3.7.1.min.js"></script>
 
-  <script src="https://code.jquery.com/jquery-3.5.0.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
-  <script>window.jQuery || document.write('<script src="assets/js/vendor/jquery-3.5.0.min.js"><\/script>')</script>
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+  <script>window.jQuery || document.write('<script src="assets/js/vendor/jquery-3.5.1.min.js"><\/script>')</script>
 
   <script src="assets/js/scripts.js?<?php echo filemtime('assets/js/scripts.js'); ?>"></script>
 
