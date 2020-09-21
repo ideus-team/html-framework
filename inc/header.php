@@ -21,14 +21,6 @@
   <!-- <meta property="og:image" content="<?php echo $BASE_URL; ?>/img/userfiles/og-image.png" /> -->
 
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  <style>
-    @-ms-viewport {
-      width: device-width;
-    }
-    @viewport {
-      width: device-width;
-    }
-  </style>
 
   <link rel="shortcut icon" href="favicon.ico" />
   <link rel="manifest" href="site.webmanifest">
