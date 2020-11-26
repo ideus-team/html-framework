@@ -36,7 +36,6 @@ module.exports = function(grunt) {
           // CSS
           sourceCSSDir    : 'src/sass',
           sourceCSSFiles  : '<%= sourceCSSDir %>' + '/**/*.scss',
-          sourceCSSBase64 : '<%= sourceCSSDir %>' + '/_base64.scss',
 
           // JS
           sourceJSPlugins : [
@@ -56,7 +55,6 @@ module.exports = function(grunt) {
           sourceIMGFormats  : '.{png,jpg,gif,svg,webp}',
           sourceIMGDir      : 'src/img',
           sourceIMGFiles    : '<%= sourceIMGDir %>' + '/**/*' + '<%= sourceIMGFormats %>',
-          sourceBase64Files : '<%= sourceIMGDir %>' + '/base64/*' + '<%= sourceIMGFormats %>',
 
         // Temp
           tempDir       : '.temp',
