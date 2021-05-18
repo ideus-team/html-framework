@@ -5,7 +5,7 @@ $uri = 'home';
 require('inc/header.php');
 ?>
 
-<main class="b-contentText">
+<main class="l-contentText">
 
 </main>
 
