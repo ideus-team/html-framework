@@ -7,7 +7,7 @@
     "@babel/preset-env": "7.14.7",
     "autoprefixer": "9.8.6",
     "cssnano": "4.1.10",
-    "grunt": "1.4.1",
+    "grunt": "1.5.2",
     "grunt-babel": "8.0.0",
     "grunt-concurrent": "3.0.0",
     "grunt-contrib-clean": "2.0.0",
