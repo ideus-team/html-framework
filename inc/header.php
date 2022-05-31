@@ -10,7 +10,7 @@
   $title = $isHomepage ? $siteName : $pageName . ' : ' . $siteName;
 ?>
 <!doctype html>
-<html class="l-html no-js" lang="">
+<html class="l-html" lang="">
 <head>
   <meta charset="utf-8" />
   <meta http-equiv="x-ua-compatible" content="ie=edge">
