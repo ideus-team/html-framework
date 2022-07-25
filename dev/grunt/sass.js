@@ -1,6 +1,7 @@
 module.exports = {
   options: {
-    implementation: require('node-sass'),
+    implementation: require('dart-sass'),
+    fiber: require('fibers'),
     sourceMap: true,
   },
 
