@@ -1,0 +1,28 @@
+.l-bottomNavigation {
+
+}
+.b-bottomNavigation {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  &__item {
+
+    &.-state_active {
+
+    }
+
+    &.-styled_true {
+
+    }
+  }
+
+  &__link {
+    @include hover-underline;
+    color: inherit;
+  }
+
+  &__descr {
+    display: none;
+  }
+}

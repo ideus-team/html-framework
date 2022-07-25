@@ -1,22 +1,18 @@
-/**
- * @section siteSearch
- */
 .l-siteSearch {
-  float: right;
-  overflow: hidden;
-  right: 20px;
-  width: 200px;
+
 }
+
 .b-siteSearch {
 
   &__search {
     display: block;
   }
 
-  &__label {}
+  &__label {
+
+  }
 
   &__input {
-    box-sizing: border-box !important;
     margin: 0;
     width: 100%;
   }

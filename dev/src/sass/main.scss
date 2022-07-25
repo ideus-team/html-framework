@@ -1,7 +1,7 @@
 @charset "utf-8";
 
-@import 'normalize';
-@import 'h5b';
+@import 'other/normalize';
+@import 'other/h5b';
 
 @import 'mixins';
 
@@ -20,23 +20,23 @@
    ========================================================================== */
 
 /* Framework Common Libraries */
-@import 'blocks/g-blocks';
+@import 'other/g-blocks';
 
 /* Project only code */
-@import 'blocks/common';
-@import 'blocks/b-text';
+@import 'other/common';
+@import 'blocks/text';
 
-@import 'blocks/b-siteHeader';
-@import 'blocks/b-siteLogo';
-@import 'blocks/b-siteSearch';
-@import 'blocks/b-mainNavigation';
-@import 'blocks/b-siteFooter';
-@import 'blocks/b-bottomNavigation';
-@import 'blocks/b-siteCopyright';
-@import 'blocks/b-developerCopyright';
+@import 'blocks/siteHeader';
+@import 'blocks/siteLogo';
+@import 'blocks/siteSearch';
+@import 'blocks/mainNavigation';
+@import 'blocks/siteFooter';
+@import 'blocks/bottomNavigation';
+@import 'blocks/siteCopyright';
+@import 'blocks/developerCopyright';
 
 
 /**
  * Print styles
  */
-@import 'print';
+@import 'other/print';

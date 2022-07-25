@@ -1,24 +1,19 @@
-/**
- * @section bottomNavigation
- */
-.l-bottomNavigation {
+.l-mainNavigation {
 
 }
-.b-bottomNavigation {
+.b-mainNavigation {
   margin: 0;
   padding: 0;
   list-style: none;
 
   &__item {
-    color: #464646;
 
-    &.-state_active {
-
-    }
+    &.-state_active {}
   }
 
   &__link {
     @include hover-underline;
+    display: block;
     color: inherit;
   }
 }

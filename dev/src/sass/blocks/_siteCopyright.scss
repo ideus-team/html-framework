@@ -1,0 +1,11 @@
+.l-siteCopyright {
+
+}
+
+.b-siteCopyright {
+
+  &__link {
+    @include hover-underline;
+    color: inherit;
+  }
+}

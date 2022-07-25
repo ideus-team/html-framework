@@ -1,10 +1,7 @@
-/**
- * @section developerCopyright
- */
 .b-developerCopyright {
 
   &__link {
-    color: inherit;
     @include hover-underline;
+    color: inherit;
   }
 }
