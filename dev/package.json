@@ -24,7 +24,7 @@
     "grunt-spritesmith": "6.10.0",
     "grunt-terser": "2.0.0",
     "jshint-stylish": "2.2.1",
-    "load-grunt-config": "3.0.2",
+    "load-grunt-config": "4.0.1",
     "pixrem": "5.0.0"
   },
   "browserslist": [

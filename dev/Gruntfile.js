@@ -23,7 +23,6 @@ module.exports = function(grunt) {
       gruntSettings: [
         /* Grunt config   */ 'Gruntfile.js',
         /* Grunt modules  */ 'package.json',
-        /* Build settings */ 'grunt/aliases.yaml',
         /* Grunt tasks    */ 'grunt/*.js',
       ],
       gruntPluginsSettings: [
