@@ -5,27 +5,40 @@
 
 @import 'mixins';
 
-/* Project files… */
+/**
+ * Settings
+ */
 @import 'fonts';
 @import 'settings';
 
-/* Generated… */
+/**
+ * Generated
+ */
 @import 'sprites';
 
-/* Plugins */
+/**
+ * Plugins
+ */
 
 
 /* ==|== primary styles =====================================================
    Authors: %Author Name%
    ========================================================================== */
 
-/* Framework Common Libraries */
-@import 'other/g-blocks';
+/**
+ * Framework Common Libraries
+ */
+@import "other/g-blocks";
 
-/* Project only code */
-@import 'other/common';
-@import 'blocks/text';
+/**
+ * Project only code
+ */
+@import "other/common";
+@import "blocks/text";
 
+/**
+ * Blocks
+ */
 @import 'blocks/siteHeader';
 @import 'blocks/siteLogo';
 @import 'blocks/siteSearch';
@@ -35,8 +48,7 @@
 @import 'blocks/siteCopyright';
 @import 'blocks/developerCopyright';
 
-
 /**
  * Print styles
  */
-@import 'other/print';
+@import "print";
