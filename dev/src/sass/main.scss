@@ -39,16 +39,16 @@
 /**
  * Blocks
  */
+@import 'blocks/bottomNavigation';
+@import 'blocks/developerCopyright';
+@import 'blocks/mainNavigation';
+@import 'blocks/siteCopyright';
+@import 'blocks/siteFooter';
 @import 'blocks/siteHeader';
 @import 'blocks/siteLogo';
 @import 'blocks/siteSearch';
-@import 'blocks/mainNavigation';
-@import 'blocks/siteFooter';
-@import 'blocks/bottomNavigation';
-@import 'blocks/siteCopyright';
-@import 'blocks/developerCopyright';
 
 /**
  * Print styles
  */
-@import "print";
+@import "other/print";
