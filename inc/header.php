@@ -42,7 +42,7 @@
           ?>
           <<?php echo $siteLogo__tag; ?> class="b-siteLogo" itemscope itemtype="http://schema.org/Organization">
             <a class="b-siteLogo__link"<?php echo $siteLogo__link; ?> itemprop="url">
-              <img class="b-siteLogo__icon" src="assets/img/blocks/siteLogo/siteLogo-logo.png" alt="<?php echo $siteName; ?>" title="<?php echo $siteName; ?>" itemprop="logo" />
+              <img class="b-siteLogo__icon" src="assets/img/logos/siteLogo-logo.png" alt="<?php echo $siteName; ?>" title="<?php echo $siteName; ?>" itemprop="logo" />
             </a>
           </<?php echo $siteLogo__tag; ?>>
         </div>
