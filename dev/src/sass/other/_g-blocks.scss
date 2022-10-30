@@ -27,16 +27,29 @@
  */
 .g-loading {
   position: relative;
+  opacity: .6;
 
   &::before {
-    content: '';
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 50%;
+    left: 50%;
     z-index: 1000;
-    display: block;
-    width: 100%;
-    height: 100%;
-    background: url('../img/loading-ico.gif') 50% 50% no-repeat rgba(#fff, .8);
+    width: 40px;
+    height: 40px;
+    border: 6px solid #eaeaea;
+    border-top-color: #282828;
+    border-radius: 50%;
+    content: '';
+    transform: translate(-50%, -50%);
+    animation: spinner 1.2s ease infinite;
+  }
+}
+
+@keyframes spinner {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
   }
 }
