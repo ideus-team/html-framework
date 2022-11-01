@@ -40,16 +40,15 @@
     border-top-color: #282828;
     border-radius: 50%;
     content: '';
-    transform: translate(-50%, -50%);
     animation: spinner 1.2s ease infinite;
   }
 }
 
 @keyframes spinner {
   0% {
-    transform: rotate(0deg);
+    transform: translate(-50%, -50%) rotate(0deg);
   }
   100% {
-    transform: rotate(360deg);
+    transform: translate(-50%, -50%) rotate(360deg);
   }
 }
