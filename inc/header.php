@@ -4,7 +4,7 @@ if ( empty( $_SERVER['HTTPS'] ) || $_SERVER['HTTPS'] === 'off' ) {
 } else {
   $protocol = 'https://';
 }
-$BASE_URL = $protocol . $_SERVER['SERVER_NAME'] . dirname( $_SERVER['PHP_SELF'] );
+$baseURL = $protocol . $_SERVER['SERVER_NAME'] . dirname( $_SERVER['PHP_SELF'] );
 
 $siteName = '%siteName%';
 
@@ -30,7 +30,7 @@ $title = $isHomepage ? $siteName : $pageName . ' : ' . $siteName;
   <title><?php echo $title; ?></title>
   <meta name="description" content="">
 
-  <!-- <meta property="og:image" content="<?php echo $BASE_URL; ?>/img/userfiles/og-image.png"> -->
+  <!-- <meta property="og:image" content="<?php echo $baseURL; ?>/img/userfiles/og-image.png"> -->
 
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -50,7 +50,7 @@ $title = $isHomepage ? $siteName : $pageName . ' : ' . $siteName;
         <div class="l-siteLogo">
           <?php
             $siteLogo__tag  = $isHomepage ? 'h1' : 'div';
-            $siteLogo__link = $isHomepage ? '' : ' href="index.html"';
+            $siteLogo__link = $isHomepage ? '' : ' href="' . $baseURL ."';
           ?>
           <<?php echo $siteLogo__tag; ?> class="b-siteLogo" itemscope itemtype="http://schema.org/Organization">
             <a class="b-siteLogo__link"<?php echo $siteLogo__link; ?> itemprop="url">
