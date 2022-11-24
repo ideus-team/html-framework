@@ -5,7 +5,11 @@
 .b-siteCopyright {
 
   &__link {
-    @include hover-underline;
     color: inherit;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
   }
 }

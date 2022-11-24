@@ -1,18 +1,18 @@
-@mixin font-face($name, $file, $weight: normal, $style: normal) {
+@mixin font-face($name, $file, $weight: normal, $style: normal, $display: swap) {
   @font-face {
     font-family: '#{$name}';
     src: url('../fonts/#{$file}.woff2') format('woff2'),
          url('../fonts/#{$file}.woff') format('woff');
     font-weight: $weight;
     font-style: $style;
-    font-display: swap;
+    font-display: $display;
   }
 }
 
 @mixin clearfix {
   &::before,
   &::after {
-    content: " ";
+    content: ' ';
     display: table;
   }
 
@@ -61,33 +61,6 @@
   transform: translateX(-50%);
 }
 
-@mixin resetList {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-@mixin beforeafter {
-  content: '';
-  position: absolute;
-}
-
-@mixin hover-underline {
-  text-decoration: none;
-
-  &:hover {
-    text-decoration: underline;
-  }
-}
-
-@mixin underline-hover {
-  text-decoration: underline;
-
-  &:hover {
-    text-decoration: none;
-  }
-}
-
 @mixin first-last-margin {
   &:first-child {
     margin-top: 0;
@@ -105,11 +78,5 @@
 
   &:last-child {
     margin-right: 0;
-  }
-}
-
-@mixin responsive($breakpoint) {
-  @media screen and (#{$breakpoint}) {
-    @content;
   }
 }

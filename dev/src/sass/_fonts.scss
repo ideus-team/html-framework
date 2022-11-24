@@ -1,8 +1,8 @@
 /**
- * @section Fonts
+ * Fonts
  *
  * You can add fonts by mixin:
- * @include font-face($name, $file, $weight: normal, $style: normal);
+ * @include font-face($name, $file, $weight: normal, $style: normal, $display: swap);
  * @include font-face('PTSans', 'PTSansRegular');
  * @include font-face('PTSans', 'PTSansItalic', normal, italic);
  * @include font-face('PTSans', 'PTSansBold', bold);

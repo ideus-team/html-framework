@@ -1,10 +1,6 @@
 /**
- * @section Settings
+ * Settings
  */
 $site-width: 1200px;
 $site-width-tablet: 1024px;
 $site-width-mobile: 640px;
-
-$breakpoint-desktop: 'min-width: #{$site-width}';
-$breakpoint-tablet:  'min-width: #{$site-width-tablet}) and (max-width: #{$site-width - 1px}';
-$breakpoint-mobile:  'max-width: #{$site-width-tablet - 1px}';

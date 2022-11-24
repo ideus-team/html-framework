@@ -1,4 +1,4 @@
-@charset "utf-8";
+@charset 'utf-8';
 
 @import 'other/normalize';
 @import 'other/h5b';
@@ -28,13 +28,13 @@
 /**
  * Framework Common Libraries
  */
-@import "other/g-blocks";
+@import 'other/g-blocks';
 
 /**
  * Project only code
  */
-@import "other/common";
-@import "blocks/text";
+@import 'other/common';
+@import 'blocks/text';
 
 /**
  * Blocks
@@ -51,4 +51,4 @@
 /**
  * Print styles
  */
-@import "other/print";
+@import 'other/print';
