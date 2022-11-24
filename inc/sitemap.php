@@ -7,8 +7,6 @@
   <title><?php echo $company; ?> - Site Map</title>
   <meta name="description" content="" />
 
-  <!-- <meta property="og:image" content="<?php echo $BASE_URL; ?>/img/userfiles/og-image.png" /> -->
-
   <meta name="viewport" content="width=1024" />
 
   <link rel="shortcut icon" href="favicon.ico" />

@@ -1,13 +1,15 @@
 <?php
-  if ( empty( $_SERVER['HTTPS'] ) || $_SERVER['HTTPS'] === 'off' ) {
-    $protocol = 'http://';
-  } else {
-    $protocol = 'https://';
-  }
-  $BASE_URL = $protocol . $_SERVER['SERVER_NAME'] . dirname( $_SERVER['PHP_SELF'] );
+if ( empty( $_SERVER['HTTPS'] ) || $_SERVER['HTTPS'] === 'off' ) {
+  $protocol = 'http://';
+} else {
+  $protocol = 'https://';
+}
+$BASE_URL = $protocol . $_SERVER['SERVER_NAME'] . dirname( $_SERVER['PHP_SELF'] );
 
-  $isHomepage = ( basename( $_SERVER['PHP_SELF'] ) == 'index.php' );
-  $title = $isHomepage ? $siteName : $pageName . ' : ' . $siteName;
+$siteName = '%siteName%';
+
+$isHomepage = ( basename( $_SERVER['PHP_SELF'] ) == 'index.php' );
+$title = $isHomepage ? $siteName : $pageName . ' : ' . $siteName;
 ?>
 <!doctype html>
 <html class="l-html" lang="">

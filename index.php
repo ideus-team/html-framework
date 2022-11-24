@@ -1,6 +1,5 @@
 <?php
 $pageName = 'Home';
-$siteName = '%siteName%';
 $uri      = 'home';
 require( 'inc/header.php' );
 ?>
