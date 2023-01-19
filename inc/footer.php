@@ -28,6 +28,6 @@
   <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
   <script>window.jQuery || document.write('<script src="assets/js/vendor/jquery-3.6.1.min.js"><\/script>')</script>
 
-  <script src="assets/js/scripts.js?<?php echo filemtime( 'assets/js/scripts.js' ); ?>"></script>
+  <script src="assets/js/scripts.js?<?php echo filemtime( $_SERVER['DOCUMENT_ROOT'] . $siteDir . '/assets/js/scripts.js' ); ?>"></script>
 </body>
 </html>

@@ -4,7 +4,8 @@ if ( empty( $_SERVER['HTTPS'] ) || $_SERVER['HTTPS'] === 'off' ) {
 } else {
   $protocol = 'https://';
 }
-$baseURL = $protocol . $_SERVER['SERVER_NAME'] . dirname( $_SERVER['PHP_SELF'] );
+$siteDir = dirname( $_SERVER['PHP_SELF'] );
+$baseURL = $protocol . $_SERVER['SERVER_NAME'] . $siteDir;
 
 $siteName = '%siteName%';
 
@@ -30,7 +31,7 @@ $title = $isHomepage ? $siteName : $pageName . ' : ' . $siteName;
   <title><?php echo $title; ?></title>
   <meta name="description" content="">
 
-  <!-- <meta property="og:image" content="<?php echo $baseURL; ?>/img/userfiles/og-image.png"> -->
+  <!-- <meta property="og:image" content="<?php echo $baseURL; ?>/assets/img/userfiles/og-image.png"> -->
 
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -40,7 +41,7 @@ $title = $isHomepage ? $siteName : $pageName . ' : ' . $siteName;
 
   <!--<meta name="theme-color" content="#ed1c24">-->
 
-  <link rel="stylesheet" href="assets/css/main.min.css?<?php echo filemtime( 'assets/css/main.min.css' ); ?>">
+  <link rel="stylesheet" href="assets/css/main.min.css?<?php echo filemtime( $_SERVER['DOCUMENT_ROOT'] . $siteDir . '/assets/css/main.min.css' ); ?>">
 </head>
 <body class="l-body -page_<?php echo $uri; ?><?php echo ( ! $isHomepage ) ? ' -page_inner' : ''; ?>">
 
