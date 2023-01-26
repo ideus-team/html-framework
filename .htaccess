@@ -88,7 +88,7 @@
 #
 # https://httpd.apache.org/docs/current/mod/core.html#errordocument
 
-ErrorDocument 404 /404.html
+ErrorDocument 404 /404.php
 
 # ----------------------------------------------------------------------
 # | Error prevention                                                   |
@@ -1219,5 +1219,18 @@ FileETag None
 <IfModule mod_rewrite.c>
   Options +FollowSymlinks
   RewriteEngine On
-  RewriteRule ^(.*)\.html$ $1.php [L]
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteRule ^([\w-]+)$ $1.php [L]
+  RewriteRule ^([\w-]+)/([\w-]+)$ $1@$2.php [L]
+
+  # Remove a trailing slash at the end
+  RewriteRule ^(.*)/$ /$1 [R=301,L]
+
+  # Remove uri from index page
+  RewriteRule ^index.php$ / [R=301,L]
+
+  # Redirect from .html
+  RewriteRule ^([\w-]+).html$ /$1 [L,R=301]
+  RewriteRule ^([\w-]+)/([\w-]+).html$ /$1/$2 [L,R=301]
 </IfModule>

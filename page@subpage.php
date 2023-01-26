@@ -1,10 +1,9 @@
 <?php
-$pageName = 'Home';
+$pageName = 'Subpage';
 $meta     = array(
   'description' => '',
   'keywords'    => '',
 );
-$uri      = 'home'; // Needs only for index.php
 require( 'inc/header.php' );
 ?>
 

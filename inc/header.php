@@ -4,8 +4,12 @@ if ( empty( $_SERVER['HTTPS'] ) || $_SERVER['HTTPS'] === 'off' ) {
 } else {
   $protocol = 'https://';
 }
-$siteDir = dirname( $_SERVER['PHP_SELF'] );
+$siteDir = str_replace( '\\', '/', dirname( $_SERVER['PHP_SELF'] ) );
+$siteDir = ( '/' === $siteDir ) ? $siteDir : $siteDir . '/';
 $baseURL = $protocol . $_SERVER['SERVER_NAME'] . $siteDir;
+
+$canonical = $protocol . $_SERVER['SERVER_NAME'] . '/' . preg_replace( array( '/^\//', '/.php/' ), '', $_SERVER['REQUEST_URI'] );
+$uri       = $uri ? $uri : preg_replace( array( '/^\/\w+\//', '/^\//', '/.php/' ), '', $_SERVER['REQUEST_URI'] );
 
 $siteName = '%siteName%';
 
@@ -28,10 +32,14 @@ $title = $isHomepage ? $siteName : $pageName . ' : ' . $siteName;
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
 
-  <title><?php echo $title; ?></title>
-  <meta name="description" content="">
+  <base href="<?php echo $siteDir; ?>">
 
-  <!-- <meta property="og:image" content="<?php echo $baseURL; ?>/assets/img/userfiles/og-image.png"> -->
+  <title><?php echo $title; ?></title>
+  <meta name="description" content="<?php echo $meta['description']; ?>">
+  <meta name="keywords" content="<?php echo $meta['keywords']; ?>">
+  <link rel="canonical" href="<?php echo $canonical; ?>">
+
+  <!-- <meta property="og:image" content="<?php echo $baseURL; ?>assets/img/userfiles/og-image.png"> -->
 
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -41,10 +49,9 @@ $title = $isHomepage ? $siteName : $pageName . ' : ' . $siteName;
 
   <!--<meta name="theme-color" content="#ed1c24">-->
 
-  <link rel="stylesheet" href="assets/css/main.min.css?<?php echo filemtime( $_SERVER['DOCUMENT_ROOT'] . $siteDir . '/assets/css/main.min.css' ); ?>">
+  <link rel="stylesheet" href="assets/css/main.min.css?<?php echo filemtime( $_SERVER['DOCUMENT_ROOT'] . $siteDir . 'assets/css/main.min.css' ); ?>">
 </head>
 <body class="l-body -page_<?php echo $uri; ?><?php echo ( ! $isHomepage ) ? ' -page_inner' : ''; ?>">
-
   <div class="l-wrapper">
     <header class="l-siteHeader">
       <div class="b-siteHeader">
@@ -74,7 +81,13 @@ $title = $isHomepage ? $siteName : $pageName . ' : ' . $siteName;
         <nav class="l-mainNavigation">
           <ul class="b-mainNavigation">
             <li class="b-mainNavigation__item<?php echo ( $uri == 'home' ) ? ' -state_active' : ''; ?>">
-              <a class="b-mainNavigation__link" href="index.html">Home</a>
+              <a class="b-mainNavigation__link" href="<?php echo $siteDir; ?>">Home</a>
+            </li>
+            <li class="b-mainNavigation__item<?php echo ( $uri == 'page' ) ? ' -state_active' : ''; ?>">
+              <a class="b-mainNavigation__link" href="page">Page</a>
+            </li>
+            <li class="b-mainNavigation__item<?php echo ( $uri == 'subpage' ) ? ' -state_active' : ''; ?>">
+              <a class="b-mainNavigation__link" href="page/subpage">Subpage</a>
             </li>
           </ul>
         </nav>
