@@ -1,6 +1,6 @@
 {
   "name": "ideus-html-framework",
-  "version": "1.10.2",
+  "version": "1.11.0",
   "description": "Our HTML5 boilerplate",
   "devDependencies": {
     "@babel/core": "7.20.12",
@@ -8,7 +8,7 @@
     "autoprefixer": "9.8.8",
     "cssnano": "4.1.11",
     "dart-sass": "1.25.0",
-    "grunt": "1.5.3",
+    "grunt": "1.6.1",
     "grunt-babel": "8.0.0",
     "grunt-concurrent": "3.0.0",
     "grunt-contrib-clean": "2.0.1",
