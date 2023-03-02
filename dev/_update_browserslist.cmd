@@ -1,2 +1,2 @@
 @echo off
-call npx browserslist@latest --update-db
+call npx update-browserslist-db@latest
