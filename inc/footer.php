@@ -31,7 +31,7 @@
     </footer>
   </div><!--wrapper-->
 
-  <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
   <script>window.jQuery || document.write('<script src="assets/js/vendor/jquery-3.6.4.min.js"><\/script>')</script>
 
   <script src="assets/js/scripts.js?<?php echo filemtime( $_SERVER['DOCUMENT_ROOT'] . $siteDir . 'assets/js/scripts.js' ); ?>"></script>
