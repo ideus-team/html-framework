@@ -1,10 +1,10 @@
 {
   "name": "ideus-html-framework",
-  "version": "1.11.2",
+  "version": "1.11.3",
   "description": "Our HTML5 boilerplate",
   "devDependencies": {
-    "@babel/core": "7.21.4",
-    "@babel/preset-env": "7.21.4",
+    "@babel/core": "7.21.5",
+    "@babel/preset-env": "7.21.5",
     "autoprefixer": "9.8.8",
     "cssnano": "4.1.11",
     "dart-sass": "1.25.0",
