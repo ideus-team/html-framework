@@ -1225,6 +1225,7 @@ FileETag None
   RewriteRule ^([\w-]+)/([\w-]+)$ $1@$2.php [L]
 
   # Remove a trailing slash at the end
+  RewriteCond %{REQUEST_FILENAME} !-d
   RewriteRule ^(.*)/$ /$1 [R=301,L]
 
   # Remove uri from index page
