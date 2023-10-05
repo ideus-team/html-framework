@@ -52,19 +52,19 @@ $title = $isHomepage ? $siteName : $pageName . ' : ' . $siteName;
   <link rel="stylesheet" href="assets/css/main.min.css?<?php echo filemtime( $_SERVER['DOCUMENT_ROOT'] . $siteDir . 'assets/css/main.min.css' ); ?>">
 </head>
 <body class="l-body -page_<?php echo $uri; ?><?php echo ( ! $isHomepage ) ? ' -page_inner' : ''; ?>">
-  <div class="l-wrapper">
+  <div class="l-wrapper" id="top">
     <header class="l-siteHeader">
       <div class="b-siteHeader">
         <div class="l-siteLogo">
           <?php
-            $siteLogo__tag  = $isHomepage ? 'h1' : 'div';
-            $siteLogo__link = $isHomepage ? '' : ' href="' . $baseURL . '"';
+            $logo_tag  = $isHomepage ? 'h1' : 'div';
+            $logo_link = $isHomepage ? $baseURL . '#top' : $baseURL;
           ?>
-          <<?php echo $siteLogo__tag; ?> class="b-siteLogo" itemscope itemtype="http://schema.org/Organization">
-            <a class="b-siteLogo__link"<?php echo $siteLogo__link; ?> itemprop="url">
+          <<?php echo $logo_tag; ?> class="b-siteLogo" itemscope itemtype="http://schema.org/Organization">
+            <a class="b-siteLogo__link" href="<?php echo $logo_link; ?>" itemprop="url">
               <img class="b-siteLogo__icon" src="assets/img/logos/siteLogo-logo.png" alt="<?php echo $siteName; ?>" title="<?php echo $siteName; ?>" itemprop="logo">
             </a>
-          </<?php echo $siteLogo__tag; ?>>
+          </<?php echo $logo_tag; ?>>
         </div>
 
         <div class="l-siteSearch">
