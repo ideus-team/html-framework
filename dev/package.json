@@ -1,13 +1,12 @@
 {
   "name": "ideus-html-framework",
-  "version": "2.4.3",
+  "version": "2.4.4",
   "description": "Our HTML5 boilerplate",
   "devDependencies": {
     "@babel/core": "7.23.3",
     "@babel/preset-env": "7.23.3",
     "autoprefixer": "9.8.8",
     "cssnano": "4.1.11",
-    "dart-sass": "1.25.0",
     "grunt": "1.6.1",
     "grunt-babel": "8.0.0",
     "grunt-concurrent": "3.0.0",
@@ -24,7 +23,8 @@
     "grunt-spritesmith": "6.10.0",
     "grunt-terser": "2.0.0",
     "jshint-stylish": "2.2.1",
-    "load-grunt-config": "4.0.1"
+    "load-grunt-config": "4.0.1",
+    "sass": "1.69.5"
   },
   "browserslist": [
     "last 2 version",

@@ -1,6 +1,6 @@
 module.exports = {
   options: {
-    implementation: require('dart-sass'),
+    implementation: require('sass'),
     sourceMap: true,
   },
 
