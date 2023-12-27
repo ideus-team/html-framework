@@ -7,110 +7,110 @@
  * !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
  */
 .b-text {
-  @include clearfix;
+	@include clearfix;
 
-  h1, h2, h3, h4, h5, h6, p, ul, ol, dl, blockquote, pre, code {
-    margin: 1em 0;
-    @include first-last-margin;
-  }
+	h1, h2, h3, h4, h5, h6, p, ul, ol, dl, blockquote, pre, code {
+		margin: 1em 0;
+		@include first-last-margin;
+	}
 
-  h1 {}
-  h2 {}
-  h3 {}
-  h4 {}
-  h5 {}
-  h6 {}
+	h1 {}
+	h2 {}
+	h3 {}
+	h4 {}
+	h5 {}
+	h6 {}
 
-  p {}
+	p {}
 
-  ul {}
-  ol {}
+	ul {}
+	ol {}
 
-  dl {}
-  dt {}
-  dd {}
+	dl {}
+	dt {}
+	dd {}
 
-  blockquote {}
+	blockquote {}
 
-  pre,
-  code {
-    display: block;
-    padding: 5px 10px 5px 8px;
-    background: #e9ebec;
-    border-left: 2px solid #000;
-  }
+	pre,
+	code {
+		display: block;
+		padding: 5px 10px 5px 8px;
+		background: #e9ebec;
+		border-left: 2px solid #000;
+	}
 
-  a {
-    text-decoration: underline;
+	a {
+		text-decoration: underline;
 
-    &:hover {
-      text-decoration: none;
-    }
+		&:hover {
+			text-decoration: none;
+		}
 
-    &[href ^= tel] {
-      @include tel;
-    }
-  }
+		&[href ^= tel] {
+			@include tel;
+		}
+	}
 
-  img {
-    max-width: 100%;
-  }
+	img {
+		max-width: 100%;
+	}
 
-  .aligncenter {
-    clear: both;
-    display: block;
-    margin: .375em auto 1em;
-    margin-left: auto;
-  }
+	.aligncenter {
+		clear: both;
+		display: block;
+		margin: .375em auto 1em;
+		margin-left: auto;
+	}
 
-  .alignright {
-    float: right;
-    margin: .375em 0 1em 1em;
-  }
+	.alignright {
+		float: right;
+		margin: .375em 0 1em 1em;
+	}
 
-  .alignleft {
-    float: left;
-    margin: .375em 1em 1em 0;
-  }
+	.alignleft {
+		float: left;
+		margin: .375em 1em 1em 0;
+	}
 
-  .alignnone {
+	.alignnone {
 
-  }
+	}
 
-  .wp-caption {
-    margin-top: 1em;
-    margin-bottom: 1em;
-    max-width: 100%;
+	.wp-caption {
+		margin-top: 1em;
+		margin-bottom: 1em;
+		max-width: 100%;
 
-    img {
+		img {
 
-    }
-  }
+		}
+	}
 
-  .wp-caption-text {
-    margin-top: .5em;
-    text-align: center;
-  }
+	.wp-caption-text {
+		margin-top: .5em;
+		text-align: center;
+	}
 
-  .size-auto,
-  .size-full,
-  .size-large,
-  .size-medium,
-  .size-thumbnail {
-    max-width: 100%;
-    height: auto;
-  }
+	.size-auto,
+	.size-full,
+	.size-large,
+	.size-medium,
+	.size-thumbnail {
+		max-width: 100%;
+		height: auto;
+	}
 
-  .gallery {}
-  .gallery dl {}
-  .gallery dt {}
-  .gallery dd {}
-  .gallery dl a {}
-  .gallery dl img {}
-  .gallery-caption {}
+	.gallery {}
+	.gallery dl {}
+	.gallery dt {}
+	.gallery dd {}
+	.gallery dl a {}
+	.gallery dl img {}
+	.gallery-caption {}
 
-  .wp-smiley {
-    margin: 0;
-    max-height: 1em;
-  }
+	.wp-smiley {
+		margin: 0;
+		max-height: 1em;
+	}
 }

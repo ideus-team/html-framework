@@ -1,8 +1,8 @@
 <?php
 $pageName = 'Home';
 $meta     = array(
-  'description' => '',
-  'keywords'    => '',
+	'description' => '',
+	'keywords'    => '',
 );
 $uri      = 'home'; // Needs only for index.php
 require( 'inc/header.php' );

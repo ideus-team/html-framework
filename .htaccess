@@ -35,12 +35,12 @@
 # https://blog.chromium.org/2011/07/using-cross-domain-images-in-webgl-and.html
 
 <IfModule mod_setenvif.c>
-    <IfModule mod_headers.c>
-        <FilesMatch "\.(bmp|cur|gif|ico|jpe?g|png|svgz?|webp)$">
-            SetEnvIf Origin ":" IS_CORS
-            Header set Access-Control-Allow-Origin "*" env=IS_CORS
-        </FilesMatch>
-    </IfModule>
+		<IfModule mod_headers.c>
+				<FilesMatch "\.(bmp|cur|gif|ico|jpe?g|png|svgz?|webp)$">
+						SetEnvIf Origin ":" IS_CORS
+						Header set Access-Control-Allow-Origin "*" env=IS_CORS
+				</FilesMatch>
+		</IfModule>
 </IfModule>
 
 # ----------------------------------------------------------------------
@@ -52,9 +52,9 @@
 # https://developers.google.com/fonts/docs/troubleshooting
 
 <IfModule mod_headers.c>
-    <FilesMatch "\.(eot|otf|tt[cf]|woff2?)$">
-        Header set Access-Control-Allow-Origin "*"
-    </FilesMatch>
+		<FilesMatch "\.(eot|otf|tt[cf]|woff2?)$">
+				Header set Access-Control-Allow-Origin "*"
+		</FilesMatch>
 </IfModule>
 
 # ----------------------------------------------------------------------
@@ -126,7 +126,7 @@ Options -MultiViews
 # https://msdn.microsoft.com/en-us/library/ff955275.aspx
 
 <IfModule mod_headers.c>
-    Header set X-UA-Compatible "IE=edge" "expr=%{CONTENT_TYPE} =~ m#text/html#i"
+		Header set X-UA-Compatible "IE=edge" "expr=%{CONTENT_TYPE} =~ m#text/html#i"
 </IfModule>
 
 # ######################################################################
@@ -144,79 +144,79 @@ Options -MultiViews
 
 <IfModule mod_mime.c>
 
-  # Data interchange
+	# Data interchange
 
-    AddType application/atom+xml                        atom
-    AddType application/json                            json map topojson
-    AddType application/ld+json                         jsonld
-    AddType application/rss+xml                         rss
-    AddType application/geo+json                        geojson
-    AddType application/rdf+xml                         rdf
-    AddType application/xml                             xml
-
-
-  # JavaScript
-
-    # Servers should use text/javascript for JavaScript resources.
-    # https://html.spec.whatwg.org/multipage/scripting.html#scriptingLanguages
-
-    AddType text/javascript                             js mjs
+		AddType application/atom+xml                        atom
+		AddType application/json                            json map topojson
+		AddType application/ld+json                         jsonld
+		AddType application/rss+xml                         rss
+		AddType application/geo+json                        geojson
+		AddType application/rdf+xml                         rdf
+		AddType application/xml                             xml
 
 
-  # Manifest files
+	# JavaScript
 
-    AddType application/manifest+json                   webmanifest
-    AddType application/x-web-app-manifest+json         webapp
-    AddType text/cache-manifest                         appcache
+		# Servers should use text/javascript for JavaScript resources.
+		# https://html.spec.whatwg.org/multipage/scripting.html#scriptingLanguages
 
-
-  # Media files
-
-    AddType audio/mp4                                   f4a f4b m4a
-    AddType audio/ogg                                   oga ogg opus
-    AddType image/bmp                                   bmp
-    AddType image/svg+xml                               svg svgz
-    AddType image/webp                                  webp
-    AddType video/mp4                                   f4v f4p m4v mp4
-    AddType video/ogg                                   ogv
-    AddType video/webm                                  webm
-    AddType video/x-flv                                 flv
-
-    # Serving `.ico` image files with a different media type
-    # prevents Internet Explorer from displaying them as images:
-    # https://github.com/h5bp/html5-boilerplate/commit/37b5fec090d00f38de64b591bcddcb205aadf8ee
-
-    AddType image/x-icon                                cur ico
+		AddType text/javascript                             js mjs
 
 
-  # WebAssembly
+	# Manifest files
 
-    AddType application/wasm                            wasm
-
-
-  # Web fonts
-
-    AddType font/woff                                   woff
-    AddType font/woff2                                  woff2
-    AddType application/vnd.ms-fontobject               eot
-    AddType font/ttf                                    ttf
-    AddType font/collection                             ttc
-    AddType font/otf                                    otf
+		AddType application/manifest+json                   webmanifest
+		AddType application/x-web-app-manifest+json         webapp
+		AddType text/cache-manifest                         appcache
 
 
-  # Other
+	# Media files
 
-    AddType application/octet-stream                    safariextz
-    AddType application/x-bb-appworld                   bbaw
-    AddType application/x-chrome-extension              crx
-    AddType application/x-opera-extension               oex
-    AddType application/x-xpinstall                     xpi
-    AddType text/calendar                               ics
-    AddType text/markdown                               markdown md
-    AddType text/vcard                                  vcard vcf
-    AddType text/vnd.rim.location.xloc                  xloc
-    AddType text/vtt                                    vtt
-    AddType text/x-component                            htc
+		AddType audio/mp4                                   f4a f4b m4a
+		AddType audio/ogg                                   oga ogg opus
+		AddType image/bmp                                   bmp
+		AddType image/svg+xml                               svg svgz
+		AddType image/webp                                  webp
+		AddType video/mp4                                   f4v f4p m4v mp4
+		AddType video/ogg                                   ogv
+		AddType video/webm                                  webm
+		AddType video/x-flv                                 flv
+
+		# Serving `.ico` image files with a different media type
+		# prevents Internet Explorer from displaying them as images:
+		# https://github.com/h5bp/html5-boilerplate/commit/37b5fec090d00f38de64b591bcddcb205aadf8ee
+
+		AddType image/x-icon                                cur ico
+
+
+	# WebAssembly
+
+		AddType application/wasm                            wasm
+
+
+	# Web fonts
+
+		AddType font/woff                                   woff
+		AddType font/woff2                                  woff2
+		AddType application/vnd.ms-fontobject               eot
+		AddType font/ttf                                    ttf
+		AddType font/collection                             ttc
+		AddType font/otf                                    otf
+
+
+	# Other
+
+		AddType application/octet-stream                    safariextz
+		AddType application/x-bb-appworld                   bbaw
+		AddType application/x-chrome-extension              crx
+		AddType application/x-opera-extension               oex
+		AddType application/x-xpinstall                     xpi
+		AddType text/calendar                               ics
+		AddType text/markdown                               markdown md
+		AddType text/vcard                                  vcard vcf
+		AddType text/vnd.rim.location.xloc                  xloc
+		AddType text/vtt                                    vtt
+		AddType text/x-component                            htc
 
 </IfModule>
 
@@ -239,24 +239,24 @@ AddDefaultCharset utf-8
 # https://httpd.apache.org/docs/current/mod/mod_mime.html#addcharset
 
 <IfModule mod_mime.c>
-    AddCharset utf-8 .appcache \
-                     .bbaw \
-                     .css \
-                     .htc \
-                     .ics \
-                     .js \
-                     .json \
-                     .manifest \
-                     .map \
-                     .markdown \
-                     .md \
-                     .mjs \
-                     .topojson \
-                     .vtt \
-                     .vcard \
-                     .vcf \
-                     .webmanifest \
-                     .xloc
+		AddCharset utf-8 .appcache \
+										 .bbaw \
+										 .css \
+										 .htc \
+										 .ics \
+										 .js \
+										 .json \
+										 .manifest \
+										 .map \
+										 .markdown \
+										 .md \
+										 .mjs \
+										 .topojson \
+										 .vtt \
+										 .vcard \
+										 .vcf \
+										 .webmanifest \
+										 .xloc
 </IfModule>
 
 # ######################################################################
@@ -299,26 +299,26 @@ AddDefaultCharset utf-8
 
 <IfModule mod_rewrite.c>
 
-    # (1)
-    RewriteEngine On
+		# (1)
+		RewriteEngine On
 
-    # (2)
-    Options +FollowSymlinks
+		# (2)
+		Options +FollowSymlinks
 
-    # (3)
-    # Options +SymLinksIfOwnerMatch
+		# (3)
+		# Options +SymLinksIfOwnerMatch
 
-    # (4)
-    # RewriteBase /
+		# (4)
+		# RewriteBase /
 
-    # (5)
-    # RewriteOptions <options>
+		# (5)
+		# RewriteOptions <options>
 
-    # (6)
-    RewriteCond %{HTTPS} =on
-    RewriteRule ^ - [env=proto:https]
-    RewriteCond %{HTTPS} !=on
-    RewriteRule ^ - [env=proto:http]
+		# (6)
+		RewriteCond %{HTTPS} =on
+		RewriteRule ^ - [env=proto:https]
+		RewriteCond %{HTTPS} !=on
+		RewriteRule ^ - [env=proto:http]
 
 </IfModule>
 
@@ -370,11 +370,11 @@ AddDefaultCharset utf-8
 #     https://github.com/h5bp/server-configs-apache/issues/52
 
 <IfModule mod_rewrite.c>
-    RewriteEngine On
-    # (1)
-    # RewriteCond %{HTTPS} !=on
-    RewriteCond %{HTTP_HOST} ^www\.(.+)$ [NC]
-    RewriteRule ^ %{ENV:PROTO}://%1%{REQUEST_URI} [R=301,L]
+		RewriteEngine On
+		# (1)
+		# RewriteCond %{HTTPS} !=on
+		RewriteCond %{HTTP_HOST} ^www\.(.+)$ [NC]
+		RewriteRule ^ %{ENV:PROTO}://%1%{REQUEST_URI} [R=301,L]
 </IfModule>
 
 # ----------------------------------------------------------------------
@@ -539,7 +539,7 @@ AddDefaultCharset utf-8
 # includes rather private places such as the CMS's directories).
 
 <IfModule mod_autoindex.c>
-    Options -Indexes
+		Options -Indexes
 </IfModule>
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -560,11 +560,11 @@ AddDefaultCharset utf-8
 # https://tools.ietf.org/html/rfc5785
 
 <IfModule mod_rewrite.c>
-    RewriteEngine On
-    RewriteCond %{REQUEST_URI} "!(^|/)\.well-known/([^./]+./?)+$" [NC]
-    RewriteCond %{SCRIPT_FILENAME} -d [OR]
-    RewriteCond %{SCRIPT_FILENAME} -f
-    RewriteRule "(^|/)\." - [F]
+		RewriteEngine On
+		RewriteCond %{REQUEST_URI} "!(^|/)\.well-known/([^./]+./?)+$" [NC]
+		RewriteCond %{SCRIPT_FILENAME} -d [OR]
+		RewriteCond %{SCRIPT_FILENAME} -f
+		RewriteRule "(^|/)\." - [F]
 </IfModule>
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -584,9 +584,9 @@ AddDefaultCharset utf-8
 # project (e.g.: project dependencies), build scripts, etc..
 
 <IfModule mod_authz_core.c>
-    <FilesMatch "(^#.*#|\.(bak|conf|dist|fla|in[ci]|log|orig|psd|sh|sql|sw[op])|~)$">
-        Require all denied
-    </FilesMatch>
+		<FilesMatch "(^#.*#|\.(bak|conf|dist|fla|in[ci]|log|orig|psd|sh|sql|sw[op])|~)$">
+				Require all denied
+		</FilesMatch>
 </IfModule>
 
 # ----------------------------------------------------------------------
@@ -655,7 +655,7 @@ AddDefaultCharset utf-8
 # https://mimesniff.spec.whatwg.org/
 
 <IfModule mod_headers.c>
-    Header set X-Content-Type-Options "nosniff"
+		Header set X-Content-Type-Options "nosniff"
 </IfModule>
 
 # ----------------------------------------------------------------------
@@ -770,8 +770,8 @@ AddDefaultCharset utf-8
 # https://php.net/manual/en/ini.core.php#ini.expose-php
 
 <IfModule mod_headers.c>
-    Header unset X-Powered-By
-    Header always unset X-Powered-By
+		Header unset X-Powered-By
+		Header always unset X-Powered-By
 </IfModule>
 
 # ----------------------------------------------------------------------
@@ -809,82 +809,82 @@ ServerSignature Off
 
 <IfModule mod_deflate.c>
 
-    # Force compression for mangled `Accept-Encoding` request headers
-    #
-    # https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Accept-Encoding
-    # https://calendar.perfplanet.com/2010/pushing-beyond-gzipping/
+		# Force compression for mangled `Accept-Encoding` request headers
+		#
+		# https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Accept-Encoding
+		# https://calendar.perfplanet.com/2010/pushing-beyond-gzipping/
 
-    <IfModule mod_setenvif.c>
-        <IfModule mod_headers.c>
-            SetEnvIfNoCase ^(Accept-EncodXng|X-cept-Encoding|X{15}|~{15}|-{15})$ ^((gzip|deflate)\s*,?\s*)+|[X~-]{4,13}$ HAVE_Accept-Encoding
-            RequestHeader append Accept-Encoding "gzip,deflate" env=HAVE_Accept-Encoding
-        </IfModule>
-    </IfModule>
+		<IfModule mod_setenvif.c>
+				<IfModule mod_headers.c>
+						SetEnvIfNoCase ^(Accept-EncodXng|X-cept-Encoding|X{15}|~{15}|-{15})$ ^((gzip|deflate)\s*,?\s*)+|[X~-]{4,13}$ HAVE_Accept-Encoding
+						RequestHeader append Accept-Encoding "gzip,deflate" env=HAVE_Accept-Encoding
+				</IfModule>
+		</IfModule>
 
-    # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+		# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-    # Compress all output labeled with one of the following media types.
-    #
-    # https://httpd.apache.org/docs/current/mod/mod_filter.html#addoutputfilterbytype
+		# Compress all output labeled with one of the following media types.
+		#
+		# https://httpd.apache.org/docs/current/mod/mod_filter.html#addoutputfilterbytype
 
-    <IfModule mod_filter.c>
-        AddOutputFilterByType DEFLATE "application/atom+xml" \
-                                      "application/javascript" \
-                                      "application/json" \
-                                      "application/ld+json" \
-                                      "application/manifest+json" \
-                                      "application/rdf+xml" \
-                                      "application/rss+xml" \
-                                      "application/schema+json" \
-                                      "application/geo+json" \
-                                      "application/vnd.ms-fontobject" \
-                                      "application/wasm" \
-                                      "application/x-font-ttf" \
-                                      "application/x-javascript" \
-                                      "application/x-web-app-manifest+json" \
-                                      "application/xhtml+xml" \
-                                      "application/xml" \
-                                      "font/eot" \
-                                      "font/opentype" \
-                                      "font/otf" \
-                                      "image/bmp" \
-                                      "image/svg+xml" \
-                                      "image/vnd.microsoft.icon" \
-                                      "text/cache-manifest" \
-                                      "text/calendar" \
-                                      "text/css" \
-                                      "text/html" \
-                                      "text/javascript" \
-                                      "text/plain" \
-                                      "text/markdown" \
-                                      "text/vcard" \
-                                      "text/vnd.rim.location.xloc" \
-                                      "text/vtt" \
-                                      "text/x-component" \
-                                      "text/x-cross-domain-policy" \
-                                      "text/xml"
+		<IfModule mod_filter.c>
+				AddOutputFilterByType DEFLATE "application/atom+xml" \
+																			"application/javascript" \
+																			"application/json" \
+																			"application/ld+json" \
+																			"application/manifest+json" \
+																			"application/rdf+xml" \
+																			"application/rss+xml" \
+																			"application/schema+json" \
+																			"application/geo+json" \
+																			"application/vnd.ms-fontobject" \
+																			"application/wasm" \
+																			"application/x-font-ttf" \
+																			"application/x-javascript" \
+																			"application/x-web-app-manifest+json" \
+																			"application/xhtml+xml" \
+																			"application/xml" \
+																			"font/eot" \
+																			"font/opentype" \
+																			"font/otf" \
+																			"image/bmp" \
+																			"image/svg+xml" \
+																			"image/vnd.microsoft.icon" \
+																			"text/cache-manifest" \
+																			"text/calendar" \
+																			"text/css" \
+																			"text/html" \
+																			"text/javascript" \
+																			"text/plain" \
+																			"text/markdown" \
+																			"text/vcard" \
+																			"text/vnd.rim.location.xloc" \
+																			"text/vtt" \
+																			"text/x-component" \
+																			"text/x-cross-domain-policy" \
+																			"text/xml"
 
-    </IfModule>
+		</IfModule>
 
-    # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+		# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-    # Map the following filename extensions to the specified
-    # encoding type in order to make Apache serve the file types
-    # with the appropriate `Content-Encoding` response header
-    # (do note that this will NOT make Apache compress them!).
-    #
-    # If these files types would be served without an appropriate
-    # `Content-Enable` response header, client applications (e.g.:
-    # browsers) wouldn't know that they first need to uncompress
-    # the response, and thus, wouldn't be able to understand the
-    # content.
-    #
-    # https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Encoding
-    # https://httpd.apache.org/docs/current/mod/mod_mime.html#addencoding
+		# Map the following filename extensions to the specified
+		# encoding type in order to make Apache serve the file types
+		# with the appropriate `Content-Encoding` response header
+		# (do note that this will NOT make Apache compress them!).
+		#
+		# If these files types would be served without an appropriate
+		# `Content-Enable` response header, client applications (e.g.:
+		# browsers) wouldn't know that they first need to uncompress
+		# the response, and thus, wouldn't be able to understand the
+		# content.
+		#
+		# https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Encoding
+		# https://httpd.apache.org/docs/current/mod/mod_mime.html#addencoding
 
-    <IfModule mod_mime.c>
-        AddEncoding gzip              svgz
-    </IfModule>
+		<IfModule mod_mime.c>
+				AddEncoding gzip              svgz
+		</IfModule>
 
 </IfModule>
 
@@ -1038,7 +1038,7 @@ ServerSignature Off
 
 # `FileETag None` doesn't work in all cases.
 <IfModule mod_headers.c>
-    Header unset ETag
+		Header unset ETag
 </IfModule>
 
 FileETag None
@@ -1059,107 +1059,107 @@ FileETag None
 
 <IfModule mod_expires.c>
 
-    ExpiresActive on
-    ExpiresDefault                                      "access plus 1 month"
+		ExpiresActive on
+		ExpiresDefault                                      "access plus 1 month"
 
-  # CSS
+	# CSS
 
-    ExpiresByType text/css                              "access plus 1 year"
-
-
-  # Data interchange
-
-    ExpiresByType application/atom+xml                  "access plus 1 hour"
-    ExpiresByType application/rdf+xml                   "access plus 1 hour"
-    ExpiresByType application/rss+xml                   "access plus 1 hour"
-
-    ExpiresByType application/json                      "access plus 0 seconds"
-    ExpiresByType application/ld+json                   "access plus 0 seconds"
-    ExpiresByType application/schema+json               "access plus 0 seconds"
-    ExpiresByType application/geo+json                  "access plus 0 seconds"
-    ExpiresByType application/xml                       "access plus 0 seconds"
-    ExpiresByType text/calendar                         "access plus 0 seconds"
-    ExpiresByType text/xml                              "access plus 0 seconds"
+		ExpiresByType text/css                              "access plus 1 year"
 
 
-  # Favicon (cannot be renamed!) and cursor images
+	# Data interchange
 
-    ExpiresByType image/vnd.microsoft.icon              "access plus 1 week"
-    ExpiresByType image/x-icon                          "access plus 1 week"
+		ExpiresByType application/atom+xml                  "access plus 1 hour"
+		ExpiresByType application/rdf+xml                   "access plus 1 hour"
+		ExpiresByType application/rss+xml                   "access plus 1 hour"
 
-  # HTML
-
-    ExpiresByType text/html                             "access plus 0 seconds"
-
-
-  # JavaScript
-
-    ExpiresByType application/javascript                "access plus 1 year"
-    ExpiresByType application/x-javascript              "access plus 1 year"
-    ExpiresByType text/javascript                       "access plus 1 year"
+		ExpiresByType application/json                      "access plus 0 seconds"
+		ExpiresByType application/ld+json                   "access plus 0 seconds"
+		ExpiresByType application/schema+json               "access plus 0 seconds"
+		ExpiresByType application/geo+json                  "access plus 0 seconds"
+		ExpiresByType application/xml                       "access plus 0 seconds"
+		ExpiresByType text/calendar                         "access plus 0 seconds"
+		ExpiresByType text/xml                              "access plus 0 seconds"
 
 
-  # Manifest files
+	# Favicon (cannot be renamed!) and cursor images
 
-    ExpiresByType application/manifest+json             "access plus 1 week"
-    ExpiresByType application/x-web-app-manifest+json   "access plus 0 seconds"
-    ExpiresByType text/cache-manifest                   "access plus 0 seconds"
+		ExpiresByType image/vnd.microsoft.icon              "access plus 1 week"
+		ExpiresByType image/x-icon                          "access plus 1 week"
 
+	# HTML
 
-  # Markdown
-
-    ExpiresByType text/markdown                         "access plus 0 seconds"
+		ExpiresByType text/html                             "access plus 0 seconds"
 
 
-  # Media files
+	# JavaScript
 
-    ExpiresByType audio/ogg                             "access plus 1 month"
-    ExpiresByType image/bmp                             "access plus 1 month"
-    ExpiresByType image/gif                             "access plus 1 month"
-    ExpiresByType image/jpeg                            "access plus 1 month"
-    ExpiresByType image/png                             "access plus 1 month"
-    ExpiresByType image/svg+xml                         "access plus 1 month"
-    ExpiresByType image/webp                            "access plus 1 month"
-    ExpiresByType video/mp4                             "access plus 1 month"
-    ExpiresByType video/ogg                             "access plus 1 month"
-    ExpiresByType video/webm                            "access plus 1 month"
+		ExpiresByType application/javascript                "access plus 1 year"
+		ExpiresByType application/x-javascript              "access plus 1 year"
+		ExpiresByType text/javascript                       "access plus 1 year"
 
 
-  # WebAssembly
+	# Manifest files
 
-    ExpiresByType application/wasm                      "access plus 1 year"
-
-
-  # Web fonts
-
-    # Collection
-    ExpiresByType font/collection                       "access plus 1 month"
-
-    # Embedded OpenType (EOT)
-    ExpiresByType application/vnd.ms-fontobject         "access plus 1 month"
-    ExpiresByType font/eot                              "access plus 1 month"
-
-    # OpenType
-    ExpiresByType font/opentype                         "access plus 1 month"
-    ExpiresByType font/otf                              "access plus 1 month"
-
-    # TrueType
-    ExpiresByType application/x-font-ttf                "access plus 1 month"
-    ExpiresByType font/ttf                              "access plus 1 month"
-
-    # Web Open Font Format (WOFF) 1.0
-    ExpiresByType application/font-woff                 "access plus 1 month"
-    ExpiresByType application/x-font-woff               "access plus 1 month"
-    ExpiresByType font/woff                             "access plus 1 month"
-
-    # Web Open Font Format (WOFF) 2.0
-    ExpiresByType application/font-woff2                "access plus 1 month"
-    ExpiresByType font/woff2                            "access plus 1 month"
+		ExpiresByType application/manifest+json             "access plus 1 week"
+		ExpiresByType application/x-web-app-manifest+json   "access plus 0 seconds"
+		ExpiresByType text/cache-manifest                   "access plus 0 seconds"
 
 
-  # Other
+	# Markdown
 
-    ExpiresByType text/x-cross-domain-policy            "access plus 1 week"
+		ExpiresByType text/markdown                         "access plus 0 seconds"
+
+
+	# Media files
+
+		ExpiresByType audio/ogg                             "access plus 1 month"
+		ExpiresByType image/bmp                             "access plus 1 month"
+		ExpiresByType image/gif                             "access plus 1 month"
+		ExpiresByType image/jpeg                            "access plus 1 month"
+		ExpiresByType image/png                             "access plus 1 month"
+		ExpiresByType image/svg+xml                         "access plus 1 month"
+		ExpiresByType image/webp                            "access plus 1 month"
+		ExpiresByType video/mp4                             "access plus 1 month"
+		ExpiresByType video/ogg                             "access plus 1 month"
+		ExpiresByType video/webm                            "access plus 1 month"
+
+
+	# WebAssembly
+
+		ExpiresByType application/wasm                      "access plus 1 year"
+
+
+	# Web fonts
+
+		# Collection
+		ExpiresByType font/collection                       "access plus 1 month"
+
+		# Embedded OpenType (EOT)
+		ExpiresByType application/vnd.ms-fontobject         "access plus 1 month"
+		ExpiresByType font/eot                              "access plus 1 month"
+
+		# OpenType
+		ExpiresByType font/opentype                         "access plus 1 month"
+		ExpiresByType font/otf                              "access plus 1 month"
+
+		# TrueType
+		ExpiresByType application/x-font-ttf                "access plus 1 month"
+		ExpiresByType font/ttf                              "access plus 1 month"
+
+		# Web Open Font Format (WOFF) 1.0
+		ExpiresByType application/font-woff                 "access plus 1 month"
+		ExpiresByType application/x-font-woff               "access plus 1 month"
+		ExpiresByType font/woff                             "access plus 1 month"
+
+		# Web Open Font Format (WOFF) 2.0
+		ExpiresByType application/font-woff2                "access plus 1 month"
+		ExpiresByType font/woff2                            "access plus 1 month"
+
+
+	# Other
+
+		ExpiresByType text/x-cross-domain-policy            "access plus 1 week"
 
 </IfModule>
 
@@ -1217,21 +1217,21 @@ FileETag None
 # </IfModule>
 
 <IfModule mod_rewrite.c>
-  Options +FollowSymlinks
-  RewriteEngine On
-  RewriteCond %{REQUEST_FILENAME} !-f
-  RewriteCond %{REQUEST_FILENAME} !-d
-  RewriteRule ^([\w-]+)$ $1.php [L]
-  RewriteRule ^([\w-]+)/([\w-]+)$ $1@$2.php [L]
+	Options +FollowSymlinks
+	RewriteEngine On
+	RewriteCond %{REQUEST_FILENAME} !-f
+	RewriteCond %{REQUEST_FILENAME} !-d
+	RewriteRule ^([\w-]+)$ $1.php [L]
+	RewriteRule ^([\w-]+)/([\w-]+)$ $1@$2.php [L]
 
-  # Remove a trailing slash at the end
-  RewriteCond %{REQUEST_FILENAME} !-d
-  RewriteRule ^(.*)/$ /$1 [R=301,L]
+	# Remove a trailing slash at the end
+	RewriteCond %{REQUEST_FILENAME} !-d
+	RewriteRule ^(.*)/$ /$1 [R=301,L]
 
-  # Remove uri from index page
-  RewriteRule ^index.php$ / [R=301,L]
+	# Remove uri from index page
+	RewriteRule ^index.php$ / [R=301,L]
 
-  # Redirect from .html
-  RewriteRule ^([\w-]+).html$ /$1 [L,R=301]
-  RewriteRule ^([\w-]+)/([\w-]+).html$ /$1/$2 [L,R=301]
+	# Redirect from .html
+	RewriteRule ^([\w-]+).html$ /$1 [L,R=301]
+	RewriteRule ^([\w-]+)/([\w-]+).html$ /$1/$2 [L,R=301]
 </IfModule>

@@ -8,13 +8,13 @@
  */
 
 /* ==========================================================================
-   Base styles: opinionated defaults
-   ========================================================================== */
+	 Base styles: opinionated defaults
+	 ========================================================================== */
 
 html {
-  color: #222;
-  font-size: 1em;
-  line-height: 1.4;
+	color: #222;
+	font-size: 1em;
+	line-height: 1.4;
 }
 
 /**
@@ -28,13 +28,13 @@ html {
  */
 
 ::-moz-selection {
-  background: #b3d4fc;
-  text-shadow: none;
+	background: #b3d4fc;
+	text-shadow: none;
 }
 
 ::selection {
-  background: #b3d4fc;
-  text-shadow: none;
+	background: #b3d4fc;
+	text-shadow: none;
 }
 
 /**
@@ -42,12 +42,12 @@ html {
  */
 
 hr {
-  display: block;
-  height: 1px;
-  border: 0;
-  border-top: 1px solid #ccc;
-  margin: 1em 0;
-  padding: 0;
+	display: block;
+	height: 1px;
+	border: 0;
+	border-top: 1px solid #ccc;
+	margin: 1em 0;
+	padding: 0;
 }
 
 /**
@@ -62,7 +62,7 @@ iframe,
 img,
 svg,
 video {
-  vertical-align: middle;
+	vertical-align: middle;
 }
 
 /**
@@ -70,9 +70,9 @@ video {
  */
 
 fieldset {
-  border: 0;
-  margin: 0;
-  padding: 0;
+	border: 0;
+	margin: 0;
+	padding: 0;
 }
 
 /**
@@ -80,23 +80,23 @@ fieldset {
  */
 
 textarea {
-  resize: vertical;
+	resize: vertical;
 }
 
 /* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
+	 Author's custom styles
+	 ========================================================================== */
 
 /* ==========================================================================
-   Helper classes
-   ========================================================================== */
+	 Helper classes
+	 ========================================================================== */
 
 /*
  * Hide visually and from screen readers
  */
 
 .g-hidden {
-  display: none !important;
+	display: none !important;
 }
 
 /**
@@ -109,16 +109,16 @@ textarea {
  */
 
 .g-visuallyhidden {
-  border: 0;
-  clip: rect(0, 0, 0, 0);
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-  /* 1 */
+	border: 0;
+	clip: rect(0, 0, 0, 0);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	white-space: nowrap;
+	width: 1px;
+	/* 1 */
 }
 
 /**
@@ -129,13 +129,13 @@ textarea {
 
 .g-visuallyhidden.focusable:active,
 .g-visuallyhidden.focusable:focus {
-  clip: auto;
-  height: auto;
-  margin: 0;
-  overflow: visible;
-  position: static;
-  white-space: inherit;
-  width: auto;
+	clip: auto;
+	height: auto;
+	margin: 0;
+	overflow: visible;
+	position: static;
+	white-space: inherit;
+	width: auto;
 }
 
 /**
@@ -143,7 +143,7 @@ textarea {
  */
 
 .g-invisible {
-  visibility: hidden;
+	visibility: hidden;
 }
 
 /**
@@ -160,10 +160,10 @@ textarea {
 
 .g-clearfix::before,
 .g-clearfix::after {
-  content: " ";
-  display: table;
+	content: " ";
+	display: table;
 }
 
 .g-clearfix::after {
-  clear: both;
+	clear: both;
 }

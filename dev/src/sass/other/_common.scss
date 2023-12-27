@@ -1,7 +1,7 @@
 a {
-  &:hover {
-    text-decoration: none;
-  }
+	&:hover {
+		text-decoration: none;
+	}
 }
 
 .l-html {
@@ -9,7 +9,7 @@ a {
 }
 
 .l-body {
-  background: #fff;
+	background: #fff;
 }
 
 
@@ -17,20 +17,20 @@ a {
  * wrapper
  */
 .l-wrapper {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  margin: 0 auto;
-  width: $site-width;
-  min-height: 100vh;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	margin: 0 auto;
+	width: $site-width;
+	min-height: 100vh;
 }
 
 /**
  * content
  */
 .l-content {
-  position: relative;
-  flex: 1;
+	position: relative;
+	flex: 1;
 }
 
 
@@ -38,6 +38,6 @@ a {
  * main
  */
 .l-contentText {
-  position: relative;
-  display: block;
+	position: relative;
+	display: block;
 }

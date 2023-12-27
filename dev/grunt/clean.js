@@ -1,11 +1,11 @@
 module.exports = {
-  options: {
-    force: true,
-  },
+	options: {
+		force: true,
+	},
 
-  main: [
-    '<%= tempDir %>',
-    '<%= destCSSDir %>',
-    '<%= destIMGDir %>',
-  ],
+	main: [
+		'<%= tempDir %>',
+		'<%= destCSSDir %>',
+		'<%= destIMGDir %>',
+	],
 };

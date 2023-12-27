@@ -1,8 +1,8 @@
 <?php
 $pageName = 'Subpage';
 $meta     = array(
-  'description' => '',
-  'keywords'    => '',
+	'description' => '',
+	'keywords'    => '',
 );
 require( 'inc/header.php' );
 ?>

@@ -1,8 +1,8 @@
 <?php
 $pageName = 'Page';
 $meta     = array(
-  'description' => '',
-  'keywords'    => '',
+	'description' => '',
+	'keywords'    => '',
 );
 require( 'inc/header.php' );
 ?>

@@ -1,7 +1,7 @@
 // Authors: %Author Name%
 
 $(function() {
-  // initFunctionExample();
+	// initFunctionExample();
 });
 
 $(window).on('resize', function() {

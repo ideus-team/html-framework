@@ -8,9 +8,9 @@
  * replacement image appears.
  */
 .g-ir {
-  text-indent: 100%;
-  white-space: nowrap;
-  overflow: hidden;
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 }
 
 
@@ -18,7 +18,7 @@
  * Telephone number
  */
 .g-tel {
-  @include tel;
+	@include tel;
 }
 
 
@@ -26,29 +26,29 @@
  * Overlay with loading icon
  */
 .g-loading {
-  position: relative;
-  opacity: .6;
+	position: relative;
+	opacity: .6;
 
-  &::before {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    z-index: 1000;
-    width: 40px;
-    height: 40px;
-    border: 6px solid #eaeaea;
-    border-top-color: #282828;
-    border-radius: 50%;
-    content: '';
-    animation: spinner 1.2s ease infinite;
-  }
+	&::before {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		z-index: 1000;
+		width: 40px;
+		height: 40px;
+		border: 6px solid #eaeaea;
+		border-top-color: #282828;
+		border-radius: 50%;
+		content: '';
+		animation: spinner 1.2s ease infinite;
+	}
 }
 
 @keyframes spinner {
-  0% {
-    transform: translate(-50%, -50%) rotate(0deg);
-  }
-  100% {
-    transform: translate(-50%, -50%) rotate(360deg);
-  }
+	0% {
+		transform: translate(-50%, -50%) rotate(0deg);
+	}
+	100% {
+		transform: translate(-50%, -50%) rotate(360deg);
+	}
 }

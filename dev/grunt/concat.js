@@ -1,10 +1,10 @@
 module.exports = {
-  options: {
-    separator: ';',
-  },
+	options: {
+		separator: ';',
+	},
 
-  main: {
-    src: '<%= sourceJSFiles %>',
-    dest: '<%= tempJS %>',
-  },
+	main: {
+		src: '<%= sourceJSFiles %>',
+		dest: '<%= tempJS %>',
+	},
 };
