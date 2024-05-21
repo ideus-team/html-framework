@@ -1,6 +1,6 @@
 {
 	"name": "ideus-html-framework",
-	"version": "2.9.3",
+	"version": "2.10.1",
 	"description": "Our HTML5 boilerplate",
 	"devDependencies": {
 		"@babel/core": "7.24.5",
@@ -24,7 +24,7 @@
 		"grunt-terser": "2.0.0",
 		"jshint-stylish": "2.2.1",
 		"load-grunt-config": "4.0.1",
-		"sass": "1.77.0"
+		"sass": "1.77.2"
 	},
 	"browserslist": [
 		"last 2 version",
