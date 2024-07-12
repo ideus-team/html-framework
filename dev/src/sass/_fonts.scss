@@ -2,12 +2,15 @@
  * Fonts
  *
  * You can add fonts by mixin:
- * @include font-face($name, $file, $weight: normal, $style: normal, $display: swap);
+ * @include font-face($name, $file, $weight: normal, $style: normal, $stretch: normal, $display: swap);
  * @include font-face('PTSans', 'PTSansRegular');
  * @include font-face('PTSans', 'PTSansItalic', normal, italic);
  * @include font-face('PTSans', 'PTSansBold', bold);
+ * @include font-face('Avenir Next LT Pro', 'avenirnextltpro-boldcnit', 700, italic, condensed);
  */
-$Arial:       Arial, 'Helvetica Neue', Helvetica, sans-serif;
-$OpenSans:   'Open Sans', sans-serif;
-$Roboto:     'Roboto', sans-serif;
-$RobotoSlab: 'Roboto Slab', serif;
+
+$font-Arial:      Arial, 'Helvetica Neue', Helvetica, sans-serif;
+$font-OpenSans:   'Open Sans', sans-serif;
+
+$font-Roboto:     'Roboto', sans-serif;
+$font-RobotoSlab: 'Roboto Slab', serif;

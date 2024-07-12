@@ -35,7 +35,7 @@ $site-width: 980px;
 	min-height: 100%;
 	background: #fff;
 	color: #292929;
-	font: 15px/1.3 $Roboto;
+	font: 15px/1.3 $font-Roboto;
 }
 
 
@@ -223,12 +223,15 @@ $site-width: 980px;
 
 	&__title {
 		@include clearfix;
-		box-sizing: border-box;
-		margin: 20px 0 0;
-		background: #fafafa;
-		color: #636363;
-		font: 18px/1.3 $RobotoSlab;
-		cursor: pointer;
+
+		& {
+			box-sizing: border-box;
+			margin: 20px 0 0;
+			background: #fafafa;
+			color: #636363;
+			font: 18px/1.3 $font-RobotoSlab;
+			cursor: pointer;
+		}
 
 		&.-state_active {
 			border-bottom: 2px solid #d4d4d4;

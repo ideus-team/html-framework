@@ -10,8 +10,11 @@
 	@include clearfix;
 
 	h1, h2, h3, h4, h5, h6, p, ul, ol, dl, blockquote, pre, code {
-		margin: 1em 0;
 		@include first-last-margin;
+
+		& {
+			margin: 1em 0;
+		}
 	}
 
 	h1 {}
@@ -30,12 +33,17 @@
 	dt {}
 	dd {}
 
-	blockquote {}
+	blockquote {
+		display: block;
+		padding: .5em 1em;
+		border-left: 2px solid #000;
+		font-style: italic;
+	}
 
 	pre,
 	code {
 		display: block;
-		padding: 5px 10px 5px 8px;
+		padding: .5em 1em;
 		background: #e9ebec;
 		border-left: 2px solid #000;
 	}
@@ -60,7 +68,6 @@
 		clear: both;
 		display: block;
 		margin: .375em auto 1em;
-		margin-left: auto;
 	}
 
 	.alignright {
@@ -108,6 +115,23 @@
 	.gallery dl a {}
 	.gallery dl img {}
 	.gallery-caption {}
+
+	.wp-video {
+		@include first-last-margin;
+
+		& {
+			margin: 1em 0;
+			width: 100% !important;
+		}
+	}
+
+	.wp-audio-shortcode {
+		@include first-last-margin;
+
+		& {
+			margin: 1em 0;
+		}
+	}
 
 	.wp-smiley {
 		margin: 0;
