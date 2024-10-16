@@ -8,26 +8,40 @@ $siteDir = str_replace( '\\', '/', dirname( $_SERVER['PHP_SELF'] ) );
 $siteDir = ( '/' === $siteDir ) ? $siteDir : $siteDir . '/';
 $baseURL = $protocol . $_SERVER['SERVER_NAME'] . $siteDir;
 
-$canonical = $protocol . $_SERVER['SERVER_NAME'] . '/' . preg_replace( array( '/^\//', '/.php/' ), '', $_SERVER['REQUEST_URI'] );
-$uri       = $uri ? $uri : preg_replace( array( '/^\/\w+\//', '/^\//', '/.php/' ), '', $_SERVER['REQUEST_URI'] );
+if ( ! isset( $canonical ) || ! $canonical ) {
+	$canonical = $protocol . $_SERVER['SERVER_NAME'] . '/' . preg_replace( array( '/^\//', '/.php/' ), '', $_SERVER['REQUEST_URI'] );
+}
+
+if ( ! isset( $uri ) || ! $uri ) {
+	$uri = preg_replace( array( '/^\/\w+\//', '/^\//', '/.php/' ), '', $_SERVER['REQUEST_URI'] );
+}
 
 $siteName = '%siteName%';
 
 $isHomepage = ( basename( $_SERVER['PHP_SELF'] ) == 'index.php' );
-$title = $isHomepage ? $siteName : $pageName . ' : ' . $siteName;
+
+if ( $isHomepage ) {
+	$title = $siteName;
+} else {
+	$title = $pageName . ' : ' . $siteName;
+}
+
+if ( ! isset( $inline_css ) || ! $inline_css ) {
+	$inline_css = false;
+} else {
+	$inline_css_path = $_SERVER['DOCUMENT_ROOT'] . $siteDir . 'assets/css/' . $inline_css . '.min.css';
+}
+
+$file_js_path    = $_SERVER['DOCUMENT_ROOT'] . $siteDir . 'assets/js/'  . $file_js    . '.js';
+$file_css_path   = $_SERVER['DOCUMENT_ROOT'] . $siteDir . 'assets/css/' . $file_css   . '.min.css';
+
+$file_js_url  = 'assets/js/'  . $file_js  . '.js?'      . @filemtime( $file_js_path );
+$file_css_url = 'assets/css/' . $file_css . '.min.css?' . @filemtime( $file_css_path );
 ?>
 <!doctype html>
-<html class="l-html" lang="">
+<html class="l-html" lang="en">
 <head>
-	<!-- Global site tag (gtag.js) - Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-XXXXX-Y"></script>
-	<script>
-		window.dataLayer = window.dataLayer || [];
-		function gtag(){dataLayer.push(arguments);}
-		gtag('js', new Date());
-
-		gtag('config', 'UA-XXXXX-Y');
-	</script>
+	<?php require( 'scripts.php' ); ?>
 
 	<meta charset="utf-8">
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -49,9 +63,22 @@ $title = $isHomepage ? $siteName : $pageName . ' : ' . $siteName;
 
 	<!--<meta name="theme-color" content="#ed1c24">-->
 
-	<link rel="stylesheet" href="assets/css/main.min.css?<?php echo filemtime( $_SERVER['DOCUMENT_ROOT'] . $siteDir . 'assets/css/main.min.css' ); ?>">
+	<?php if ( $inline_css && file_exists( $inline_css_path ) ) : ?>
+
+		<style>
+			<?php require( $inline_css_path ); ?>
+		</style>
+
+	<?php elseif ( file_exists( $file_css_path ) ) : ?>
+
+		<link rel="stylesheet" href="<?php echo $file_css_url; ?>">
+
+	<?php endif; ?>
+
 </head>
 <body class="l-body -page_<?php echo $uri; ?><?php echo ( ! $isHomepage ) ? ' -page_inner' : ''; ?>">
+	<?php require( 'after-body.php' ); ?>
+
 	<div class="l-wrapper" id="top">
 		<header class="l-siteHeader">
 			<div class="b-siteHeader">
@@ -80,13 +107,13 @@ $title = $isHomepage ? $siteName : $pageName . ' : ' . $siteName;
 
 				<nav class="l-mainNavigation">
 					<ul class="b-mainNavigation">
-						<li class="b-mainNavigation__item<?php echo ( $uri == 'home' ) ? ' -state_active' : ''; ?>">
+						<li class="b-mainNavigation__item<?php echo ( 'home' === $uri ) ? ' -state_active' : ''; ?>">
 							<a class="b-mainNavigation__link" href="<?php echo $siteDir; ?>">Home</a>
 						</li>
-						<li class="b-mainNavigation__item<?php echo ( $uri == 'page' ) ? ' -state_active' : ''; ?>">
+						<li class="b-mainNavigation__item<?php echo ( 'page' === $uri ) ? ' -state_active' : ''; ?>">
 							<a class="b-mainNavigation__link" href="page">Page</a>
 						</li>
-						<li class="b-mainNavigation__item<?php echo ( $uri == 'subpage' ) ? ' -state_active' : ''; ?>">
+						<li class="b-mainNavigation__item<?php echo ( 'subpage' === $uri ) ? ' -state_active' : ''; ?>">
 							<a class="b-mainNavigation__link" href="page/subpage">Subpage</a>
 						</li>
 					</ul>

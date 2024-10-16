@@ -4,13 +4,13 @@
 			<div class="b-siteFooter">
 				<div class="l-bottomNavigation" role="navigation">
 					<ul class="b-bottomNavigation">
-						<li class="b-bottomNavigation__item<?php echo ( $uri == 'home' ) ? ' -state_active' : ''; ?>">
+						<li class="b-bottomNavigation__item<?php echo ( 'home' === $uri ) ? ' -state_active' : ''; ?>">
 							<a class="b-bottomNavigation__link" href="<?php echo $siteDir; ?>">Home</a>
 						</li>
-						<li class="b-bottomNavigation__item<?php echo ( $uri == 'page' ) ? ' -state_active' : ''; ?>">
+						<li class="b-bottomNavigation__item<?php echo ( 'page' === $uri ) ? ' -state_active' : ''; ?>">
 							<a class="b-bottomNavigation__link" href="page">Page</a>
 						</li>
-						<li class="b-bottomNavigation__item<?php echo ( $uri == 'subpage' ) ? ' -state_active' : ''; ?>">
+						<li class="b-bottomNavigation__item<?php echo ( 'subpage' === $uri ) ? ' -state_active' : ''; ?>">
 							<a class="b-bottomNavigation__link" href="page/subpage">Subpage</a>
 						</li>
 					</ul>
@@ -31,9 +31,20 @@
 		</footer>
 	</div><!--wrapper-->
 
+	<?php if ( $inline_css && file_exists( $inline_css_path ) && file_exists( $file_css_path ) ) : ?>
+
+		<link rel="stylesheet" href="<?php echo $file_css_url; ?>">
+
+	<?php endif; ?>
+
 	<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 	<script>window.jQuery || document.write('<script src="assets/js/vendor/jquery-3.7.1.min.js"><\/script>')</script>
 
-	<script src="assets/js/scripts.js?<?php echo filemtime( $_SERVER['DOCUMENT_ROOT'] . $siteDir . 'assets/js/scripts.js' ); ?>"></script>
+	<?php if ( file_exists( $file_js_path ) ) : ?>
+
+		<script src="<?php echo $file_js_url; ?>"></script>
+
+	<?php endif; ?>
+
 </body>
 </html>
