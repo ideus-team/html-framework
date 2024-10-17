@@ -26,6 +26,14 @@ if ( $isHomepage ) {
 	$title = $pageName . ' : ' . $siteName;
 }
 
+if ( ! isset( $file_js ) || ! $file_js ) {
+	$file_js = 'main';
+}
+
+if ( ! isset( $file_css ) || ! $file_css ) {
+	$file_css = 'main';
+}
+
 if ( ! isset( $inline_css ) || ! $inline_css ) {
 	$inline_css = false;
 } else {
