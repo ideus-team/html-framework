@@ -124,3 +124,9 @@ Generated code will look like this:
 	}
 }
 ```
+
+### Inline SVG
+Усі інлайнові SVG повинні бути у окремих svg-файлах і додані на сторінку за допомогою наступного кода:
+```php
+<?php include( 'assets/img/path_to_image.svg' ); ?>
+```
