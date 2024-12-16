@@ -6,13 +6,14 @@ module.exports = function(grunt) {
 	});
 
 	require('load-grunt-config')(grunt, {
-		jitGrunt: {
+		jitGrunt : {
 			staticMappings: {
-				sprite: 'grunt-spritesmith',
+				sprite  : 'grunt-spritesmith',
+				postcss : '@lodder/grunt-postcss',
 			},
 		},
 
-		data: {
+		data : {
 			// Data passed into config.  Can use with <%= test %>
 
 			// Paths for Plugins settings:
@@ -33,8 +34,8 @@ module.exports = function(grunt) {
 			// Compile:
 				// Source:
 					// CSS
-					sourceCSSDir    : 'src/sass',
-					sourceCSSFiles  : '<%= sourceCSSDir %>' + '/**/*.scss',
+					sourceCSSDir   : 'src/sass',
+					sourceCSSFiles : '<%= sourceCSSDir %>' + '/**/*.scss',
 
 					// JS
 					sourceJSPlugins : [
@@ -51,13 +52,13 @@ module.exports = function(grunt) {
 					],
 
 					// IMG
-					sourceIMGFormats  : '.{png,jpg,gif,svg,webp}',
-					sourceIMGDir      : 'src/img',
-					sourceIMGFiles    : '<%= sourceIMGDir %>' + '/**/*' + '<%= sourceIMGFormats %>',
+					sourceIMGFormats : '.{png,jpg,gif,svg,webp}',
+					sourceIMGDir     : 'src/img',
+					sourceIMGFiles   : '<%= sourceIMGDir %>' + '/**/*' + '<%= sourceIMGFormats %>',
 
 				// Temp
-					tempDir       : '.temp',
-					tempJS        : '<%= tempDir %>' + '/js/main.js',
+					tempDir : '.temp',
+					tempJS  : '<%= tempDir %>' + '/js/main.js',
 
 				// Destination:
 					// CSS
@@ -66,8 +67,8 @@ module.exports = function(grunt) {
 					destMinCSSExt : '.min.css',
 
 					// JS
-					destJSDir  : '../assets/js',
-					destJS     : '<%= destJSDir %>'  + '/scripts.js',
+					destJSDir : '../assets/js',
+					destJS    : '<%= destJSDir %>'  + '/scripts.js',
 
 					// IMG
 					destIMGDir     : '../assets/img',
