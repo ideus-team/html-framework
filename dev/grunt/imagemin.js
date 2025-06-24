@@ -1,5 +1,10 @@
 module.exports = {
 	main: {
+		options: {
+			svgoPlugins: [{
+				removeViewBox: false,
+			}],
+		},
 		files: [{
 			expand: true,
 			cwd: '<%= sourceIMGDir %>' + '/',

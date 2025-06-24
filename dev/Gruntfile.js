@@ -52,7 +52,7 @@ module.exports = function(grunt) {
 					],
 
 					// IMG
-					sourceIMGFormats : '.{png,jpg,gif,svg,webp}',
+					sourceIMGFormats : '.{png,jpg,gif,svg,webp,avif}',
 					sourceIMGDir     : 'src/img',
 					sourceIMGFiles   : '<%= sourceIMGDir %>' + '/**/*' + '<%= sourceIMGFormats %>',
 

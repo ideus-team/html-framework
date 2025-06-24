@@ -65,11 +65,13 @@ $file_css_url = 'assets/css/' . $file_css . '.min.css?' . @filemtime( $file_css_
 
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-	<link rel="shortcut icon" href="favicon.ico">
-	<link rel="manifest" href="site.webmanifest">
+	<link rel="icon" href="favicon.ico" sizes="any">
+	<link rel="icon" href="icon.svg" type="image/svg+xml">
 	<link rel="apple-touch-icon" href="icon.png">
 
-	<!--<meta name="theme-color" content="#ed1c24">-->
+	<link rel="manifest" href="site.webmanifest">
+
+	<!--<meta name="theme-color" content="#fafafa">-->
 
 	<?php if ( $inline_css && file_exists( $inline_css_path ) ) : ?>
 
@@ -95,7 +97,7 @@ $file_css_url = 'assets/css/' . $file_css . '.min.css?' . @filemtime( $file_css_
 					$logo_tag  = $isHomepage ? 'h1' : 'div';
 					$logo_link = $isHomepage ? $baseURL . '#top' : $baseURL;
 					?>
-					<<?php echo $logo_tag; ?> class="b-siteLogo" itemscope itemtype="http://schema.org/Organization">
+					<<?php echo $logo_tag; ?> class="b-siteLogo" itemscope itemtype="https://schema.org/Organization">
 						<a class="b-siteLogo__link" href="<?php echo $logo_link; ?>" itemprop="url">
 							<img class="b-siteLogo__icon" src="assets/img/logos/siteLogo-logo.png" alt="<?php echo $siteName; ?>" title="<?php echo $siteName; ?>" itemprop="logo">
 						</a>

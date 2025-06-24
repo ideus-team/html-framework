@@ -16,7 +16,7 @@
 					</ul>
 				</div>
 
-				<address class="l-siteCopyright vcard" itemscope itemtype="http://schema.org/Organization">
+				<address class="l-siteCopyright vcard" itemscope itemtype="https://schema.org/Organization">
 					<div class="b-siteCopyright">
 						© <?php echo date( 'Y' ); ?>
 						<a rel="me" itemprop="name" class="b-siteCopyright__link fn n org url work" href="<?php echo $protocol . $_SERVER['HTTP_HOST']; ?>">%clientName%</a>.
