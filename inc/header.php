@@ -98,7 +98,7 @@ $file_css_url = 'assets/css/' . $file_css . '.min.css?' . @filemtime( $file_css_
 					$logo_link = $isHomepage ? $baseURL . '#top' : $baseURL;
 					?>
 					<<?php echo $logo_tag; ?> class="b-siteLogo" itemscope itemtype="https://schema.org/Organization">
-						<a class="b-siteLogo__link" href="<?php echo $logo_link; ?>" itemprop="url">
+						<a class="b-siteLogo__link" href="<?php echo $logo_link; ?>" itemprop="url" aria-label="<?php echo $siteName; ?>">
 							<img class="b-siteLogo__icon" src="assets/img/logos/siteLogo-logo.png" alt="<?php echo $siteName; ?>" title="<?php echo $siteName; ?>" itemprop="logo">
 						</a>
 					</<?php echo $logo_tag; ?>>
