@@ -8,7 +8,6 @@ module.exports = function(grunt) {
 	require('load-grunt-config')(grunt, {
 		jitGrunt : {
 			staticMappings: {
-				sprite  : 'grunt-spritesmith',
 				postcss : '@lodder/grunt-postcss',
 			},
 		},

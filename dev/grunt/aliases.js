@@ -58,7 +58,6 @@ module.exports = {
 	'img': {
 		description: 'Image Tasks',
 		tasks: [
-			'sprite',
 			'imagemin',
 		],
 	},
@@ -66,7 +65,6 @@ module.exports = {
 	'devimg': {
 		description: 'Development Image Tasks',
 		tasks: [
-			'sprite',
 			'copy',
 		],
 	},

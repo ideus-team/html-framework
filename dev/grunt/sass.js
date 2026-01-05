@@ -8,7 +8,7 @@ module.exports = {
 		files: [{
 			expand: true,
 			cwd: '<%= sourceCSSDir %>',
-			src: '*.scss',
+			src: '**/*.scss',
 			dest: '<%= destCSSDir %>',
 			ext: '<%= destCSSExt %>',
 		}],
