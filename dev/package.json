@@ -1,13 +1,13 @@
 {
 	"name": "ideus-html-framework",
-	"version": "2.27.3",
+	"version": "2.27.4",
 	"description": "Our HTML5 boilerplate",
 	"devDependencies": {
 		"@babel/core": "7.29.0",
-		"@babel/preset-env": "7.29.3",
+		"@babel/preset-env": "7.29.5",
 		"@lodder/grunt-postcss": "3.1.1",
 		"autoprefixer": "10.5.0",
-		"cssnano": "7.1.9",
+		"cssnano": "8.0.0",
 		"grunt": "1.6.2",
 		"grunt-babel": "8.0.0",
 		"grunt-concurrent": "3.0.0",
