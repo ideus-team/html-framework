@@ -40,7 +40,6 @@ module.exports = {
 			'jshint',
 			'jscs',
 			'concat',
-			'babel',
 			'terser',
 		],
 	},
@@ -51,7 +50,6 @@ module.exports = {
 			'jshint',
 			'jscs',
 			'concat',
-			'babel',
 		],
 	},
 

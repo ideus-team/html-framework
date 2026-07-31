@@ -4,7 +4,6 @@ module.exports = {
 	},
 
 	main: [
-		'<%= tempDir %>',
 		'<%= destCSSDir %>',
 		'<%= destIMGDir %>',
 	],

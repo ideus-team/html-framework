@@ -5,6 +5,6 @@ module.exports = {
 
 	main: {
 		src: '<%= sourceJSFiles %>',
-		dest: '<%= tempJS %>',
+		dest: '<%= destJS %>',
 	},
 };

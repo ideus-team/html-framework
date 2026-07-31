@@ -1,15 +1,9 @@
 @charset 'utf-8';
 
-@import 'other/normalize';
-@import 'other/h5b';
+@use "config" as *;
 
-@import 'mixins';
-
-/**
- * Settings
- */
-@import 'fonts';
-@import 'settings';
+@use 'other/normalize';
+@use 'other/h5b';
 
 /**
  * Plugins
@@ -23,27 +17,27 @@
 /**
  * Framework Common Libraries
  */
-@import 'other/g-blocks';
+@use 'other/g-blocks';
 
 /**
  * Project only code
  */
-@import 'other/common';
-@import 'blocks/text';
+@use 'other/common';
+@use 'blocks/text';
 
 /**
  * Blocks
  */
-@import 'blocks/bottomNavigation';
-@import 'blocks/developerCopyright';
-@import 'blocks/mainNavigation';
-@import 'blocks/siteCopyright';
-@import 'blocks/siteFooter';
-@import 'blocks/siteHeader';
-@import 'blocks/siteLogo';
-@import 'blocks/siteSearch';
+@use 'blocks/bottomNavigation';
+@use 'blocks/developerCopyright';
+@use 'blocks/mainNavigation';
+@use 'blocks/siteCopyright';
+@use 'blocks/siteFooter';
+@use 'blocks/siteHeader';
+@use 'blocks/siteLogo';
+@use 'blocks/siteSearch';
 
 /**
  * Print styles
  */
-@import 'other/print';
+@use 'other/print';

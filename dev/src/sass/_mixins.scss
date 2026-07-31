@@ -1,3 +1,6 @@
+@use "variables" as *;
+@use "fonts" as *;
+
 @mixin font-face($name, $file, $weight: normal, $style: normal, $stretch: normal, $display: swap) {
 	@font-face {
 		font-family: '#{$name}';

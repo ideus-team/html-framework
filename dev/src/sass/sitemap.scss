@@ -1,14 +1,13 @@
 @charset "utf-8";
 
-@import 'other/normalize';
-@import 'other/h5b';
+@use "config" as *;
 
-@import 'mixins';
+@use 'other/normalize';
+@use 'other/h5b';
 
-/* Project files… */
-@import 'fonts';
-
-/* Config */
+/**
+ * Settings
+ */
 $site-width: 980px;
 
 /* ==|== primary styles =====================================================
