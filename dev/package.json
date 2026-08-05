@@ -1,11 +1,11 @@
 {
 	"name": "ideus-html-framework",
-	"version": "2.29.0",
+	"version": "2.29.2",
 	"description": "Our HTML5 boilerplate",
 	"devDependencies": {
 		"@lodder/grunt-postcss": "3.1.1",
 		"autoprefixer": "10.5.4",
-		"cssnano": "8.0.2",
+		"cssnano": "8.0.3",
 		"grunt": "1.6.3",
 		"grunt-concurrent": "3.0.0",
 		"grunt-contrib-clean": "2.0.1",

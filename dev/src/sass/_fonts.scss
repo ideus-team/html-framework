@@ -1,3 +1,5 @@
+@use "mixins" as *;
+
 /**
  * Fonts
  *
@@ -8,9 +10,3 @@
  * @include font-face('PTSans', 'PTSansBold', bold);
  * @include font-face('Avenir Next LT Pro', 'avenirnextltpro-boldcnit', 700, italic, condensed);
  */
-
-$font-Arial:      Arial, 'Helvetica Neue', Helvetica, sans-serif;
-$font-OpenSans:   'Open Sans', sans-serif;
-
-$font-Roboto:     'Roboto', sans-serif;
-$font-RobotoSlab: 'Roboto Slab', serif;
