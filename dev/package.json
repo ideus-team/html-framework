@@ -1,10 +1,10 @@
 {
 	"name": "ideus-html-framework",
-	"version": "2.31.1",
+	"version": "2.31.2",
 	"description": "Our HTML5 boilerplate",
 	"devDependencies": {
 		"@lodder/grunt-postcss": "3.1.1",
-		"autoprefixer": "10.6.1",
+		"autoprefixer": "10.6.2",
 		"cssnano": "8.0.10",
 		"grunt": "1.6.3",
 		"grunt-concurrent": "3.0.0",
@@ -19,8 +19,8 @@
 		"grunt-terser": "2.0.0",
 		"jshint-stylish": "2.2.1",
 		"load-grunt-config": "4.0.1",
-		"postcss": "8.5.30",
-		"sass": "1.105.1"
+		"postcss": "8.5.32",
+		"sass": "1.107.1"
 	},
 	"browserslist": [
 		"last 2 version",
