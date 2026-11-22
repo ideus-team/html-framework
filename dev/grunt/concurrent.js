@@ -14,7 +14,7 @@ module.exports = {
 
 	dev: {
 		tasks: [
-			'watch:configs',
+			'watch:devconfigs',
 			'watch:devscripts',
 			'watch:styles',
 			'watch:devimages',

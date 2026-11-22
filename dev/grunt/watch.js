@@ -24,6 +24,19 @@ module.exports = {
 		],
 	},
 
+	devconfigs: {
+		options: {
+			reload: true,
+		},
+		files: [
+			'<%= gruntSettings %>',
+			'<%= gruntPluginsSettings %>',
+		],
+		tasks: [
+			'dev',
+		],
+	},
+
 	scripts: {
 		files: [
 			'<%= sourceJSFiles %>',
